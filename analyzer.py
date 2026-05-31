@@ -11,7 +11,7 @@ import json
 import glob
 import subprocess
 from datetime import datetime, timedelta
-from html import escape
+from html import escape, unescape
 from anthropic import Anthropic
 import smtplib
 from email.mime.text import MIMEText
@@ -54,18 +54,21 @@ def get_youtube_feed():
 
 def get_video_transcript(video_url):
     """Get transcript from YouTube video using yt-dlp and available subtitles"""
+    tmp_dir = Path(__file__).parent / ".vtt_tmp"
+    tmp_dir.mkdir(exist_ok=True)
+    tmp_prefix = str(tmp_dir / "sub")
     sub_files = []
     try:
         subprocess.run(
             ["yt-dlp", "--write-auto-subs", "--sub-lang", "en",
              "--sub-format", "vtt", "--convert-subs", "vtt",
-             "--skip-download", "-o", "temp", video_url],
+             "--skip-download", "-o", tmp_prefix, video_url],
             capture_output=True,
             text=True,
             timeout=60
         )
 
-        sub_files = glob.glob("temp*.vtt")
+        sub_files = glob.glob(str(tmp_dir / "sub*.vtt"))
         if not sub_files:
             print(f"⚠️  No subtitles found for {video_url}")
         if sub_files:
@@ -230,7 +233,7 @@ def save_latest_analysis(analyzed_videos):
     date_str = datetime.now().strftime("%B %d, %Y")
     lines = [f"# Nate Herk Analysis — {date_str}\n"]
     for v in analyzed_videos:
-        plain = re.sub(r'<[^>]+>', '', v['analysis']).strip()
+        plain = unescape(re.sub(r'<[^>]+>', '', v['analysis'])).strip()
         lines.append(f"## [{v['title']}]({v['url']})")
         lines.append(f"*{v['published']}*\n")
         lines.append(plain)
@@ -298,7 +301,7 @@ def main():
         print(f"\n🔍 Analyzing: {video_info['title'][:50]}...")
 
         # Get transcript
-        transcript = get_video_transcript(entry.link)
+        transcript = get_video_transcript(video_info['url'])
 
         if transcript:
             # Analyze with Claude
