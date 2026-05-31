@@ -100,15 +100,18 @@ Video URL: {video_url}
 Transcript:
 {transcript}"""
 
-    message = client.messages.create(
-        model="claude-opus-4-8",
-        max_tokens=800,
-        messages=[
-            {"role": "user", "content": analysis_prompt}
-        ]
-    )
-
-    return message.content[0].text
+    try:
+        message = client.messages.create(
+            model="claude-opus-4-8",
+            max_tokens=800,
+            messages=[
+                {"role": "user", "content": analysis_prompt}
+            ]
+        )
+        return message.content[0].text
+    except Exception as e:
+        print(f"❌ Claude API error: {e}")
+        return None
 
 
 def send_email(recipient, subject, html_content):
@@ -240,8 +243,8 @@ def main():
     new_videos = []
     videos_to_analyze = []
 
-    # Find new videos from the last 24 hours
-    cutoff_time = datetime.now() - timedelta(days=1)
+    # 48h window so caption-generation delays don't cause videos to be missed
+    cutoff_time = datetime.now() - timedelta(days=2)
 
     for entry in entries[:5]:  # Check last 5 videos
         try:
@@ -252,15 +255,14 @@ def main():
             continue
 
         if video_id not in processed_videos:
-            # Only process videos from last 24 hours
             if published > cutoff_time:
-                    new_videos.append({
-                        'id': video_id,
-                        'title': entry.title,
-                        'url': entry.link,
-                        'published': published.strftime("%B %d at %I:%M %p")
-                    })
-                    videos_to_analyze.append(entry)
+                new_videos.append({
+                    'id': video_id,
+                    'title': entry.title,
+                    'url': entry.link,
+                    'published': published.strftime("%B %d at %I:%M %p")
+                })
+                videos_to_analyze.append(entry)
 
     if not new_videos:
         print("✨ No new videos to analyze")
