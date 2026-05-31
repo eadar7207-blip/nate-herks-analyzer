@@ -65,6 +65,8 @@ def get_video_transcript(video_url):
         )
 
         sub_files = glob.glob("temp*.vtt")
+        if not sub_files:
+            print(f"⚠️  No subtitles found for {video_url}")
         if sub_files:
             with open(sub_files[0]) as f:
                 content = f.read()
@@ -139,8 +141,7 @@ def send_email(recipient, subject, html_content):
 
         msg.attach(MIMEText(html_content, "html", "utf-8"))
 
-        # Send via Gmail SMTP
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, timeout=30) as server:
             server.login(sender_email, sender_password)
             server.sendmail(sender_email, recipient, msg.as_string())
 
