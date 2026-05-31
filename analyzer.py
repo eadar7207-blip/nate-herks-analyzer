@@ -110,12 +110,27 @@ def analyze_video_with_claude(video_title, transcript, video_url):
     if not transcript:
         return None
 
-    analysis_prompt = f"""Analyze this Nate Herk video transcript and write exactly 4 paragraphs — no headers, no bullets, no markdown. Write in plain, simple language as if explaining to a smart friend who isn't deep in tech or AI. Avoid jargon; if you must use a term, explain it in the same sentence.
+    analysis_prompt = f"""Analyze this Nate Herk video transcript and write a full summary. Use plain, simple words — explain everything as if talking to a smart friend who isn't deep in tech or AI. If you use a technical term, explain it in the same sentence. No jargon left unexplained.
 
-Paragraph 1: What the video is about and the core idea, in plain English.
-Paragraph 2: The key method or framework introduced — what it is and why it works, simply explained.
-Paragraph 3: How this applies to an AI real estate consulting business, with a concrete real-world example.
-Paragraph 4: The single most actionable thing to do this week (specific and simple), plus one memorable quote from the video.
+Structure your response exactly like this:
+
+WHAT IT'S ABOUT
+One short paragraph covering the main idea and why Nate made this video.
+
+THE KEY POINTS
+A bullet for each important point from the video. Keep each bullet short and clear. Bold the most critical insight on each bullet so it stands out.
+
+THE METHOD OR FRAMEWORK
+If Nate introduces a system, process, or way of doing something, explain it step by step in plain English. If there's no framework, skip this section.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+A paragraph explaining how this directly applies to an AI real estate consulting business. Give a concrete example — a real scenario, not a vague idea.
+
+ACTION STEP THIS WEEK
+One specific thing to do this week. Not "explore" or "consider" — an actual action with clear steps.
+
+BEST QUOTE
+The single most memorable or useful line from the video, in quotation marks.
 
 Video Title: {video_title}
 Video URL: {video_url}
@@ -126,7 +141,7 @@ Transcript:
     try:
         message = client.messages.create(
             model="claude-opus-4-8",
-            max_tokens=1200,
+            max_tokens=2000,
             messages=[
                 {"role": "user", "content": analysis_prompt}
             ]
