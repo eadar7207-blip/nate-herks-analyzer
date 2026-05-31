@@ -11,7 +11,7 @@ import json
 import glob
 import subprocess
 from datetime import datetime, timedelta
-from html import escape, unescape
+from html import escape
 from anthropic import Anthropic
 import smtplib
 from email.mime.text import MIMEText
@@ -248,15 +248,42 @@ def format_email_html(videos_analysis):
 def format_analysis_as_html(analysis_text):
     if not analysis_text:
         return "<p>Analysis unavailable.</p>"
-    paragraphs = [p.strip() for p in analysis_text.split('\n\n') if p.strip()]
-    return ''.join(f"<p>{escape(p)}</p>" for p in paragraphs)
+    html_parts = []
+    in_list = False
+    for line in analysis_text.split('\n'):
+        s = line.strip()
+        if not s:
+            if in_list:
+                html_parts.append('</ul>')
+                in_list = False
+            continue
+        if s.isupper():
+            if in_list:
+                html_parts.append('</ul>')
+                in_list = False
+            html_parts.append(f'<h3 style="color:#667eea;margin-top:18px;margin-bottom:4px;">{escape(s)}</h3>')
+        elif s.startswith('- ') or s.startswith('• '):
+            if not in_list:
+                html_parts.append('<ul style="margin:6px 0;padding-left:20px;">')
+                in_list = True
+            content = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', escape(s[2:]))
+            html_parts.append(f'<li>{content}</li>')
+        else:
+            if in_list:
+                html_parts.append('</ul>')
+                in_list = False
+            content = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', escape(s))
+            html_parts.append(f'<p style="margin:6px 0;">{content}</p>')
+    if in_list:
+        html_parts.append('</ul>')
+    return '\n'.join(html_parts)
 
 
 def save_latest_analysis(analyzed_videos):
     date_str = datetime.now().strftime("%B %d, %Y")
     lines = [f"# Nate Herk Analysis — {date_str}\n"]
     for v in analyzed_videos:
-        plain = unescape(re.sub(r'<[^>]+>', '', v['analysis'])).strip()
+        plain = v['raw_analysis'].strip()
         safe_title = v['title'].replace('[', '\\[').replace(']', '\\]')
         lines.append(f"## [{safe_title}]({v['url']})")
         lines.append(f"*{v['published']}*\n")
@@ -336,6 +363,7 @@ def main():
             )
 
             if analysis:
+                video_info['raw_analysis'] = analysis
                 video_info['analysis'] = format_analysis_as_html(analysis)
                 analyzed_videos.append(video_info)
                 print("✅ Analysis complete")
