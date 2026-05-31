@@ -102,7 +102,7 @@ Transcript:
 
     message = client.messages.create(
         model="claude-opus-4-8",
-        max_tokens=600,
+        max_tokens=800,
         messages=[
             {"role": "user", "content": analysis_prompt}
         ]
@@ -244,20 +244,23 @@ def main():
     cutoff_time = datetime.now() - timedelta(days=1)
 
     for entry in entries[:5]:  # Check last 5 videos
-        video_id = entry.id.split('yt:video:')[1]
+        try:
+            video_id = entry.id.split('yt:video:')[1]
+            published = datetime(*entry.published_parsed[:6])
+        except (IndexError, TypeError, AttributeError):
+            print(f"⚠️  Skipping malformed feed entry: {getattr(entry, 'id', 'unknown')}")
+            continue
 
         if video_id not in processed_videos:
-            published = datetime(*entry.published_parsed[:6])
-
             # Only process videos from last 24 hours
             if published > cutoff_time:
-                new_videos.append({
-                    'id': video_id,
-                    'title': entry.title,
-                    'url': entry.link,
-                    'published': published.strftime("%B %d at %I:%M %p")
-                })
-                videos_to_analyze.append(entry)
+                    new_videos.append({
+                        'id': video_id,
+                        'title': entry.title,
+                        'url': entry.link,
+                        'published': published.strftime("%B %d at %I:%M %p")
+                    })
+                    videos_to_analyze.append(entry)
 
     if not new_videos:
         print("✨ No new videos to analyze")

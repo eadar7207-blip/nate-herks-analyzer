@@ -54,9 +54,9 @@ jobs:
         run: |
           git config user.name "nate-herks-analyzer[bot]"
           git config user.email "nate-herks-analyzer[bot]@users.noreply.github.com"
-          git add latest_analysis.md
+          git add latest_analysis.md 2>/dev/null || true
           git diff --cached --quiet || git commit -m "chore: update latest analysis [skip ci]"
-          git push
+          git diff HEAD~1..HEAD --quiet 2>/dev/null || git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
