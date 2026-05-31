@@ -6,7 +6,10 @@ Monitors YouTube feed, analyzes transcripts, and emails detailed summaries
 
 import feedparser
 import os
+import re
 import json
+import glob
+import subprocess
 from datetime import datetime, timedelta
 from anthropic import Anthropic
 import smtplib
@@ -45,37 +48,35 @@ def get_youtube_feed():
 
 def get_video_transcript(video_url):
     """Get transcript from YouTube video using yt-dlp and available subtitles"""
-    import subprocess
-    import json as json_module
-
+    sub_files = []
     try:
-        # Use yt-dlp to get transcript
-        result = subprocess.run(
+        subprocess.run(
             ["yt-dlp", "--write-auto-subs", "--sub-format", "vtt",
              "--skip-download", "-o", "temp", video_url],
             capture_output=True,
             text=True,
-            timeout=30
+            timeout=60
         )
 
-        # Look for generated subtitle files
-        import glob
         sub_files = glob.glob("temp*.vtt")
         if sub_files:
             with open(sub_files[0]) as f:
                 content = f.read()
-                # Remove VTT formatting, deduplicate adjacent repeated lines
-                raw = [line.strip() for line in content.split('\n')
-                       if line.strip() and not line.startswith('WEBVTT')
-                       and '-->' not in line and not line[0].isdigit()]
-                deduped = [raw[0]] + [l for i, l in enumerate(raw[1:], 1) if l != raw[i-1]]
-                transcript = ' '.join(deduped)
-                # Cleanup
-                for f in sub_files:
-                    os.remove(f)
-                return transcript[:8000]  # Limit to ~8000 chars for Claude
+            raw = [line.strip() for line in content.split('\n')
+                   if line.strip() and not line.startswith('WEBVTT')
+                   and '-->' not in line and not line[0].isdigit()]
+            if not raw:
+                return None
+            deduped = [raw[0]] + [l for i, l in enumerate(raw[1:], 1) if l != raw[i-1]]
+            return ' '.join(deduped)[:8000]
     except Exception as e:
         print(f"Failed to get transcript: {e}")
+    finally:
+        for f in sub_files:
+            try:
+                os.remove(f)
+            except OSError:
+                pass
 
     return None
 
@@ -213,7 +214,6 @@ def save_latest_analysis(analyzed_videos):
     lines = [f"# Nate Herk Analysis — {date_str}\n"]
     for v in analyzed_videos:
         # Strip HTML tags for plain markdown
-        import re
         plain = re.sub(r'<[^>]+>', '', v['analysis']).strip()
         lines.append(f"## [{v['title']}]({v['url']})")
         lines.append(f"*{v['published']}*\n")
