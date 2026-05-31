@@ -1,0 +1,25 @@
+# Cache
+.processed_videos.json
+
+# Temp files
+temp*
+*.vtt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
