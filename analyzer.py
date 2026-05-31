@@ -64,11 +64,12 @@ def get_video_transcript(video_url):
         if sub_files:
             with open(sub_files[0]) as f:
                 content = f.read()
-                # Remove VTT formatting, keep just text
-                lines = [line.strip() for line in content.split('\n')
-                        if line.strip() and not line.startswith('WEBVTT')
-                        and '-->' not in line]
-                transcript = ' '.join(lines)
+                # Remove VTT formatting, deduplicate adjacent repeated lines
+                raw = [line.strip() for line in content.split('\n')
+                       if line.strip() and not line.startswith('WEBVTT')
+                       and '-->' not in line and not line[0].isdigit()]
+                deduped = [raw[0]] + [l for i, l in enumerate(raw[1:], 1) if l != raw[i-1]]
+                transcript = ' '.join(deduped)
                 # Cleanup
                 for f in sub_files:
                     os.remove(f)
@@ -85,24 +86,22 @@ def analyze_video_with_claude(video_title, transcript, video_url):
     if not transcript:
         return None
 
-    analysis_prompt = f"""Analyze this video transcript from Nate Herks and provide:
+    analysis_prompt = f"""Analyze this Nate Herk video transcript and write exactly 4 paragraphs — no headers, no bullets, no markdown. Keep it tight and practical.
 
-1. **Key Points Summary** (3-5 main takeaways from the video)
-2. **AI Real Estate Breakthrough** (How this applies to an AI real estate consultant business - focus on AI/automation/tech applications to real estate, lead generation, customer management, market analysis, etc.)
-3. **Actionable Insights** (Specific things an AI real estate consultant could implement)
-4. **Quote or Highlight** (Most impactful quote or moment from the video)
+Paragraph 1: What the video is about and the core idea.
+Paragraph 2: The key framework or method introduced and how it works.
+Paragraph 3: How this applies specifically to an AI real estate consulting business.
+Paragraph 4: The single most actionable thing to implement this week, and one highlight quote from the video.
 
 Video Title: {video_title}
 Video URL: {video_url}
 
 Transcript:
-{transcript}
-
-Provide detailed, actionable insights tailored to an AI real estate consultant."""
+{transcript}"""
 
     message = client.messages.create(
         model="claude-opus-4-8",
-        max_tokens=1500,
+        max_tokens=600,
         messages=[
             {"role": "user", "content": analysis_prompt}
         ]
@@ -202,40 +201,10 @@ def format_email_html(videos_analysis):
 
 
 def format_analysis_as_html(analysis_text):
-    """Convert plain text analysis to HTML with sections"""
     if not analysis_text:
-        return "<p>Analysis failed.</p>"
-
-    html = "<div>"
-
-    current_section = None
-    for line in analysis_text.split('\n'):
-        line = line.strip()
-        if not line:
-            continue
-
-        # Detect section headers (lines with ** markers)
-        if '**' in line:
-            # Extract section title
-            title = line.replace('**', '').strip()
-            if current_section:
-                html += "</div>"
-            html += f"<div class='section'><div class='section-title'>{title}</div>"
-            current_section = True
-        elif line.startswith('"') or ('"' in line and len(line) > 20):
-            # Quote/highlight
-            html += f"<div class='highlight'>{line}</div>"
-        elif line.startswith('-') or line.startswith('•'):
-            # Bullet point
-            html += f"<div class='insight'>{line[1:].strip()}</div>"
-        else:
-            html += f"<p>{line}</p>"
-
-    if current_section:
-        html += "</div>"
-    html += "</div>"
-
-    return html
+        return "<p>Analysis unavailable.</p>"
+    paragraphs = [p.strip() for p in analysis_text.split('\n\n') if p.strip()]
+    return ''.join(f"<p>{p}</p>" for p in paragraphs)
 
 
 def main():
