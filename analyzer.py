@@ -11,6 +11,7 @@ import json
 import glob
 import subprocess
 from datetime import datetime, timedelta
+from html import escape
 from anthropic import Anthropic
 import smtplib
 from email.mime.text import MIMEText
@@ -184,7 +185,6 @@ def format_email_html(videos_analysis):
     if not videos_analysis:
         html += "<p>No new videos analyzed today.</p>"
     else:
-        from html import escape
         for video in videos_analysis:
             html += f"""
             <div class="video">
@@ -215,19 +215,20 @@ def format_analysis_as_html(analysis_text):
 
 
 def save_latest_analysis(analyzed_videos):
-    """Write plain-text analysis to latest_analysis.md so Claude Code can read it from the repo."""
     date_str = datetime.now().strftime("%B %d, %Y")
     lines = [f"# Nate Herk Analysis — {date_str}\n"]
     for v in analyzed_videos:
-        # Strip HTML tags for plain markdown
         plain = re.sub(r'<[^>]+>', '', v['analysis']).strip()
         lines.append(f"## [{v['title']}]({v['url']})")
         lines.append(f"*{v['published']}*\n")
         lines.append(plain)
         lines.append("")
-    output_path = Path(__file__).parent / "latest_analysis.md"
-    output_path.write_text('\n'.join(lines))
-    print("📄 Saved latest_analysis.md")
+    try:
+        output_path = Path(__file__).parent / "latest_analysis.md"
+        output_path.write_text('\n'.join(lines), encoding="utf-8")
+        print("📄 Saved latest_analysis.md")
+    except OSError as e:
+        print(f"⚠️  Could not save latest_analysis.md: {e}")
 
 
 def main():
