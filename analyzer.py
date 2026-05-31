@@ -27,10 +27,12 @@ CACHE_FILE = Path(__file__).parent / ".processed_videos.json"
 
 
 def load_processed_videos():
-    """Load list of already processed video IDs"""
     if CACHE_FILE.exists():
-        with open(CACHE_FILE) as f:
-            return json.load(f)
+        try:
+            with open(CACHE_FILE) as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            print("⚠️  Cache file corrupt, starting fresh")
     return []
 
 
@@ -41,8 +43,9 @@ def save_processed_videos(video_ids):
 
 
 def get_youtube_feed():
-    """Fetch latest videos from Nate Herks YouTube channel"""
     feed = feedparser.parse(YOUTUBE_RSS_URL)
+    if feed.bozo and not feed.entries:
+        print(f"⚠️  Feed fetch failed: {feed.get('bozo_exception', 'unknown error')}")
     return feed.entries
 
 
@@ -131,8 +134,7 @@ def send_email(recipient, subject, html_content):
         msg["From"] = sender_email
         msg["To"] = recipient
 
-        # Attach HTML version
-        msg.attach(MIMEText(html_content, "html"))
+        msg.attach(MIMEText(html_content, "html", "utf-8"))
 
         # Send via Gmail SMTP
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
@@ -182,11 +184,12 @@ def format_email_html(videos_analysis):
     if not videos_analysis:
         html += "<p>No new videos analyzed today.</p>"
     else:
+        from html import escape
         for video in videos_analysis:
             html += f"""
             <div class="video">
-                <h2><a href="{video['url']}" target="_blank">{video['title']}</a></h2>
-                <p style="font-size: 12px; color: #999;">Published: {video['published']}</p>
+                <h2><a href="{escape(video['url'])}" target="_blank">{escape(video['title'])}</a></h2>
+                <p style="font-size: 12px; color: #999;">Published: {escape(video['published'])}</p>
                 {video['analysis']}
             </div>
             """
