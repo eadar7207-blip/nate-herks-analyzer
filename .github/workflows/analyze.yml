@@ -48,6 +48,16 @@ jobs:
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
         run: python analyzer.py
 
+      - name: Commit analysis to repo
+        run: |
+          git config user.name "nate-herks-analyzer[bot]"
+          git config user.email "nate-herks-analyzer[bot]@users.noreply.github.com"
+          git add latest_analysis.md
+          git diff --cached --quiet || git commit -m "chore: update latest analysis [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Upload cache
         if: always()
         uses: actions/upload-artifact@v4

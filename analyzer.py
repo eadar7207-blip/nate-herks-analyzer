@@ -207,6 +207,23 @@ def format_analysis_as_html(analysis_text):
     return ''.join(f"<p>{p}</p>" for p in paragraphs)
 
 
+def save_latest_analysis(analyzed_videos):
+    """Write plain-text analysis to latest_analysis.md so Claude Code can read it from the repo."""
+    date_str = datetime.now().strftime("%B %d, %Y")
+    lines = [f"# Nate Herk Analysis — {date_str}\n"]
+    for v in analyzed_videos:
+        # Strip HTML tags for plain markdown
+        import re
+        plain = re.sub(r'<[^>]+>', '', v['analysis']).strip()
+        lines.append(f"## [{v['title']}]({v['url']})")
+        lines.append(f"*{v['published']}*\n")
+        lines.append(plain)
+        lines.append("")
+    output_path = Path(__file__).parent / "latest_analysis.md"
+    output_path.write_text('\n'.join(lines))
+    print("📄 Saved latest_analysis.md")
+
+
 def main():
     """Main execution"""
 
@@ -281,6 +298,9 @@ def main():
         html_content = format_email_html(analyzed_videos)
 
         send_email(recipient, subject, html_content)
+
+        # Save plain-text analysis to repo so it can be read from Claude Code
+        save_latest_analysis(analyzed_videos)
 
         # Update processed videos
         new_processed = processed_videos + [v['id'] for v in analyzed_videos]
