@@ -15,7 +15,8 @@ if [ ! -f "$ANALYSIS_FILE" ]; then
 fi
 
 # Only surface it if the workflow updated it in the last 48 hours
-LAST_UPDATE=$(git log -1 --format="%ct" -- latest_analysis.md 2>/dev/null || echo "0")
+LAST_UPDATE=$(git log -1 --format="%ct" -- latest_analysis.md 2>/dev/null)
+LAST_UPDATE=${LAST_UPDATE:-0}  # git log returns empty string (not error) if file never committed
 NOW=$(date +%s)
 AGE=$((NOW - LAST_UPDATE))
 
