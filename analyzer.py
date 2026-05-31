@@ -71,11 +71,15 @@ def get_video_transcript(video_url):
         if sub_files:
             with open(sub_files[0]) as f:
                 content = f.read()
-            raw = [line.strip() for line in content.split('\n')
-                   if line.strip() and not line.startswith('WEBVTT')
-                   and '-->' not in line and not line[0].isdigit()
-                   and not line.startswith('Kind:') and not line.startswith('Language:')
-                   and not line.startswith('NOTE')]
+            raw = []
+            for line in content.split('\n'):
+                stripped = line.strip()
+                if (stripped and not stripped.startswith('WEBVTT')
+                        and '-->' not in stripped and not stripped.isdigit()
+                        and not stripped.startswith('Kind:') and not stripped.startswith('Language:')
+                        and not stripped.startswith('NOTE')):
+                    raw.append(re.sub(r'<[^>]+>', '', stripped).strip())
+            raw = [s for s in raw if s]
             if not raw:
                 return None
             deduped = [raw[0]] + [l for i, l in enumerate(raw[1:], 1) if l != raw[i-1]]
@@ -114,11 +118,13 @@ Transcript:
     try:
         message = client.messages.create(
             model="claude-opus-4-8",
-            max_tokens=800,
+            max_tokens=1200,
             messages=[
                 {"role": "user", "content": analysis_prompt}
             ]
         )
+        if message.stop_reason == "max_tokens":
+            print("⚠️  Analysis was truncated by max_tokens limit")
         return message.content[0].text
     except Exception as e:
         print(f"❌ Claude API error: {e}")
@@ -217,7 +223,7 @@ def format_analysis_as_html(analysis_text):
     if not analysis_text:
         return "<p>Analysis unavailable.</p>"
     paragraphs = [p.strip() for p in analysis_text.split('\n\n') if p.strip()]
-    return ''.join(f"<p>{p}</p>" for p in paragraphs)
+    return ''.join(f"<p>{escape(p)}</p>" for p in paragraphs)
 
 
 def save_latest_analysis(analyzed_videos):
@@ -254,11 +260,17 @@ def main():
     videos_to_analyze = []
 
     # 48h window so caption-generation delays don't cause videos to be missed
-    cutoff_time = datetime.now() - timedelta(days=2)
+    cutoff_time = datetime.utcnow() - timedelta(days=2)
 
     for entry in entries[:5]:  # Check last 5 videos
         try:
-            video_id = entry.id.split('yt:video:')[1]
+            raw_id = entry.id.split('yt:video:')
+            video_id = raw_id[1] if len(raw_id) > 1 else None
+            if not video_id:
+                print(f"⚠️  Skipping entry with empty video ID: {getattr(entry, 'id', 'unknown')}")
+                continue
+            title = entry.title
+            link = entry.link
             published = datetime(*entry.published_parsed[:6])
         except (IndexError, TypeError, AttributeError):
             print(f"⚠️  Skipping malformed feed entry: {getattr(entry, 'id', 'unknown')}")
@@ -268,8 +280,8 @@ def main():
             if published > cutoff_time:
                 new_videos.append({
                     'id': video_id,
-                    'title': entry.title,
-                    'url': entry.link,
+                    'title': title,
+                    'url': link,
                     'published': published.strftime("%B %d at %I:%M %p")
                 })
                 videos_to_analyze.append(entry)
