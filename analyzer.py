@@ -8,7 +8,6 @@ import feedparser
 import os
 import re
 import json
-import glob
 import subprocess
 from datetime import datetime, timedelta
 from html import escape
@@ -73,7 +72,7 @@ def get_video_transcript(video_url):
             timeout=60
         )
 
-        sub_files = glob.glob(str(tmp_dir / "sub*.vtt"))
+        sub_files = list(tmp_dir.glob("sub*.vtt"))
         if not sub_files:
             print(f"⚠️  No subtitles found for {video_url}")
         if sub_files:
