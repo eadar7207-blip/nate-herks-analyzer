@@ -4,7 +4,7 @@ on:
   schedule:
     # Runs every day at 8:00 AM UTC (3:00 AM EST / 12:00 AM PST)
     # You can adjust the time by changing the cron expression
-    - cron: '0 8 * * *'
+    - cron: '0 0 * * *'
 
   # Allow manual trigger
   workflow_dispatch:
