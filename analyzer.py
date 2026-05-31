@@ -31,7 +31,10 @@ def load_processed_videos():
     if CACHE_FILE.exists():
         try:
             with open(CACHE_FILE) as f:
-                return json.load(f)
+                data = json.load(f)
+            if isinstance(data, list):
+                return data
+            print("⚠️  Cache file has unexpected format, starting fresh")
         except (json.JSONDecodeError, OSError):
             print("⚠️  Cache file corrupt, starting fresh")
     return []
@@ -72,7 +75,7 @@ def get_video_transcript(video_url):
         if not sub_files:
             print(f"⚠️  No subtitles found for {video_url}")
         if sub_files:
-            with open(sub_files[0]) as f:
+            with open(sub_files[0], encoding='utf-8-sig') as f:
                 content = f.read()
             raw = []
             for line in content.split('\n'):
@@ -128,6 +131,9 @@ Transcript:
         )
         if message.stop_reason == "max_tokens":
             print("⚠️  Analysis was truncated by max_tokens limit")
+        if not message.content:
+            print("❌ Claude returned empty content")
+            return None
         return message.content[0].text
     except Exception as e:
         print(f"❌ Claude API error: {e}")
