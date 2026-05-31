@@ -59,6 +59,8 @@ def get_video_transcript(video_url):
     """Get transcript from YouTube video using yt-dlp and available subtitles"""
     tmp_dir = Path(__file__).parent / ".vtt_tmp"
     tmp_dir.mkdir(exist_ok=True)
+    for stale in tmp_dir.glob("sub*.vtt"):
+        stale.unlink(missing_ok=True)
     tmp_prefix = str(tmp_dir / "sub")
     sub_files = []
     try:
@@ -240,7 +242,8 @@ def save_latest_analysis(analyzed_videos):
     lines = [f"# Nate Herk Analysis — {date_str}\n"]
     for v in analyzed_videos:
         plain = unescape(re.sub(r'<[^>]+>', '', v['analysis'])).strip()
-        lines.append(f"## [{v['title']}]({v['url']})")
+        safe_title = v['title'].replace('[', '\\[').replace(']', '\\]')
+        lines.append(f"## [{safe_title}]({v['url']})")
         lines.append(f"*{v['published']}*\n")
         lines.append(plain)
         lines.append("")
