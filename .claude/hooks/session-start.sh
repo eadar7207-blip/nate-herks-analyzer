@@ -23,5 +23,5 @@ AGE=$((NOW - LAST_UPDATE))
 if [ "$AGE" -lt "172800" ]; then
   echo "New Nate Herk analysis is ready:"
   echo ""
-  head -c 4000 "$ANALYSIS_FILE"
+  head -c 12000 "$ANALYSIS_FILE"
 fi

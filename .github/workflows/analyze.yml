@@ -44,6 +44,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install --upgrade yt-dlp
 
       - name: Run video analyzer
         env:
@@ -62,7 +63,11 @@ jobs:
             echo "No new analysis to commit"
           else
             git commit -m "chore: update latest analysis [skip ci]"
-            git push || echo "⚠️  Push failed (non-fast-forward?) — analysis saved locally"
+            for attempt in 1 2 3; do
+              git push && break
+              echo "Push attempt $attempt failed, rebasing and retrying..."
+              git pull --rebase origin main
+            done
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
