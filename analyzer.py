@@ -86,12 +86,12 @@ def analyze_video_with_claude(video_title, transcript, video_url):
     if not transcript:
         return None
 
-    analysis_prompt = f"""Analyze this Nate Herk video transcript and write exactly 4 paragraphs — no headers, no bullets, no markdown. Keep it tight and practical.
+    analysis_prompt = f"""Analyze this Nate Herk video transcript and write exactly 4 paragraphs — no headers, no bullets, no markdown. Write in plain, simple language as if explaining to a smart friend who isn't deep in tech or AI. Avoid jargon; if you must use a term, explain it in the same sentence.
 
-Paragraph 1: What the video is about and the core idea.
-Paragraph 2: The key framework or method introduced and how it works.
-Paragraph 3: How this applies specifically to an AI real estate consulting business.
-Paragraph 4: The single most actionable thing to implement this week, and one highlight quote from the video.
+Paragraph 1: What the video is about and the core idea, in plain English.
+Paragraph 2: The key method or framework introduced — what it is and why it works, simply explained.
+Paragraph 3: How this applies to an AI real estate consulting business, with a concrete real-world example.
+Paragraph 4: The single most actionable thing to do this week (specific and simple), plus one memorable quote from the video.
 
 Video Title: {video_title}
 Video URL: {video_url}
