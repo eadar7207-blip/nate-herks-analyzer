@@ -255,7 +255,7 @@ def main():
     videos_to_analyze = []
 
     # Find new videos from the last 24 hours
-    cutoff_time = datetime.now(entries[0].published_parsed).replace(tzinfo=None) - timedelta(days=1)
+    cutoff_time = datetime.now() - timedelta(days=1)
 
     for entry in entries[:5]:  # Check last 5 videos
         video_id = entry.id.split('yt:video:')[1]
