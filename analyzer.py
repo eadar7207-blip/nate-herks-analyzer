@@ -57,8 +57,9 @@ def get_video_transcript(video_url):
     sub_files = []
     try:
         subprocess.run(
-            ["yt-dlp", "--write-auto-subs", "--sub-format", "vtt",
-             "--convert-subs", "vtt", "--skip-download", "-o", "temp", video_url],
+            ["yt-dlp", "--write-auto-subs", "--sub-lang", "en",
+             "--sub-format", "vtt", "--convert-subs", "vtt",
+             "--skip-download", "-o", "temp", video_url],
             capture_output=True,
             text=True,
             timeout=60
@@ -72,7 +73,9 @@ def get_video_transcript(video_url):
                 content = f.read()
             raw = [line.strip() for line in content.split('\n')
                    if line.strip() and not line.startswith('WEBVTT')
-                   and '-->' not in line and not line[0].isdigit()]
+                   and '-->' not in line and not line[0].isdigit()
+                   and not line.startswith('Kind:') and not line.startswith('Language:')
+                   and not line.startswith('NOTE')]
             if not raw:
                 return None
             deduped = [raw[0]] + [l for i, l in enumerate(raw[1:], 1) if l != raw[i-1]]
