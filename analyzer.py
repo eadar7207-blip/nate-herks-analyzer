@@ -38,9 +38,11 @@ def load_processed_videos():
 
 
 def save_processed_videos(video_ids):
-    """Save processed video IDs to cache"""
-    with open(CACHE_FILE, "w") as f:
-        json.dump(video_ids, f)
+    try:
+        with open(CACHE_FILE, "w") as f:
+            json.dump(video_ids, f)
+    except OSError as e:
+        print(f"⚠️  Could not save processed videos cache: {e}")
 
 
 def get_youtube_feed():
@@ -56,7 +58,7 @@ def get_video_transcript(video_url):
     try:
         subprocess.run(
             ["yt-dlp", "--write-auto-subs", "--sub-format", "vtt",
-             "--skip-download", "-o", "temp", video_url],
+             "--convert-subs", "vtt", "--skip-download", "-o", "temp", video_url],
             capture_output=True,
             text=True,
             timeout=60
