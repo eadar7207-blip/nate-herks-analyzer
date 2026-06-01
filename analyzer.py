@@ -4,11 +4,12 @@ Nate Herks Video Analyzer - Extracts key insights from daily videos
 Monitors YouTube feed, analyzes transcripts, and emails detailed summaries
 """
 
-import feedparser
 import os
 import re
 import json
 import subprocess
+import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from html import escape
 from anthropic import Anthropic
@@ -47,11 +48,48 @@ def save_processed_videos(video_ids):
         print(f"⚠️  Could not save processed videos cache: {e}")
 
 
+class _Entry:
+    """Minimal feedparser-compatible entry parsed from YouTube Atom XML."""
+    def __init__(self, id_, title, link, published_parsed):
+        self.id = id_
+        self.title = title
+        self.link = link
+        self.published_parsed = published_parsed
+
+
 def get_youtube_feed():
-    feed = feedparser.parse(YOUTUBE_RSS_URL)
-    if feed.bozo and not feed.entries:
-        print(f"⚠️  Feed fetch failed: {feed.get('bozo_exception', 'unknown error')}")
-    return feed.entries
+    NS = {
+        'atom': 'http://www.w3.org/2005/Atom',
+        'yt':   'http://www.youtube.com/xml/schemas/2015',
+    }
+    try:
+        req = urllib.request.Request(YOUTUBE_RSS_URL, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = resp.read()
+    except Exception as e:
+        print(f"⚠️  Feed fetch failed: {e}")
+        return []
+
+    try:
+        root = ET.fromstring(data)
+    except ET.ParseError as e:
+        print(f"⚠️  Feed parse failed: {e}")
+        return []
+
+    entries = []
+    for elem in root.findall('atom:entry', NS):
+        try:
+            video_id = elem.find('yt:videoId', NS).text
+            title    = elem.find('atom:title', NS).text or ''
+            link     = elem.find('atom:link', NS).attrib.get('href', '')
+            pub_str  = elem.find('atom:published', NS).text or ''
+            pub_dt   = datetime.strptime(pub_str[:19], '%Y-%m-%dT%H:%M:%S')
+            parsed   = pub_dt.timetuple()
+            entry    = _Entry(f'yt:video:{video_id}', title, link, parsed)
+            entries.append(entry)
+        except Exception:
+            continue
+    return entries
 
 
 def get_video_transcript(video_url):
