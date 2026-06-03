@@ -43,6 +43,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Probe RSS feed
+        run: |
+          echo "=== RSS probe ===" > /tmp/rss_probe.txt
+          curl -s -L --max-time 15 \
+            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+            -o /tmp/rss_body.txt \
+            -w "HTTP %{http_code} size=%{size_download}" \
+            "https://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA" \
+            >> /tmp/rss_probe.txt 2>&1 || echo "curl error $?" >> /tmp/rss_probe.txt
+          echo "" >> /tmp/rss_probe.txt
+          head -c 400 /tmp/rss_body.txt >> /tmp/rss_probe.txt 2>/dev/null || true
+          cat /tmp/rss_probe.txt
+
       - name: Run video analyzer
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -50,20 +63,30 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
           YOUTUBE_COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
-        run: python analyzer.py
+        run: python analyzer.py 2>&1 | tee /tmp/analyzer_output.txt
 
       - name: Commit analysis to repo
         run: |
           git config user.name "nate-herks-analyzer[bot]"
           git config user.email "nate-herks-analyzer[bot]@users.noreply.github.com"
-          git add latest_analysis.md 2>/dev/null || true
+          # Always commit diagnostics so we can read them
+          {
+            echo "# Run $(date -u '+%Y-%m-%d %H:%M UTC')"
+            echo '```'
+            cat /tmp/rss_probe.txt 2>/dev/null || echo "(no probe output)"
+            echo ""
+            echo "--- analyzer output ---"
+            cat /tmp/analyzer_output.txt 2>/dev/null || echo "(no analyzer output)"
+            echo '```'
+          } > diagnostic.txt
+          git add diagnostic.txt latest_analysis.md 2>/dev/null || git add diagnostic.txt
           if git diff --cached --quiet; then
-            echo "No new analysis to commit"
+            echo "Nothing to commit"
           else
-            git commit -m "chore: update latest analysis [skip ci]"
+            git commit -m "chore: update analysis + diagnostics [skip ci]"
             for attempt in 1 2 3; do
               git push && break
-              echo "Push attempt $attempt failed, rebasing and retrying..."
+              echo "Push attempt $attempt failed, rebasing..."
               git pull --rebase origin main
             done
           fi
