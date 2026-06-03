@@ -133,7 +133,8 @@ def get_video_transcript(video_url):
     import tempfile
     import requests as req_lib
     from http.cookiejar import MozillaCookieJar
-    from youtube_transcript_api import YouTubeTranscriptApi, GenericProxyConfig
+    from youtube_transcript_api import YouTubeTranscriptApi
+    from youtube_transcript_api.proxies import GenericProxyConfig
 
     video_id_match = re.search(r'(?:v=|youtu\.be/)([A-Za-z0-9_-]{11})', video_url)
     if not video_id_match:
