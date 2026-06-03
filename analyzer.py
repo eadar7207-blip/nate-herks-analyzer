@@ -129,8 +129,10 @@ def get_youtube_feed():
 
 
 def get_video_transcript(video_url):
-    """Get transcript using youtube-transcript-api v1.0+ with cookie auth."""
+    """Get transcript using youtube-transcript-api v1.2+ InnerTube API."""
     import tempfile
+    import requests as req_lib
+    from http.cookiejar import MozillaCookieJar
     from youtube_transcript_api import YouTubeTranscriptApi
 
     video_id_match = re.search(r'(?:v=|youtu\.be/)([A-Za-z0-9_-]{11})', video_url)
@@ -140,21 +142,34 @@ def get_video_transcript(video_url):
     video_id = video_id_match.group(1)
 
     cookies_content = os.getenv("YOUTUBE_COOKIES")
-    cookies_path = None
+    ytt = None
+    tmp_path = None
+
     if cookies_content:
         print(f"   🔑 Using YouTube cookies ({len(cookies_content)} chars)")
         try:
             tmp = tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False)
             tmp.write(cookies_content)
             tmp.close()
-            cookies_path = tmp.name
-        except OSError as e:
-            print(f"⚠️  Could not write cookies temp file: {e}")
+            tmp_path = tmp.name
+            session = req_lib.Session()
+            session.headers.update({
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            })
+            cj = MozillaCookieJar(tmp_path)
+            cj.load(ignore_discard=True, ignore_expires=True)
+            session.cookies.update(cj)
+            ytt = YouTubeTranscriptApi(http_client=session)
+        except Exception as e:
+            print(f"⚠️  Cookie setup failed: {e}, trying without auth")
+            ytt = None
     else:
         print("   No YouTube cookies configured")
 
+    if ytt is None:
+        ytt = YouTubeTranscriptApi()
+
     try:
-        ytt = YouTubeTranscriptApi(cookie_path=cookies_path) if cookies_path else YouTubeTranscriptApi()
         transcript = ytt.fetch(video_id, languages=['en'])
         text = ' '.join(snippet.text for snippet in transcript)
         deduped = re.sub(r'(\b\S+\b)( \1\b)+', r'\1', text)
@@ -164,9 +179,9 @@ def get_video_transcript(video_url):
         print(f"⚠️  Transcript fetch failed for {video_url}: {e}")
         return None
     finally:
-        if cookies_path:
+        if tmp_path:
             try:
-                os.unlink(cookies_path)
+                os.unlink(tmp_path)
             except OSError:
                 pass
 
