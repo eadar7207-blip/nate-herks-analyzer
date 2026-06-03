@@ -97,15 +97,16 @@ def get_video_transcript(video_url):
     tmp_prefix = str(tmp_dir / "sub")
     sub_files = []
     try:
-        subprocess.run(
+        dl = subprocess.run(
             ["yt-dlp", "--write-auto-subs", "--write-subs",
-             "--sub-langs", "en.*,en",
              "--sub-format", "vtt", "--convert-subs", "vtt",
              "--skip-download", "-o", tmp_prefix, video_url],
             capture_output=True,
             text=True,
             timeout=60
         )
+        if dl.stderr:
+            print(f"yt-dlp stderr: {dl.stderr[:600]}")
 
         sub_files = list(tmp_dir.glob("sub*.vtt"))
         if not sub_files:
