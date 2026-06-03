@@ -9,7 +9,7 @@ import re
 import json
 import urllib.request
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from html import escape
 from anthropic import Anthropic
 import smtplib
@@ -58,14 +58,44 @@ class _Entry:
 
 def get_youtube_feed():
     """Get latest videos from YouTube channel RSS feed."""
+    import http.cookiejar
+    import tempfile
+
     ns = {
         'atom': 'http://www.w3.org/2005/Atom',
         'yt': 'http://www.youtube.com/xml/schemas/2015',
     }
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'application/atom+xml,application/xml,text/xml,*/*',
+        'Accept-Language': 'en-US,en;q=0.9',
+    }
+
+    cookies_content = os.getenv("YOUTUBE_COOKIES")
+    cookies_path = None
+    opener = urllib.request.build_opener()
+
+    if cookies_content:
+        print(f"   🔑 Using YouTube cookies for RSS feed ({len(cookies_content)} chars)")
+        try:
+            tmp = tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False)
+            tmp.write(cookies_content)
+            tmp.close()
+            cookies_path = tmp.name
+            cj = http.cookiejar.MozillaCookieJar(cookies_path)
+            cj.load(ignore_discard=True, ignore_expires=True)
+            opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
+        except Exception as ce:
+            print(f"⚠️  Cookie load failed: {ce}")
+    else:
+        print("   No YouTube cookies configured for RSS feed")
+
     try:
-        req = urllib.request.Request(RSS_FEED_URL, headers={'User-Agent': 'Mozilla/5.0'})
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        req = urllib.request.Request(RSS_FEED_URL, headers=headers)
+        with opener.open(req, timeout=30) as resp:
+            status = resp.getcode()
             xml_content = resp.read()
+        print(f"   RSS feed HTTP {status}, {len(xml_content)} bytes")
         root = ET.fromstring(xml_content)
         entries = []
         for entry in root.findall('atom:entry', ns):
@@ -90,6 +120,12 @@ def get_youtube_feed():
     except Exception as e:
         print(f"⚠️  RSS feed fetch failed: {e}")
         return []
+    finally:
+        if cookies_path:
+            try:
+                os.unlink(cookies_path)
+            except OSError:
+                pass
 
 
 def get_video_transcript(video_url):
@@ -344,9 +380,6 @@ def main():
     new_videos = []
     videos_to_analyze = []
 
-    # 7-day window; cache-based deduplication prevents re-processing
-    cutoff_time = datetime.utcnow() - timedelta(days=7)
-
     for entry in entries[:5]:  # Check last 5 videos
         try:
             raw_id = entry.id.split('yt:video:')
@@ -361,15 +394,15 @@ def main():
             print(f"⚠️  Skipping malformed feed entry: {getattr(entry, 'id', 'unknown')}")
             continue
 
+        print(f"   📅 {video_id} published {published.strftime('%Y-%m-%d')} — {'already processed' if video_id in processed_videos else 'NEW'}")
         if video_id not in processed_videos:
-            if published > cutoff_time:
-                new_videos.append({
-                    'id': video_id,
-                    'title': title,
-                    'url': link,
-                    'published': published.strftime("%B %d at %I:%M %p")
-                })
-                videos_to_analyze.append(entry)
+            new_videos.append({
+                'id': video_id,
+                'title': title,
+                'url': link,
+                'published': published.strftime("%B %d at %I:%M %p")
+            })
+            videos_to_analyze.append(entry)
 
     if not new_videos:
         print("✨ No new videos to analyze")
