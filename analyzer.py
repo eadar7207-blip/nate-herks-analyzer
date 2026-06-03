@@ -58,7 +58,7 @@ def get_youtube_feed():
     """Get latest videos from YouTube channel using yt-dlp."""
     try:
         result = subprocess.run(
-            ["yt-dlp", "--flat-playlist", "--dump-json", "--playlist-end", "10", CHANNEL_URL],
+            ["yt-dlp", "--flat-playlist", "--dump-json", "--playlist-end", "15", CHANNEL_URL],
             capture_output=True, text=True, timeout=120
         )
         entries = []
