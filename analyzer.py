@@ -89,54 +89,24 @@ def get_youtube_feed():
 
 
 def get_video_transcript(video_url):
-    """Get transcript from YouTube video using yt-dlp and available subtitles"""
-    tmp_dir = Path(__file__).parent / ".vtt_tmp"
-    tmp_dir.mkdir(exist_ok=True)
-    for stale in tmp_dir.glob("sub*.vtt"):
-        stale.unlink(missing_ok=True)
-    tmp_prefix = str(tmp_dir / "sub")
-    sub_files = []
+    """Get transcript from YouTube video using youtube-transcript-api"""
+    from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound, TranscriptsDisabled
     try:
-        dl = subprocess.run(
-            ["yt-dlp", "--write-auto-subs", "--write-subs",
-             "--sub-format", "vtt", "--convert-subs", "vtt",
-             "--skip-download", "-o", tmp_prefix, video_url],
-            capture_output=True,
-            text=True,
-            timeout=60
-        )
-        if dl.stderr:
-            print(f"yt-dlp stderr: {dl.stderr[:600]}")
-
-        sub_files = list(tmp_dir.glob("sub*.vtt"))
-        if not sub_files:
-            print(f"⚠️  No subtitles found for {video_url}")
-        if sub_files:
-            with open(sub_files[0], encoding='utf-8-sig') as f:
-                content = f.read()
-            raw = []
-            for line in content.split('\n'):
-                stripped = line.strip()
-                if (stripped and not stripped.startswith('WEBVTT')
-                        and '-->' not in stripped and not stripped.isdigit()
-                        and not stripped.startswith('Kind:') and not stripped.startswith('Language:')
-                        and not stripped.startswith('NOTE')):
-                    raw.append(re.sub(r'<[^>]+>', '', stripped).strip())
-            raw = [s for s in raw if s]
-            if not raw:
-                return None
-            deduped = [raw[0]] + [l for i, l in enumerate(raw[1:], 1) if l != raw[i-1]]
-            return ' '.join(deduped)[:8000]
+        video_id_match = re.search(r'(?:v=|youtu\.be/)([A-Za-z0-9_-]{11})', video_url)
+        if not video_id_match:
+            print(f"⚠️  Could not extract video ID from {video_url}")
+            return None
+        video_id = video_id_match.group(1)
+        transcript = YouTubeTranscriptApi.get_transcript(video_id)
+        text = ' '.join(entry['text'] for entry in transcript)
+        deduped = re.sub(r'(\b\S+\b)( \1\b)+', r'\1', text)
+        return deduped[:8000]
+    except (NoTranscriptFound, TranscriptsDisabled) as e:
+        print(f"⚠️  No transcript available for {video_url}: {e}")
+        return None
     except Exception as e:
-        print(f"Failed to get transcript: {e}")
-    finally:
-        for f in sub_files:
-            try:
-                os.remove(f)
-            except OSError:
-                pass
-
-    return None
+        print(f"⚠️  Transcript fetch failed for {video_url}: {e}")
+        return None
 
 
 def analyze_video_with_claude(video_title, transcript, video_url):
