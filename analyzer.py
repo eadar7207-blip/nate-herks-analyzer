@@ -129,11 +129,11 @@ def get_youtube_feed():
 
 
 def get_video_transcript(video_url):
-    """Get transcript using youtube-transcript-api v1.2+ InnerTube API."""
+    """Get transcript using youtube-transcript-api v1.2+ with proxy support."""
     import tempfile
     import requests as req_lib
     from http.cookiejar import MozillaCookieJar
-    from youtube_transcript_api import YouTubeTranscriptApi
+    from youtube_transcript_api import YouTubeTranscriptApi, GenericProxyConfig
 
     video_id_match = re.search(r'(?:v=|youtu\.be/)([A-Za-z0-9_-]{11})', video_url)
     if not video_id_match:
@@ -142,8 +142,14 @@ def get_video_transcript(video_url):
     video_id = video_id_match.group(1)
 
     cookies_content = os.getenv("YOUTUBE_COOKIES")
-    ytt = None
+    proxy_url = os.getenv("PROXY_URL")
     tmp_path = None
+
+    # Build session with cookies if available
+    session = req_lib.Session()
+    session.headers.update({
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    })
 
     if cookies_content:
         print(f"   🔑 Using YouTube cookies ({len(cookies_content)} chars)")
@@ -152,22 +158,26 @@ def get_video_transcript(video_url):
             tmp.write(cookies_content)
             tmp.close()
             tmp_path = tmp.name
-            session = req_lib.Session()
-            session.headers.update({
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-            })
             cj = MozillaCookieJar(tmp_path)
             cj.load(ignore_discard=True, ignore_expires=True)
-            session.cookies.update(cj)
-            ytt = YouTubeTranscriptApi(http_client=session)
+            session.cookies = cj  # Direct assignment preserves domain/path metadata
         except Exception as e:
-            print(f"⚠️  Cookie setup failed: {e}, trying without auth")
-            ytt = None
+            print(f"⚠️  Cookie load failed: {e}")
     else:
         print("   No YouTube cookies configured")
 
-    if ytt is None:
-        ytt = YouTubeTranscriptApi()
+    # Proxy config bypasses datacenter IP blocks (required on GitHub Actions)
+    proxy_config = None
+    if proxy_url:
+        print(f"   🌐 Using proxy: {proxy_url[:40]}...")
+        proxy_config = GenericProxyConfig(http_url=proxy_url, https_url=proxy_url)
+    else:
+        print("   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube")
+
+    ytt = YouTubeTranscriptApi(
+        proxy_config=proxy_config,
+        http_client=session,
+    )
 
     try:
         transcript = ytt.fetch(video_id, languages=['en'])
@@ -176,7 +186,7 @@ def get_video_transcript(video_url):
         print(f"   ✅ Got transcript ({len(deduped)} chars)")
         return deduped[:8000]
     except Exception as e:
-        print(f"⚠️  Transcript fetch failed for {video_url}: {e}")
+        print(f"⚠️  Transcript fetch failed for {video_url}: {type(e).__name__}: {e.__class__.__module__}")
         return None
     finally:
         if tmp_path:

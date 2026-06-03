@@ -63,6 +63,7 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
           YOUTUBE_COOKIES: ${{ secrets.YOUTUBE_COOKIES }}
+          PROXY_URL: ${{ secrets.PROXY_URL }}
         run: python analyzer.py 2>&1 | tee /tmp/analyzer_output.txt
 
       - name: Commit analysis to repo
