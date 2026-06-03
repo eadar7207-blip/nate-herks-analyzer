@@ -7,8 +7,9 @@ Monitors YouTube feed, analyzes transcripts, and emails detailed summaries
 import os
 import re
 import json
-import subprocess
-from datetime import datetime, timedelta
+import urllib.request
+import xml.etree.ElementTree as ET
+from datetime import datetime, timedelta, timezone
 from html import escape
 from anthropic import Anthropic
 import smtplib
@@ -20,7 +21,8 @@ import time
 # Initialize Anthropic client
 client = Anthropic()
 
-CHANNEL_URL = "https://www.youtube.com/@nateherk/videos"
+CHANNEL_ID = "UC2ojq-nuP8ceeHqiroeKhBA"
+RSS_FEED_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
 CACHE_FILE = Path(__file__).parent / ".processed_videos.json"
 
 
@@ -55,36 +57,38 @@ class _Entry:
 
 
 def get_youtube_feed():
-    """Get latest videos from YouTube channel using yt-dlp."""
+    """Get latest videos from YouTube channel RSS feed."""
+    ns = {
+        'atom': 'http://www.w3.org/2005/Atom',
+        'yt': 'http://www.youtube.com/xml/schemas/2015',
+    }
     try:
-        result = subprocess.run(
-            ["yt-dlp", "--flat-playlist", "--dump-json", "--playlist-end", "15", CHANNEL_URL],
-            capture_output=True, text=True, timeout=120
-        )
+        req = urllib.request.Request(RSS_FEED_URL, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            xml_content = resp.read()
+        root = ET.fromstring(xml_content)
         entries = []
-        for line in result.stdout.strip().split('\n'):
-            if not line.strip():
+        for entry in root.findall('atom:entry', ns):
+            video_id_el = entry.find('yt:videoId', ns)
+            if video_id_el is None or not video_id_el.text:
                 continue
-            try:
-                data = json.loads(line)
-                video_id = data.get('id', '')
-                if not video_id:
-                    continue
-                title = data.get('title', '') or ''
-                url = data.get('webpage_url') or f"https://www.youtube.com/watch?v={video_id}"
-                upload_date = data.get('upload_date', '')
-                if upload_date and len(upload_date) == 8:
-                    pub_dt = datetime.strptime(upload_date, '%Y%m%d')
-                else:
-                    pub_dt = datetime.utcnow()
-                entries.append(_Entry(f'yt:video:{video_id}', title, url, pub_dt.timetuple()))
-            except Exception:
-                continue
-        if not entries and result.stderr:
-            print(f"⚠️  yt-dlp returned no entries. stderr: {result.stderr[:300]}")
+            video_id = video_id_el.text
+            title_el = entry.find('atom:title', ns)
+            title = title_el.text if title_el is not None else ''
+            link_el = entry.find('atom:link', ns)
+            link = link_el.get('href', '') if link_el is not None else f"https://www.youtube.com/watch?v={video_id}"
+            published_el = entry.find('atom:published', ns)
+            pub_dt = datetime.now(timezone.utc).replace(tzinfo=None)
+            if published_el is not None and published_el.text:
+                try:
+                    pub_dt = datetime.fromisoformat(published_el.text.replace('Z', '+00:00')).replace(tzinfo=None)
+                except ValueError:
+                    pass
+            entries.append(_Entry(f'yt:video:{video_id}', title, link, pub_dt.timetuple()))
+        print(f"   ✅ RSS feed returned {len(entries)} entries")
         return entries
     except Exception as e:
-        print(f"⚠️  Feed fetch failed: {e}")
+        print(f"⚠️  RSS feed fetch failed: {e}")
         return []
 
 
