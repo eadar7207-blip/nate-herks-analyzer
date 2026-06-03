@@ -20,7 +20,7 @@ import time
 # Initialize Anthropic client
 client = Anthropic()
 
-CHANNEL_URL = "https://www.youtube.com/@NateHerks/videos"
+CHANNEL_URL = "https://www.youtube.com/@nateherk/videos"
 CACHE_FILE = Path(__file__).parent / ".processed_videos.json"
 
 
