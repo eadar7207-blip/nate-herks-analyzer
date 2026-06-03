@@ -89,7 +89,8 @@ def get_youtube_feed():
 
 
 def get_video_transcript(video_url):
-    """Get transcript using youtube-transcript-api v1.0+ (InnerTube API)."""
+    """Get transcript using youtube-transcript-api v1.0+ with cookie auth."""
+    import tempfile
     from youtube_transcript_api import YouTubeTranscriptApi
 
     video_id_match = re.search(r'(?:v=|youtu\.be/)([A-Za-z0-9_-]{11})', video_url)
@@ -98,8 +99,22 @@ def get_video_transcript(video_url):
         return None
     video_id = video_id_match.group(1)
 
+    cookies_content = os.getenv("YOUTUBE_COOKIES")
+    cookies_path = None
+    if cookies_content:
+        print(f"   🔑 Using YouTube cookies ({len(cookies_content)} chars)")
+        try:
+            tmp = tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False)
+            tmp.write(cookies_content)
+            tmp.close()
+            cookies_path = tmp.name
+        except OSError as e:
+            print(f"⚠️  Could not write cookies temp file: {e}")
+    else:
+        print("   No YouTube cookies configured")
+
     try:
-        ytt = YouTubeTranscriptApi()
+        ytt = YouTubeTranscriptApi(cookie_path=cookies_path) if cookies_path else YouTubeTranscriptApi()
         transcript = ytt.fetch(video_id, languages=['en'])
         text = ' '.join(snippet.text for snippet in transcript)
         deduped = re.sub(r'(\b\S+\b)( \1\b)+', r'\1', text)
@@ -108,6 +123,12 @@ def get_video_transcript(video_url):
     except Exception as e:
         print(f"⚠️  Transcript fetch failed for {video_url}: {e}")
         return None
+    finally:
+        if cookies_path:
+            try:
+                os.unlink(cookies_path)
+            except OSError:
+                pass
 
 
 def analyze_video_with_claude(video_title, transcript, video_url):
