@@ -21,7 +21,7 @@ import time
 # Initialize Anthropic client
 client = Anthropic()
 
-CHANNEL_ID = "UC2ojq-nuP8ceeHqiroeKhBA"
+CHANNEL_ID = "UC2ojq-nuP8ceeHqiroeKhBA"  # @nateherk
 RSS_FEED_URL = f"https://www.youtube.com/feeds/videos.xml?channel_id={CHANNEL_ID}"
 CACHE_FILE = Path(__file__).parent / ".processed_videos.json"
 
