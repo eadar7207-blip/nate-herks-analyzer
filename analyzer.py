@@ -464,12 +464,13 @@ def main():
             print("⚠️  Could not get transcript")
 
     if analyzed_videos:
-        # Send email
         recipient = os.getenv("EMAIL_RECIPIENT", "eadar7207@gmail.com")
-        subject = f"🎬 Nate Herks Daily Analysis - {len(analyzed_videos)} Video(s)"
-        html_content = format_email_html(analyzed_videos)
 
-        send_email(recipient, subject, html_content)
+        # Send one email per video
+        for video in analyzed_videos:
+            subject = f"🎬 {video['title'][:60]}"
+            html_content = format_email_html([video])
+            send_email(recipient, subject, html_content)
 
         # Save plain-text analysis to repo so it can be read from Claude Code
         save_latest_analysis(analyzed_videos)
