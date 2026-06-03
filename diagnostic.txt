@@ -1,4 +1,4 @@
-# Run 2026-06-03 13:47 UTC
+# Run 2026-06-03 13:50 UTC
 ```
 === RSS probe ===
 HTTP 200 size=36825
@@ -10,7 +10,7 @@ HTTP 200 size=36825
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-03T13:47:35.546046
+⏰ Time: 2026-06-03T13:50:43.121370
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 36825 bytes
    ✅ RSS feed returned 15 entries
@@ -23,83 +23,13 @@ HTTP 200 size=36825
 📹 Found 5 new video(s)
 
 🔍 Analyzing: 100 Years of Artificial Intelligence Explained...
-   🔑 Using YouTube cookies (2995 chars)
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=NHFbAg2b54U: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=NHFbAg2b54U! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two things you can do to work around this:
-1. Use proxies to hide your IP address, as explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-2. (NOT RECOMMENDED) If you authenticate your requests using cookies, you will be able to continue doing requests for a while. However, YouTube will eventually permanently ban the account that you have used to authenticate with! So only do this if you don't mind your account being banned!
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-⚠️  Could not get transcript
-
-🔍 Analyzing: Claude Code Dynamic Workflows Clearly Explained...
-   🔑 Using YouTube cookies (2995 chars)
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=jZgcWCzxh1I: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=jZgcWCzxh1I! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two things you can do to work around this:
-1. Use proxies to hide your IP address, as explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-2. (NOT RECOMMENDED) If you authenticate your requests using cookies, you will be able to continue doing requests for a while. However, YouTube will eventually permanently ban the account that you have used to authenticate with! So only do this if you don't mind your account being banned!
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-⚠️  Could not get transcript
-
-🔍 Analyzing: I Turned Claude Opus 4.8 Into My Entire AI Operati...
-   🔑 Using YouTube cookies (2995 chars)
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=0WDkwMxj13s: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=0WDkwMxj13s! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two things you can do to work around this:
-1. Use proxies to hide your IP address, as explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-2. (NOT RECOMMENDED) If you authenticate your requests using cookies, you will be able to continue doing requests for a while. However, YouTube will eventually permanently ban the account that you have used to authenticate with! So only do this if you don't mind your account being banned!
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-⚠️  Could not get transcript
-
-🔍 Analyzing: Opus 4.8 Just Dropped. Here's How To Actually Use ...
-   🔑 Using YouTube cookies (2995 chars)
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=q5lg3npxjAc: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=q5lg3npxjAc! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two things you can do to work around this:
-1. Use proxies to hide your IP address, as explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-2. (NOT RECOMMENDED) If you authenticate your requests using cookies, you will be able to continue doing requests for a while. However, YouTube will eventually permanently ban the account that you have used to authenticate with! So only do this if you don't mind your account being banned!
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-⚠️  Could not get transcript
-
-🔍 Analyzing: 100 Hours Testing Claude Code vs ChatGPT Codex (ho...
-   🔑 Using YouTube cookies (2995 chars)
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=RLjaUES9P8A: 
-Could not retrieve a transcript for the video https://www.youtube.com/watch?v=RLjaUES9P8A! This is most likely caused by:
-
-YouTube is blocking requests from your IP. This usually is due to one of the following reasons:
-- You have done too many requests and your IP has been blocked by YouTube
-- You are doing requests from an IP belonging to a cloud provider (like AWS, Google Cloud Platform, Azure, etc.). Unfortunately, most IPs from cloud providers are blocked by YouTube.
-
-There are two things you can do to work around this:
-1. Use proxies to hide your IP address, as explained in the "Working around IP bans" section of the README (https://github.com/jdepoix/youtube-transcript-api?tab=readme-ov-file#working-around-ip-bans-requestblocked-or-ipblocked-exception).
-2. (NOT RECOMMENDED) If you authenticate your requests using cookies, you will be able to continue doing requests for a while. However, YouTube will eventually permanently ban the account that you have used to authenticate with! So only do this if you don't mind your account being banned!
-
-If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!
-⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+Traceback (most recent call last):
+  File "/home/runner/work/nate-herks-analyzer/nate-herks-analyzer/analyzer.py", line 486, in <module>
+    main()
+  File "/home/runner/work/nate-herks-analyzer/nate-herks-analyzer/analyzer.py", line 444, in main
+    transcript = get_video_transcript(video_info['url'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/nate-herks-analyzer/nate-herks-analyzer/analyzer.py", line 136, in get_video_transcript
+    from youtube_transcript_api import YouTubeTranscriptApi, GenericProxyConfig
+ImportError: cannot import name 'GenericProxyConfig' from 'youtube_transcript_api' (/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/youtube_transcript_api/__init__.py)
 ```
