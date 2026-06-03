@@ -88,26 +88,13 @@ def get_youtube_feed():
         return []
 
 
-def _parse_vtt(vtt_content):
-    """Extract plain text from WebVTT subtitle content."""
-    lines = []
-    for line in vtt_content.split('\n'):
-        line = line.strip()
-        if not line or '-->' in line or line.startswith('WEBVTT') or line.startswith('Kind:') or line.startswith('Language:'):
-            continue
-        clean = re.sub(r'<[^>]+>', '', line)
-        if clean and not clean.isdigit():
-            lines.append(clean)
-    text = ' '.join(lines)
-    return re.sub(r'(\b\S+\b)( \1\b)+', r'\1', text)
-
-
 def get_video_transcript(video_url):
     """Get transcript from YouTube video."""
     import tempfile
-    import shutil
-    import glob
-    from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound, TranscriptsDisabled
+    import requests
+    import http.cookiejar
+    from youtube_transcript_api._transcripts import TranscriptListFetcher
+    from youtube_transcript_api import NoTranscriptFound, TranscriptsDisabled
 
     video_id_match = re.search(r'(?:v=|youtu\.be/)([A-Za-z0-9_-]{11})', video_url)
     if not video_id_match:
@@ -130,41 +117,28 @@ def get_video_transcript(video_url):
         print("   No YouTube cookies configured")
 
     try:
-        # Primary: yt-dlp with cookies (more robust auth for timedtext download)
-        if cookies_path:
-            tmpdir = tempfile.mkdtemp()
-            try:
-                result = subprocess.run([
-                    "yt-dlp", "--write-auto-sub", "--no-download",
-                    "--sub-format", "vtt", "--sub-langs", "en",
-                    "--cookies", cookies_path,
-                    "--output", os.path.join(tmpdir, "%(id)s"),
-                    video_url
-                ], capture_output=True, text=True, timeout=60)
-                vtt_files = glob.glob(os.path.join(tmpdir, "*.vtt"))
-                if vtt_files:
-                    with open(vtt_files[0]) as f:
-                        vtt_content = f.read()
-                    text = _parse_vtt(vtt_content)
-                    if text:
-                        print(f"   ✅ Got transcript via yt-dlp ({len(text)} chars)")
-                        return text[:8000]
-                if result.returncode != 0:
-                    print(f"   yt-dlp failed (rc={result.returncode}): {result.stderr[:300]}")
-            except Exception as e:
-                print(f"   yt-dlp error: {e}")
-            finally:
-                shutil.rmtree(tmpdir, ignore_errors=True)
+        # Use a browser-like session so the same UA/cookies cover both
+        # the watch-page fetch (list) and the timedtext XML fetch
+        with requests.Session() as session:
+            session.headers.update({
+                'User-Agent': (
+                    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+                    'AppleWebKit/537.36 (KHTML, like Gecko) '
+                    'Chrome/120.0.0.0 Safari/537.36'
+                ),
+                'Accept-Language': 'en-US,en;q=0.9',
+            })
+            if cookies_path:
+                jar = http.cookiejar.MozillaCookieJar()
+                jar.load(cookies_path, ignore_discard=True, ignore_expires=True)
+                session.cookies = jar
 
-        # Fallback: youtube-transcript-api
-        kwargs = {}
-        if cookies_path:
-            kwargs['cookies'] = cookies_path
-        transcript = YouTubeTranscriptApi.get_transcript(video_id, **kwargs)
-        text = ' '.join(entry['text'] for entry in transcript)
-        deduped = re.sub(r'(\b\S+\b)( \1\b)+', r'\1', text)
-        print(f"   ✅ Got transcript via youtube-transcript-api ({len(deduped)} chars)")
-        return deduped[:8000]
+            transcript_list = TranscriptListFetcher(session).fetch(video_id)
+            transcript = transcript_list.find_transcript(['en']).fetch()
+            text = ' '.join(entry['text'] for entry in transcript)
+            deduped = re.sub(r'(\b\S+\b)( \1\b)+', r'\1', text)
+            print(f"   ✅ Got transcript ({len(deduped)} chars)")
+            return deduped[:8000]
     except (NoTranscriptFound, TranscriptsDisabled) as e:
         print(f"⚠️  No transcript available for {video_url}: {e}")
         return None
