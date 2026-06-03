@@ -89,12 +89,8 @@ def get_youtube_feed():
 
 
 def get_video_transcript(video_url):
-    """Get transcript from YouTube video."""
-    import tempfile
-    import requests
-    import http.cookiejar
-    from youtube_transcript_api._transcripts import TranscriptListFetcher
-    from youtube_transcript_api import NoTranscriptFound, TranscriptsDisabled
+    """Get transcript using youtube-transcript-api v1.0+ (InnerTube API)."""
+    from youtube_transcript_api import YouTubeTranscriptApi
 
     video_id_match = re.search(r'(?:v=|youtu\.be/)([A-Za-z0-9_-]{11})', video_url)
     if not video_id_match:
@@ -102,55 +98,16 @@ def get_video_transcript(video_url):
         return None
     video_id = video_id_match.group(1)
 
-    cookies_content = os.getenv("YOUTUBE_COOKIES")
-    cookies_path = None
-    if cookies_content:
-        print(f"   🔑 Using YouTube cookies ({len(cookies_content)} chars)")
-        try:
-            tmp = tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False)
-            tmp.write(cookies_content)
-            tmp.close()
-            cookies_path = tmp.name
-        except OSError as e:
-            print(f"⚠️  Could not write cookies temp file: {e}")
-    else:
-        print("   No YouTube cookies configured")
-
     try:
-        # Use a browser-like session so the same UA/cookies cover both
-        # the watch-page fetch (list) and the timedtext XML fetch
-        with requests.Session() as session:
-            session.headers.update({
-                'User-Agent': (
-                    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
-                    'AppleWebKit/537.36 (KHTML, like Gecko) '
-                    'Chrome/120.0.0.0 Safari/537.36'
-                ),
-                'Accept-Language': 'en-US,en;q=0.9',
-            })
-            if cookies_path:
-                jar = http.cookiejar.MozillaCookieJar()
-                jar.load(cookies_path, ignore_discard=True, ignore_expires=True)
-                session.cookies = jar
-
-            transcript_list = TranscriptListFetcher(session).fetch(video_id)
-            transcript = transcript_list.find_transcript(['en']).fetch()
-            text = ' '.join(entry['text'] for entry in transcript)
-            deduped = re.sub(r'(\b\S+\b)( \1\b)+', r'\1', text)
-            print(f"   ✅ Got transcript ({len(deduped)} chars)")
-            return deduped[:8000]
-    except (NoTranscriptFound, TranscriptsDisabled) as e:
-        print(f"⚠️  No transcript available for {video_url}: {e}")
-        return None
+        ytt = YouTubeTranscriptApi()
+        transcript = ytt.fetch(video_id, languages=['en'])
+        text = ' '.join(snippet.text for snippet in transcript)
+        deduped = re.sub(r'(\b\S+\b)( \1\b)+', r'\1', text)
+        print(f"   ✅ Got transcript ({len(deduped)} chars)")
+        return deduped[:8000]
     except Exception as e:
         print(f"⚠️  Transcript fetch failed for {video_url}: {e}")
         return None
-    finally:
-        if cookies_path:
-            try:
-                os.unlink(cookies_path)
-            except OSError:
-                pass
 
 
 def analyze_video_with_claude(video_title, transcript, video_url):
