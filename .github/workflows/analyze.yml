@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: '0 * * * *'  # Every hour
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['analyzer.py', 'requirements.txt']
 
 concurrency:
   group: analyze
