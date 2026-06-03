@@ -88,9 +88,25 @@ def get_youtube_feed():
         return []
 
 
+def _parse_vtt(vtt_content):
+    """Extract plain text from WebVTT subtitle content."""
+    lines = []
+    for line in vtt_content.split('\n'):
+        line = line.strip()
+        if not line or '-->' in line or line.startswith('WEBVTT') or line.startswith('Kind:') or line.startswith('Language:'):
+            continue
+        clean = re.sub(r'<[^>]+>', '', line)
+        if clean and not clean.isdigit():
+            lines.append(clean)
+    text = ' '.join(lines)
+    return re.sub(r'(\b\S+\b)( \1\b)+', r'\1', text)
+
+
 def get_video_transcript(video_url):
-    """Get transcript from YouTube video using youtube-transcript-api"""
+    """Get transcript from YouTube video."""
     import tempfile
+    import shutil
+    import glob
     from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound, TranscriptsDisabled
 
     video_id_match = re.search(r'(?:v=|youtu\.be/)([A-Za-z0-9_-]{11})', video_url)
@@ -99,10 +115,10 @@ def get_video_transcript(video_url):
         return None
     video_id = video_id_match.group(1)
 
-    cookies_path = None
     cookies_content = os.getenv("YOUTUBE_COOKIES")
+    cookies_path = None
     if cookies_content:
-        print(f"   \U0001f511 Using YouTube cookies ({len(cookies_content)} chars)")
+        print(f"   🔑 Using YouTube cookies ({len(cookies_content)} chars)")
         try:
             tmp = tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False)
             tmp.write(cookies_content)
@@ -114,21 +130,40 @@ def get_video_transcript(video_url):
         print("   No YouTube cookies configured")
 
     try:
+        # Primary: yt-dlp with cookies (more robust auth for timedtext download)
+        if cookies_path:
+            tmpdir = tempfile.mkdtemp()
+            try:
+                result = subprocess.run([
+                    "yt-dlp", "--write-auto-sub", "--no-download",
+                    "--sub-format", "vtt", "--sub-langs", "en",
+                    "--cookies", cookies_path,
+                    "--output", os.path.join(tmpdir, "%(id)s"),
+                    video_url
+                ], capture_output=True, text=True, timeout=60)
+                vtt_files = glob.glob(os.path.join(tmpdir, "*.vtt"))
+                if vtt_files:
+                    with open(vtt_files[0]) as f:
+                        vtt_content = f.read()
+                    text = _parse_vtt(vtt_content)
+                    if text:
+                        print(f"   ✅ Got transcript via yt-dlp ({len(text)} chars)")
+                        return text[:8000]
+                if result.returncode != 0:
+                    print(f"   yt-dlp failed (rc={result.returncode}): {result.stderr[:300]}")
+            except Exception as e:
+                print(f"   yt-dlp error: {e}")
+            finally:
+                shutil.rmtree(tmpdir, ignore_errors=True)
+
+        # Fallback: youtube-transcript-api
         kwargs = {}
         if cookies_path:
             kwargs['cookies'] = cookies_path
-
-        # Diagnose available tracks before fetching
-        try:
-            transcript_list = YouTubeTranscriptApi.list_transcripts(video_id, **kwargs)
-            available = [f"{t.language_code}({'auto' if t.is_generated else 'manual'})" for t in transcript_list]
-            print(f"   Available transcripts for {video_id}: {available or 'none'}")
-        except Exception as list_err:
-            print(f"   Could not list transcripts for {video_id}: {list_err}")
-
         transcript = YouTubeTranscriptApi.get_transcript(video_id, **kwargs)
         text = ' '.join(entry['text'] for entry in transcript)
         deduped = re.sub(r'(\b\S+\b)( \1\b)+', r'\1', text)
+        print(f"   ✅ Got transcript via youtube-transcript-api ({len(deduped)} chars)")
         return deduped[:8000]
     except (NoTranscriptFound, TranscriptsDisabled) as e:
         print(f"⚠️  No transcript available for {video_url}: {e}")
@@ -205,7 +240,7 @@ def send_email(recipient, subject, html_content):
 
     if not sender_email or not sender_password:
         print("⚠️  EMAIL_SENDER or EMAIL_PASSWORD not set - skipping email")
-        print("\U0001f4e7 Analysis would be sent to:", recipient)
+        print("📧 Analysis would be sent to:", recipient)
         return False
 
     try:
@@ -255,7 +290,7 @@ def format_email_html(videos_analysis):
     <body>
         <div class="container">
             <div class="header">
-                <h1>\U0001f3ac Nate Herks Daily Analysis</h1>
+                <h1>🎬 Nate Herks Daily Analysis</h1>
                 <p>{date_str}</p>
             </div>
     """
@@ -332,7 +367,7 @@ def save_latest_analysis(analyzed_videos):
     try:
         output_path = Path(__file__).parent / "latest_analysis.md"
         output_path.write_text('\n'.join(lines), encoding="utf-8")
-        print("\U0001f4c4 Saved latest_analysis.md")
+        print("📄 Saved latest_analysis.md")
     except OSError as e:
         print(f"⚠️  Could not save latest_analysis.md: {e}")
 
@@ -340,7 +375,7 @@ def save_latest_analysis(analyzed_videos):
 def main():
     """Main execution"""
 
-    print("\U0001f3ac Nate Herks Video Analyzer Started")
+    print("🎬 Nate Herks Video Analyzer Started")
     print(f"⏰ Time: {datetime.now().isoformat()}")
 
     # Load processed videos
@@ -348,7 +383,7 @@ def main():
 
     # Get latest videos
     entries = get_youtube_feed()
-    print(f"\U0001f4fa Found {len(entries)} recent videos in feed")
+    print(f"📺 Found {len(entries)} recent videos in feed")
 
     new_videos = []
     videos_to_analyze = []
@@ -384,12 +419,12 @@ def main():
         print("✨ No new videos to analyze")
         return
 
-    print(f"\U0001f4f9 Found {len(new_videos)} new video(s)")
+    print(f"📹 Found {len(new_videos)} new video(s)")
 
     # Analyze each video
     analyzed_videos = []
     for entry, video_info in zip(videos_to_analyze, new_videos):
-        print(f"\n\U0001f50d Analyzing: {video_info['title'][:50]}...")
+        print(f"\n🔍 Analyzing: {video_info['title'][:50]}...")
 
         # Get transcript
         transcript = get_video_transcript(video_info['url'])
@@ -416,7 +451,7 @@ def main():
     if analyzed_videos:
         # Send email
         recipient = os.getenv("EMAIL_RECIPIENT", "eadar7207@gmail.com")
-        subject = f"\U0001f3ac Nate Herks Daily Analysis - {len(analyzed_videos)} Video(s)"
+        subject = f"🎬 Nate Herks Daily Analysis - {len(analyzed_videos)} Video(s)"
         html_content = format_email_html(analyzed_videos)
 
         send_email(recipient, subject, html_content)
