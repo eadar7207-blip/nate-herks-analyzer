@@ -98,7 +98,8 @@ def get_video_transcript(video_url):
     sub_files = []
     try:
         subprocess.run(
-            ["yt-dlp", "--write-auto-subs", "--sub-lang", "en",
+            ["yt-dlp", "--write-auto-subs", "--write-subs",
+             "--sub-langs", "en.*,en",
              "--sub-format", "vtt", "--convert-subs", "vtt",
              "--skip-download", "-o", tmp_prefix, video_url],
             capture_output=True,
