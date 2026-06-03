@@ -102,6 +102,7 @@ def get_video_transcript(video_url):
     cookies_path = None
     cookies_content = os.getenv("YOUTUBE_COOKIES")
     if cookies_content:
+        print(f"   \U0001f511 Using YouTube cookies ({len(cookies_content)} chars)")
         try:
             tmp = tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False)
             tmp.write(cookies_content)
@@ -109,6 +110,8 @@ def get_video_transcript(video_url):
             cookies_path = tmp.name
         except OSError as e:
             print(f"⚠️  Could not write cookies temp file: {e}")
+    else:
+        print("   No YouTube cookies configured")
 
     try:
         kwargs = {}
@@ -202,7 +205,7 @@ def send_email(recipient, subject, html_content):
 
     if not sender_email or not sender_password:
         print("⚠️  EMAIL_SENDER or EMAIL_PASSWORD not set - skipping email")
-        print("📧 Analysis would be sent to:", recipient)
+        print("\U0001f4e7 Analysis would be sent to:", recipient)
         return False
 
     try:
@@ -252,7 +255,7 @@ def format_email_html(videos_analysis):
     <body>
         <div class="container">
             <div class="header">
-                <h1>🎬 Nate Herks Daily Analysis</h1>
+                <h1>\U0001f3ac Nate Herks Daily Analysis</h1>
                 <p>{date_str}</p>
             </div>
     """
@@ -329,7 +332,7 @@ def save_latest_analysis(analyzed_videos):
     try:
         output_path = Path(__file__).parent / "latest_analysis.md"
         output_path.write_text('\n'.join(lines), encoding="utf-8")
-        print("📄 Saved latest_analysis.md")
+        print("\U0001f4c4 Saved latest_analysis.md")
     except OSError as e:
         print(f"⚠️  Could not save latest_analysis.md: {e}")
 
@@ -337,7 +340,7 @@ def save_latest_analysis(analyzed_videos):
 def main():
     """Main execution"""
 
-    print("🎬 Nate Herks Video Analyzer Started")
+    print("\U0001f3ac Nate Herks Video Analyzer Started")
     print(f"⏰ Time: {datetime.now().isoformat()}")
 
     # Load processed videos
@@ -345,7 +348,7 @@ def main():
 
     # Get latest videos
     entries = get_youtube_feed()
-    print(f"📺 Found {len(entries)} recent videos in feed")
+    print(f"\U0001f4fa Found {len(entries)} recent videos in feed")
 
     new_videos = []
     videos_to_analyze = []
@@ -381,12 +384,12 @@ def main():
         print("✨ No new videos to analyze")
         return
 
-    print(f"📹 Found {len(new_videos)} new video(s)")
+    print(f"\U0001f4f9 Found {len(new_videos)} new video(s)")
 
     # Analyze each video
     analyzed_videos = []
     for entry, video_info in zip(videos_to_analyze, new_videos):
-        print(f"\n🔍 Analyzing: {video_info['title'][:50]}...")
+        print(f"\n\U0001f50d Analyzing: {video_info['title'][:50]}...")
 
         # Get transcript
         transcript = get_video_transcript(video_info['url'])
@@ -413,7 +416,7 @@ def main():
     if analyzed_videos:
         # Send email
         recipient = os.getenv("EMAIL_RECIPIENT", "eadar7207@gmail.com")
-        subject = f"🎬 Nate Herks Daily Analysis - {len(analyzed_videos)} Video(s)"
+        subject = f"\U0001f3ac Nate Herks Daily Analysis - {len(analyzed_videos)} Video(s)"
         html_content = format_email_html(analyzed_videos)
 
         send_email(recipient, subject, html_content)
