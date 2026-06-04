@@ -1,7 +1,7 @@
-# Run 2026-06-04 16:14 UTC
+# Run 2026-06-04 19:09 UTC
 ```
 === RSS probe ===
-HTTP 200 size=38688
+HTTP 200 size=38983
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,23 @@ HTTP 200 size=38688
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-04T16:14:08.804821
+⏰ Time: 2026-06-04T19:09:43.783645
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 38688 bytes
+   RSS feed HTTP 200, 38983 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 c0kaKxM2pHg published 2026-06-04 — NEW
    📅 vfWTyEreOEc published 2026-06-03 — NEW
    📅 NHFbAg2b54U published 2026-06-02 — NEW
    📅 jZgcWCzxh1I published 2026-05-30 — NEW
    📅 0WDkwMxj13s published 2026-05-29 — NEW
-   📅 q5lg3npxjAc published 2026-05-28 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: The Skill That 10x’d My Claude Code Projects...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=c0kaKxM2pHg: RequestBlocked: youtube_transcript_api._errors
+⚠️  Could not get transcript
 
 🔍 Analyzing: I Tested Every Claude Code Feature, These 12 Are t...
    🔑 Using YouTube cookies (2995 chars)
@@ -44,12 +50,6 @@ HTTP 200 size=38688
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=0WDkwMxj13s: RequestBlocked: youtube_transcript_api._errors
-⚠️  Could not get transcript
-
-🔍 Analyzing: Opus 4.8 Just Dropped. Here's How To Actually Use ...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=q5lg3npxjAc: RequestBlocked: youtube_transcript_api._errors
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
