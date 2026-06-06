@@ -1,4 +1,4 @@
-# Run 2026-06-06 18:59 UTC
+# Run 2026-06-06 20:08 UTC
 ```
 === RSS probe ===
 HTTP 200 size=39075
@@ -10,7 +10,7 @@ HTTP 200 size=39075
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-06T18:59:41.611686
+⏰ Time: 2026-06-06T20:08:10.464295
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 39075 bytes
    ✅ RSS feed returned 15 entries
@@ -25,31 +25,31 @@ HTTP 200 size=39075
 🔍 Analyzing: AGI is Here. Anthropic Just Proved It....
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=NDeyhGnNECc: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=NDeyhGnNECc: IpBlocked: youtube_transcript_api._errors
 ⚠️  Could not get transcript
 
 🔍 Analyzing: The Skill That 10x’d My Claude Code Projects...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=c0kaKxM2pHg: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=c0kaKxM2pHg: IpBlocked: youtube_transcript_api._errors
 ⚠️  Could not get transcript
 
 🔍 Analyzing: I Tested Every Claude Code Feature, These 12 Are t...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=vfWTyEreOEc: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=vfWTyEreOEc: IpBlocked: youtube_transcript_api._errors
 ⚠️  Could not get transcript
 
 🔍 Analyzing: 100 Years of Artificial Intelligence Explained...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=NHFbAg2b54U: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=NHFbAg2b54U: IpBlocked: youtube_transcript_api._errors
 ⚠️  Could not get transcript
 
 🔍 Analyzing: Claude Code Dynamic Workflows Clearly Explained...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=jZgcWCzxh1I: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=jZgcWCzxh1I: IpBlocked: youtube_transcript_api._errors
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
