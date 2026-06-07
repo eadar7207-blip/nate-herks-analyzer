@@ -56,8 +56,67 @@ class _Entry:
         self.published_parsed = published_parsed
 
 
+def _get_feed_via_ytdlp():
+    """Fallback: use yt-dlp to list recent channel videos when RSS is blocked."""
+    import subprocess
+    import tempfile
+
+    channel_url = f"https://www.youtube.com/@nateherk/videos"
+    cookies_content = os.getenv("YOUTUBE_COOKIES")
+    cookies_path = None
+    entries = []
+
+    try:
+        cmd = [
+            "yt-dlp",
+            "--flat-playlist",
+            "--playlist-end", "10",
+            "--print", "%(id)s\t%(title)s\t%(upload_date>%Y-%m-%dT%H:%M:%S)s",
+            "--no-warnings",
+            "--quiet",
+        ]
+        if cookies_content:
+            tmp = tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False)
+            tmp.write(cookies_content)
+            tmp.close()
+            cookies_path = tmp.name
+            cmd += ["--cookies", cookies_path]
+        cmd.append(channel_url)
+
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
+        if result.returncode != 0:
+            print(f"⚠️  yt-dlp exit {result.returncode}: {result.stderr[:200]}")
+            return []
+
+        for line in result.stdout.strip().splitlines():
+            parts = line.split('\t')
+            if len(parts) < 2:
+                continue
+            video_id = parts[0].strip()
+            title = parts[1].strip() if len(parts) > 1 else ''
+            date_str = parts[2].strip() if len(parts) > 2 else ''
+            try:
+                pub_dt = datetime.fromisoformat(date_str) if date_str and date_str != 'NA' else datetime.now()
+            except ValueError:
+                pub_dt = datetime.now()
+            link = f"https://www.youtube.com/watch?v={video_id}"
+            entries.append(_Entry(f'yt:video:{video_id}', title, link, pub_dt.timetuple()))
+
+        print(f"   ✅ yt-dlp returned {len(entries)} entries")
+        return entries
+    except Exception as e:
+        print(f"⚠️  yt-dlp fallback failed: {e}")
+        return []
+    finally:
+        if cookies_path:
+            try:
+                os.unlink(cookies_path)
+            except OSError:
+                pass
+
+
 def get_youtube_feed():
-    """Get latest videos from YouTube channel RSS feed."""
+    """Get latest videos from YouTube channel RSS feed, falling back to yt-dlp."""
     import http.cookiejar
     import tempfile
 
@@ -90,6 +149,8 @@ def get_youtube_feed():
     else:
         print("   No YouTube cookies configured for RSS feed")
 
+    rss_ok = False
+    entries = []
     try:
         req = urllib.request.Request(RSS_FEED_URL, headers=headers)
         with opener.open(req, timeout=30) as resp:
@@ -97,7 +158,6 @@ def get_youtube_feed():
             xml_content = resp.read()
         print(f"   RSS feed HTTP {status}, {len(xml_content)} bytes")
         root = ET.fromstring(xml_content)
-        entries = []
         for entry in root.findall('atom:entry', ns):
             video_id_el = entry.find('yt:videoId', ns)
             if video_id_el is None or not video_id_el.text:
@@ -115,17 +175,22 @@ def get_youtube_feed():
                 except ValueError:
                     pass
             entries.append(_Entry(f'yt:video:{video_id}', title, link, pub_dt.timetuple()))
+        rss_ok = True
         print(f"   ✅ RSS feed returned {len(entries)} entries")
-        return entries
     except Exception as e:
-        print(f"⚠️  RSS feed fetch failed: {e}")
-        return []
+        print(f"⚠️  RSS feed fetch failed: {e} — trying yt-dlp fallback")
     finally:
         if cookies_path:
             try:
                 os.unlink(cookies_path)
             except OSError:
                 pass
+
+    if not rss_ok or not entries:
+        print("   🔄 Switching to yt-dlp for video discovery")
+        entries = _get_feed_via_ytdlp()
+
+    return entries
 
 
 def get_video_transcript(video_url):
