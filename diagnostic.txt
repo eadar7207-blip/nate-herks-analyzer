@@ -1,7 +1,7 @@
-# Run 2026-06-09 17:15 UTC
+# Run 2026-06-09 19:51 UTC
 ```
 === RSS probe ===
-HTTP 200 size=39012
+HTTP 200 size=39145
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,23 @@ HTTP 200 size=39012
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-09T17:15:22.565474
+⏰ Time: 2026-06-09T19:50:57.698256
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 39012 bytes
+   RSS feed HTTP 200, 39145 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 dYrrEKXtttk published 2026-06-09 — NEW
    📅 e18sdZLwP7o published 2026-06-09 — NEW
    📅 lkR6mvqQQlk published 2026-06-06 — NEW
    📅 NDeyhGnNECc published 2026-06-05 — NEW
    📅 c0kaKxM2pHg published 2026-06-04 — NEW
-   📅 vfWTyEreOEc published 2026-06-03 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: Claude Mythos is Finally Here....
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=dYrrEKXtttk: RequestBlocked: youtube_transcript_api._errors
+⚠️  Could not get transcript
 
 🔍 Analyzing: How to Build Claude Subagents Better Than 99% of P...
    🔑 Using YouTube cookies (2995 chars)
@@ -44,12 +50,6 @@ HTTP 200 size=39012
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=c0kaKxM2pHg: RequestBlocked: youtube_transcript_api._errors
-⚠️  Could not get transcript
-
-🔍 Analyzing: I Tested Every Claude Code Feature, These 12 Are t...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=vfWTyEreOEc: RequestBlocked: youtube_transcript_api._errors
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
