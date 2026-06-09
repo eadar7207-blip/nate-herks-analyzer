@@ -1,129 +1,133 @@
-# Nate Herk Analysis — June 4, 2026
+# Nate Herk Analysis — June 9, 2026
+
+5 videos analyzed. Transcripts blocked by YouTube IP restrictions; analysis based on web research + known content context.
 
 ---
 
-## [How Nate Herk's AI Agent Is Revolutionizing Lead Response Times \[With Human In The Loop\]](https://www.youtube.com/watch?v=fnaTZa0-S30)
-*Most Relevant for Real Estate*
+## [How to Build Claude Subagents Better Than 99% of People](https://www.youtube.com/watch?v=e18sdZLwP7o)
+*June 9, 2026*
 
 WHAT IT'S ABOUT
-Nate walks through a real n8n workflow built for a sales team that automatically watches for new inbound leads, writes a personalized first-reply email, then holds it for a human to approve before sending. The goal is to get to every lead in under 5 minutes without sacrificing the personal touch.
+Nate breaks down how to properly set up Claude subagents — specialized mini-versions of Claude that each handle one specific job while the main Claude session acts as the manager. Most people use them like a single chatbot and miss 90% of the value.
 
 THE KEY POINTS
-- **"Speed to lead" is the single biggest conversion lever** — first responder wins the deal.
-- The workflow monitors new form submissions continuously and immediately drafts a response using the lead's own words.
-- **Human-in-the-loop is the secret** — the agent drafts, then sends an approval notification (Slack/Telegram) before anything goes out.
-- Built in n8n: trigger → AI draft → approval step → send. No code required.
-- **Result: first reply time drops from hours to under 5 minutes**, with zero extra work from the sales rep.
+- A subagent runs in its own separate context window with its own tool access — **it never sees your main conversation**. This keeps the main context clean.
+- **Run Opus as the orchestrator, Sonnet as the subagents.** Top-tier reasoning at the top, fast/cheap execution at the bottom — significant cost savings.
+- Anthropic's own research: multi-agent setup outperformed a single Claude Opus by **90.2% on complex research tasks** — nearly doubling output quality.
+- Biggest mistake: running everything sequentially. **Parallel subagents** across independent domains collapse project timelines dramatically.
+- Configure domain-based routing in your `CLAUDE.md` so Claude automatically dispatches the right subagent — no manual decision-making each time.
+- **Context isolation is the hidden benefit.** Fresh subagent = no context drift on long tasks.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+A property research system can have one subagent pulling MLS comps, another analyzing neighborhood trends, a third drafting the client report — all running in parallel. A 45-minute research task becomes under 5 minutes. Apply to client intake: subagents for credit analysis, market positioning, and CRM entry could all run the moment a new lead comes in.
+
+ACTION STEP THIS WEEK
+Build one parallel subagent workflow for your most repetitive research task. Create a CLAUDE.md rule routing "run comps for [address]" to a Sonnet subagent with web search + MLS tools. Time the before/after.
+
+BEST QUOTE
+"Claude Code isn't one AI — it's an orchestration system. Your main chat is the manager. The subagents are the specialists. Most people never make that mental shift."
+
+---
+
+## [Is Claude Mythos Coming?](https://www.youtube.com/watch?v=lkR6mvqQQlk)
+*June 7, 2026*
+
+WHAT IT'S ABOUT
+A Mythos identifier appeared on Anthropic's API that morning. Nate explains what Mythos actually is, why widening access ≠ public launch, and why he thinks it may quietly fold into the next Opus release rather than ship as a standalone product.
+
+THE KEY POINTS
+- **Mythos is Anthropic's most powerful model yet** — leaked via a misconfigured CMS in March 2026. Anthropic confirmed it represents "a step change" in performance.
+- Leaked benchmarks: dramatically higher scores than Opus 4.6 across coding, reasoning, and cybersecurity. Anthropic internally called it "currently far ahead of any other AI in cyber capabilities."
+- Access gated to vetted partners only via **Project Glasswing** — no public API, pricing, or SLA.
+- **Nate's thesis: widening access ≠ public launch.** A model ID in the API is a red team artifact, not a product announcement.
+- His prediction: **Mythos capabilities fold into the next Claude Opus release** rather than shipping as a standalone brand.
+- The cybersecurity concern is the real bottleneck — Anthropic's docs say Mythos "presages models that can exploit vulnerabilities far outpacing defenders." Safety review takes time.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+When Mythos-class capabilities go public (likely via Opus integration), AI agents for due diligence, title document analysis, and smart building cybersecurity risk will take a major leap. Build systems modularly now so swapping in a more powerful model is a one-line change — not a rebuild.
+
+ACTION STEP THIS WEEK
+Audit your current AI workflows and tag which ones are model-capability-limited vs. prompt/workflow-limited. The model-limited ones are your priority upgrade candidates when Opus gets the Mythos boost. List 3 tasks you'd automate if the model got 2x smarter.
+
+BEST QUOTE
+"A leak plus widening access still isn't the same as a public launch. Anthropic isn't in a race to name things — they're in a race to not break the world while shipping the most capable AI ever built."
+
+---
+
+## [AGI is Here. Anthropic Just Proved It.](https://www.youtube.com/watch?v=NDeyhGnNECc)
+*June 6, 2026*
+
+WHAT IT'S ABOUT
+Nate makes the case that the mainstream debate about "when will AGI arrive" is already settled for professional knowledge work. Using hard benchmark data, he argues AI has crossed the functional AGI threshold for coding, reasoning, and business tasks.
+
+THE KEY POINTS
+- **SWE-bench scores doubled in two years:** 33.4% → 80.8%. This tests real GitHub bug fixes — not trivia. 80%+ means Claude solves 4 out of 5 real engineering problems autonomously.
+- Sonnet 4.6's **ARC-AGI-2 score jumped 4.3× in one generation** — from 13.6% to 58.3%. ARC-AGI tests general reasoning, not memorization. The metric skeptics said would never move fast.
+- Anthropic passed OpenAI in **business adoption** — competitive pressure accelerating on both sides.
+- **Claude Opus 4.8 is the new public flagship.** The ceiling keeps rising with every release.
+- Nate's definition of AGI: not "human-like consciousness" — **"AI that can replace a mid-level knowledge worker on a defined task."** By that definition: already here for coding, legal doc review, market research, financial modeling.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+The competitive advantage window for early adopters is closing, not opening. A Claude Sonnet 4.6 agent can now autonomously research a property, comp it, draft a CMA, and email a summary without human intervention at each step. The question isn't whether to use AI in real estate consulting — it's whether your clients are getting it from you or someone else.
+
+ACTION STEP THIS WEEK
+Send one client a fully AI-generated market analysis this week — under 30 minutes lead time, human review before sending. Track: (1) client reaction, (2) time saved vs. manual, (3) quality gap if any. This is your baseline for the AGI-era service model.
+
+BEST QUOTE
+"The question was never 'will AI get to AGI.' The question is: by the time you believe it, will you have already missed the window?"
+
+---
+
+## [The Skill That 10x'd My Claude Code Projects](https://www.youtube.com/watch?v=c0kaKxM2pHg)
+*June 5, 2026*
+
+WHAT IT'S ABOUT
+Nate reveals the single most impactful Claude Code skill in his system and introduces a 6-step framework for building skills that actually work, explaining the difference between skills that teach Claude new abilities vs. skills that encode your preferences.
 
 THE METHOD OR FRAMEWORK
-1. n8n trigger watches for new form submissions (Typeform, Gravity Forms, etc.)
-2. AI node drafts personalized reply using lead's submitted details
-3. Slack/Telegram sends approval notification with Approve/Reject buttons
-4. On approval, Gmail sends the drafted email to the lead
-5. Lead never knows it was AI-assisted
+
+Two types of skills:
+- **Capability Uplift Skills** — Teach Claude something new. Example: how to read your CRM's export format, or structure a deal memo in your firm's template.
+- **Encoded Preference Skills** — Claude already knows the task; the skill locks in *your way* of doing it. Example: "Always comp within 0.5 miles, same school district, within 15% sq ft."
+
+6-Step Skill Authoring Framework:
+1. **Name & Trigger** — What phrase activates this skill? Be specific.
+2. **One-Sentence Goal** — What does perfect execution produce?
+3. **Step-by-Step Process** — Numbered, unambiguous steps. No vague verbs.
+4. **Reference Files** — Templates, example outputs, data sources.
+5. **Rules & Guardrails** — What Claude must never do. Prevents hallucination.
+6. **Self-Improvement Loop** — After each run, Claude notes what to adjust. **This is the 10x factor.**
 
 HOW THIS APPLIES TO AI REAL ESTATE
-When a buyer submits a showing request or a seller asks for a home valuation, the agent fires instantly — drafting a warm, personalized reply referencing their specific property. Agents approve with one tap in Slack. Response time drops from hours to minutes. This is a $5,000–$15,000 deliverable for a real estate brokerage.
+Build a "Run CMA" skill: trigger "run CMA for [address]", goal is a 1-page CMA in your standard format, steps pull 5 comps with your criteria, reference your template and comp rules, guardrails prevent using stale/distant comps without flagging, self-improvement logs every manual override. After 10 runs, the skill reflects your professional judgment — not just generic AI judgment.
 
 ACTION STEP THIS WEEK
-Build a demo version: Typeform (fake real estate inquiry) → Claude drafts reply → Slack Approve button → Gmail sends. Screenshot everything. Use as your case-study proof when pitching brokerages.
+Write one Encoded Preference skill for your single most repeated task using the 6-step framework. Keep it under 500 lines. Run it 3 times and use step 6 to log corrections. By Friday you'll have a skill that encodes your judgment.
 
 BEST QUOTE
-"The agent doesn't replace the salesperson — it makes sure the salesperson never misses a lead again."
+"Most people prompt Claude. The top 1% instruct Claude. There's a big difference — instructions persist. Prompts don't."
 
 ---
 
-## [The AI Offer You Can Sell Tomorrow Morning](https://www.youtube.com/watch?v=Pi-m8R068r4)
-*Business Model*
+## [I Spent 500+ Hours in Claude Code. Here Are the 12 Things That Matter](https://www.youtube.com/watch?v=vfWTyEreOEc)
+*June 4, 2026*
 
 WHAT IT'S ABOUT
-Nate addresses why people fail to land their first AI client: they pitch big retainers and freeze up. His fix is an entry-level offer — selling hourly consulting hours to help businesses set up their AI Operating System.
+After 500+ hours in Claude Code, Nate ranks every major feature from D-tier to S-tier based purely on how much each one moves the needle on real productivity.
 
 THE KEY POINTS
-- **Don't start with a retainer — start with hours.** Sell 3–5 consulting hours at $200–$500/hr. Low commitment, fast close.
-- Run a discovery call: ask about biggest time-wasters and recurring manual tasks.
-- **Always translate inefficiency into money.** If a process costs $200k/yr and AI cuts 70%, that's $140k in savings. Show the number.
-- Design a roadmap: templates (fast/cheap) vs. custom builds (expensive). Quote accordingly.
-- Natural upsell: $5,000 AI Business Audit → $20k–$100k full implementation.
-- **The hours get you in the door; the audit gets you the big contract.**
-
-THE METHOD OR FRAMEWORK
-1. Offer 3-hour AI Efficiency Session at $500–$750
-2. Discovery call: map their manual workflows
-3. Translate each inefficiency into annual cost
-4. Deliver prioritized AI automation roadmap
-5. Propose audit at $5,000 to build full implementation plan
-6. Close implementation contract at $20k–$100k
+- **S-tier (use every day):** Skills (SKILL.md files), subagents with parallel execution, CLAUDE.md context files. These three compound — each makes the others more powerful.
+- **A-tier (high ROI):** Hooks (pre/post-task automation), MCP server connections (real-time data), self-improvement loop in skills. Versatile across project types.
+- **B-tier (specialized):** Dynamic Workflows (100+ parallel agents), custom permissions, multi-model routing (Opus for thinking, Sonnet for doing). Essential at scale; overkill for simple tasks.
+- **C-tier (nice to have):** UI customizations, verbose logging, most default settings. **Don't spend time here until S and A tiers are solid.**
+- Core pattern: **features that compound in value over time are always better than one-time features.** Skills + self-improvement loop = asymmetric ROI.
+- Most underrated insight: **the gap between A-tier and B-tier is not capability — it's context.** Dynamic Workflows are just subagents at a scale that requires orchestration scripts.
 
 HOW THIS APPLIES TO AI REAL ESTATE
-Lead with a $500 "AI Efficiency Audit" for real estate brokerages. 2-hour session delivers a list of 5 automatable workflows with estimated time/cost savings. The audit reveals their lead response gap, CMA prep time, and listing description workflow — and becomes a $25k implementation proposal.
+This is your prioritization guide for the AI real estate consulting stack: Start with S-tier (CLAUDE.md with your market/methodology, 3 core skills). Add A-tier hooks to automate handoffs. Don't touch Dynamic Workflows until running 10+ concurrent client engagements. Do less — but do the compounding things first.
 
 ACTION STEP THIS WEEK
-Create a one-page "AI Efficiency Audit" offer for real estate brokerages. Post on LinkedIn and reach out to 5 local brokers directly.
+Do a 20-minute audit of your current Claude usage. Tag each use case S/A/B/C. Pick the single S-tier thing you're not doing yet — probably a real CLAUDE.md with your actual business context — and build it this week.
 
 BEST QUOTE
-"Most people fail to land clients not because their skills aren't good enough — it's because the offer they're pitching is too big for a stranger to say yes to."
-
----
-
-## [Stop Learning n8n in 2026...Learn THIS Instead](https://www.youtube.com/watch?v=ZeJXI2MAhj0)
-*March 2026 · Technical Stack*
-
-WHAT IT'S ABOUT
-Nate announces a major pivot: the old n8n-centric curriculum is archived. The new stack is Claude Code + Codex as the primary layer, with n8n handling integrations. He introduces the AI Operating System (AI OS) framework as the thing to learn and sell in 2026.
-
-THE KEY POINTS
-- **n8n is not dead, but it's no longer the core skill.** It's now a component inside a Claude Code-powered system.
-- Claude Code gets you 40–50% of any automation built fast. n8n handles the rest.
-- The AI OS framework: Claude Code (logic + agents) + n8n (execution + integrations) + you (architect + seller).
-- **"When to use which tool" is the new high-value skill.**
-- True agents — where AI plans, uses tools, and acts on results — are now real and deployable.
-- His free AI OS Course covers this from zero to building and selling agents.
-
-HOW THIS APPLIES TO AI REAL ESTATE
-Stop selling "n8n automation," start selling "AI Operating Systems for real estate." Pitch: "We build a custom AI OS for your brokerage — an always-on system where AI handles lead response, listing prep, CMA research, and follow-up." This differentiates you from every generic n8n freelancer.
-
-ACTION STEP THIS WEEK
-Update all service descriptions (LinkedIn, website, pitch deck) to replace "n8n automation" with "AI Operating System for real estate teams." Enroll in Nate's free AI OS Course.
-
-BEST QUOTE
-"Knowing when to use which tool is the new skill. The person who knows how to combine them is the one getting paid."
-
----
-
-## [I Will Never Fix Another n8n Workflow (Claude Code Self-Healing System)](https://www.youtube.com/watch?v=uUEa6K-FLB8)
-*January 2026 · Infrastructure & Reliability*
-
-WHAT IT'S ABOUT
-Nate shows how to make n8n workflows self-maintaining. When a workflow breaks, it automatically calls Claude Code via MCP, Claude reads the broken workflow, patches it, and reactivates it — without any human involvement.
-
-THE KEY POINTS
-- Every n8n workflow gets an Error Workflow attached that triggers on failure.
-- Error Workflow sends a Telegram alert with workflow name, error, and an "Approve Fix" button.
-- On approval, n8n spawns a headless Claude Code session via Execute Command node.
-- Claude reads the broken workflow JSON via MCP, identifies the failing node, generates a fix.
-- **Result: workflows fix themselves. You get "fixed" notifications instead of error alerts.**
-- Key constraint: Claude Code cannot set API credentials — you must add those in the n8n UI first.
-
-THE METHOD OR FRAMEWORK
-1. Attach Error Workflow to every n8n workflow
-2. Error Workflow → Telegram alert with "Approve Fix" button
-3. On approval → Execute Command node starts Claude Code session
-4. Claude Code reads workflow via n8n MCP, identifies issue, generates corrected JSON
-5. n8n applies fix and reactivates workflow
-6. Confirmation notification sent
-
-HOW THIS APPLIES TO AI REAL ESTATE
-This is your "reliability guarantee" sales point. When a brokerage asks "What happens when it breaks?" your answer is: "It fixes itself." Charge a monthly retainer for "AI OS Maintenance" and use this system to keep the promise.
-
-ACTION STEP THIS WEEK
-Set up the self-healing error workflow in your own n8n instance. Test it by intentionally breaking a workflow. Once confirmed working, add "self-healing AI workflows" to your service pitch.
-
-BEST QUOTE
-"It's like having an AI engineer on call 24/7 to maintain your automations — except it costs nothing and never sleeps."
-
----
-
-## Overall Strategic Takeaway
-
-Nate's channel is converging on one message: **stop selling tools, start selling systems.** The tool is Claude Code + n8n. The system is the AI Operating System. The entry point is an hourly audit. The proof point is a self-healing lead-response workflow. For an AI real estate consulting business, this is a complete, ready-to-deploy playbook.
+"500 hours taught me one thing: the people getting 10x results aren't using fancier prompts. They're using the features that remember things. Memory beats cleverness every time."
