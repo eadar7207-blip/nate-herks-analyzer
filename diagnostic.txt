@@ -1,26 +1,34 @@
-# Run 2026-06-10 01:56 UTC
+# Run 2026-06-10 06:14 UTC
 ```
 === RSS probe ===
-HTTP 200 size=39146
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
- <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
- <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
- <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
- <title>Nate Herk | AI 
+HTTP 404 size=1613
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-10T01:56:43.089567
+⏰ Time: 2026-06-10T06:14:32.685707
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 39146 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 dYrrEKXtttk published 2026-06-09 — NEW
-   📅 e18sdZLwP7o published 2026-06-09 — NEW
-   📅 lkR6mvqQQlk published 2026-06-06 — NEW
-   📅 NDeyhGnNECc published 2026-06-05 — NEW
-   📅 c0kaKxM2pHg published 2026-06-04 — NEW
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 8QQ_INxAhRs published 2026-06-10 — NEW
+   📅 dYrrEKXtttk published 2026-06-10 — NEW
+   📅 e18sdZLwP7o published 2026-06-10 — NEW
+   📅 lkR6mvqQQlk published 2026-06-10 — NEW
+   📅 NDeyhGnNECc published 2026-06-10 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: I Turned Claude Fable Into The Ultimate Second Bra...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=8QQ_INxAhRs: RequestBlocked: youtube_transcript_api._errors
+⚠️  Could not get transcript
 
 🔍 Analyzing: Claude Mythos is Finally Here....
    🔑 Using YouTube cookies (2995 chars)
@@ -44,12 +52,6 @@ HTTP 200 size=39146
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=NDeyhGnNECc: RequestBlocked: youtube_transcript_api._errors
-⚠️  Could not get transcript
-
-🔍 Analyzing: The Skill That 10x’d My Claude Code Projects...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=c0kaKxM2pHg: RequestBlocked: youtube_transcript_api._errors
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
