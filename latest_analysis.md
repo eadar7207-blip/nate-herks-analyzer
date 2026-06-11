@@ -1,6 +1,61 @@
-# Nate Herk Analysis — June 9, 2026
+# Nate Herk Analysis — June 11, 2026
 
-5 videos analyzed. Transcripts blocked by YouTube IP restrictions; analysis based on web research + known content context.
+7 videos analyzed. Transcripts blocked by YouTube IP restrictions; analysis based on web research.
+
+---
+
+## [I Turned Claude Fable Into The Ultimate Second Brain](https://www.youtube.com/watch?v=8QQ_INxAhRs)
+*June 11, 2026*
+
+WHAT IT'S ABOUT
+Nate walks through his complete Claude Fable "second brain" — a single connected system where all his business context, client knowledge, workflows, and schedules live. He uses a four-part framework called the Four Cs to build it, and shows his exact file/folder structure so you can replicate it.
+
+THE KEY POINTS
+- **The Four Cs are the full architecture:** Context (what the AI knows), Connections (data and tools it links to), Capabilities (what it can do — skills and workflows), Cadence (what it runs automatically on a schedule).
+- **Context is non-skippable — build this first.** Before any automation: write everything Claude should know about your voice, clients, processes, and goals. This foundation file gets read before every session.
+- Connections and Capabilities can be built in parallel. **Cadence is always last** — never automate a workflow that doesn't work manually yet.
+- **Cadence is the real differentiator** — it's what makes this a business partner instead of a chatbot. Claude runs things on a schedule, checks things automatically, and maintains continuity across sessions like a real employee.
+- Claude Fable-5 (the just-released Mythos-class model) powers the system. "My entire life and business now live in one second brain, and Claude Fable understands it better than I do."
+
+THE METHOD OR FRAMEWORK
+1. **Context** — A single foundation document: specialty areas, methodology, client personas, communication style, tools. Written in plain English. Claude reads this before every session.
+2. **Connections** — Link Claude to your data: MLS feeds, CRM, calendar, email. Your "inputs" layer.
+3. **Capabilities** — Skills and workflows: CMA runner, client email drafter, property researcher, due diligence checker.
+4. **Cadence** — Automated rhythms: weekly report prep, new listing alerts, price-drop monitors, daily CRM updates. Runs without you asking.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+Context layer = your market specialties, comp criteria, and client personas. Connections = MLS data, CRM, and calendar. Capabilities = CMA runner, client email drafter, deal analyzer. Cadence = auto-monitor new listings in target neighborhoods, prep weekly client pipeline reports, and alert you when a watched property gets a price cut. The system stops being a tool and starts running the research side of your business.
+
+ACTION STEP THIS WEEK
+Build your Context file — one document with your real estate specialties, comp criteria, client communication style, and core processes. Aim for 500–1000 words. Save it as CLAUDE.md in your project folder. Everything else you build will rely on this foundation.
+
+BEST QUOTE
+"My entire life and business now live in one second brain, and Claude Fable understands it better than I do."
+
+---
+
+## [Claude Mythos is Finally Here.](https://www.youtube.com/watch?v=dYrrEKXtttk)
+*June 11, 2026*
+
+WHAT IT'S ABOUT
+Nate's Mythos prediction just came true. Anthropic shipped Claude Fable-5 — built on the same Mythos technology — publicly, free until June 22, available to all Pro, Max, Team, and Enterprise subscribers. He explains the two-model release, the June 22 pricing cliff, the benchmark improvements, and what he's most excited to use it for.
+
+THE KEY POINTS
+- **Claude Fable-5 IS Mythos** — not a preview or leak artifact. Anthropic released two Mythos-class models: Claude Fable 5 and Claude Mythos 5.
+- **Free until June 22** for Pro, Max, Team, and Enterprise subscribers. On June 23, it moves to usage credits only.
+- Pricing after June 22: **$10/M input tokens, $50/M output tokens** — double the cost of Opus 4.8.
+- Nate's earlier prediction was right: **Mythos capabilities shipped integrated into Claude's product line**, not as a standalone brand. "Fable" is the brand; Mythos is the technology.
+- **Benchmark improvements across coding, knowledge work, and vision** — continuing the trajectory previewed in his "AGI is Here" video.
+- The cybersecurity capability concern (the main delay factor) has passed Anthropic's safety review.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+Fable-5's synthesis capability is the biggest unlock for real estate knowledge work: read an entire purchase contract, property history, neighborhood report, and client brief simultaneously — and produce a coherent analysis in minutes. Before June 22, run your most complex research task through Fable-5 and compare to Opus. The gap tells you whether to budget for usage credits.
+
+ACTION STEP THIS WEEK
+URGENT — deadline June 22. Run 2–3 complex real estate tasks through Claude Fable-5 now while it's free: full contract review, multi-property comp analysis, client situation synthesis. Time each task. Decide if you budget for usage credits on those specific workflows after June 22.
+
+BEST QUOTE
+"I said Mythos would fold into Claude. It did. The model ID is Fable, the capability is Mythos, and the window to use it free closes June 22."
 
 ---
 
