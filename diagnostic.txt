@@ -1,4 +1,4 @@
-# Run 2026-06-13 05:11 UTC
+# Run 2026-06-13 08:41 UTC
 ```
 === RSS probe ===
 HTTP 200 size=39175
@@ -10,46 +10,15 @@ HTTP 200 size=39175
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-13T05:11:33.911098
+⏰ Time: 2026-06-13T08:41:31.017365
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 39175 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
-   📅 ONmaDdOBGig published 2026-06-12 — NEW
-   📅 diY71x7GUjI published 2026-06-12 — NEW
-   📅 8QQ_INxAhRs published 2026-06-10 — NEW
-   📅 dYrrEKXtttk published 2026-06-09 — NEW
-   📅 e18sdZLwP7o published 2026-06-09 — NEW
-📹 Found 5 new video(s)
-
-🔍 Analyzing: Claude Fable 5 Made This Entire Video By Itself....
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=ONmaDdOBGig: RequestBlocked: youtube_transcript_api._errors
-⚠️  Could not get transcript
-
-🔍 Analyzing: From Zero to Head of AI in 1 Year (as a regular pe...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=diY71x7GUjI: RequestBlocked: youtube_transcript_api._errors
-⚠️  Could not get transcript
-
-🔍 Analyzing: I Turned Claude Fable Into The Ultimate Second Bra...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=8QQ_INxAhRs: RequestBlocked: youtube_transcript_api._errors
-⚠️  Could not get transcript
-
-🔍 Analyzing: Claude Mythos is Finally Here....
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=dYrrEKXtttk: RequestBlocked: youtube_transcript_api._errors
-⚠️  Could not get transcript
-
-🔍 Analyzing: How to Build Claude Subagents Better Than 99% of P...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=e18sdZLwP7o: RequestBlocked: youtube_transcript_api._errors
-⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+   📅 ONmaDdOBGig published 2026-06-12 — already processed
+   📅 diY71x7GUjI published 2026-06-12 — already processed
+   📅 8QQ_INxAhRs published 2026-06-10 — already processed
+   📅 dYrrEKXtttk published 2026-06-09 — already processed
+   📅 e18sdZLwP7o published 2026-06-09 — already processed
+✨ No new videos to analyze
 ```
