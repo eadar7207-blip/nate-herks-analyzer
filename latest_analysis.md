@@ -1,188 +1,63 @@
-# Nate Herk Analysis — June 11, 2026
+# Nate Herk Analysis — June 13, 2026
 
-7 videos analyzed. Transcripts blocked by YouTube IP restrictions; analysis based on web research.
+2 new videos analyzed.
 
 ---
 
-## [I Turned Claude Fable Into The Ultimate Second Brain](https://www.youtube.com/watch?v=8QQ_INxAhRs)
-*June 11, 2026*
+## [Claude Fable 5 Made This Entire Video By Itself.](https://www.youtube.com/watch?v=ONmaDdOBGig)
+*June 12, 2026*
 
 WHAT IT'S ABOUT
-Nate walks through his complete Claude Fable "second brain" — a single connected system where all his business context, client knowledge, workflows, and schedules live. He uses a four-part framework called the Four Cs to build it, and shows his exact file/folder structure so you can replicate it.
+Nate demonstrates that Claude Fable 5 handled the entire production pipeline for this YouTube video — no Premiere, no DaVinci Resolve, no traditional editing software. He dropped raw footage into Claude Code, and the AI transcribed it, selected cuts with written rationale, removed stutters and filler words, synced motion graphics to exact timestamps, and rendered the final output. The point is not just a tech demo — it's proof that a repeatable, code-driven video production workflow now exists for any creator willing to learn it.
 
 THE KEY POINTS
-- **The Four Cs are the full architecture:** Context (what the AI knows), Connections (data and tools it links to), Capabilities (what it can do — skills and workflows), Cadence (what it runs automatically on a schedule).
-- **Context is non-skippable — build this first.** Before any automation: write everything Claude should know about your voice, clients, processes, and goals. This foundation file gets read before every session.
-- Connections and Capabilities can be built in parallel. **Cadence is always last** — never automate a workflow that doesn't work manually yet.
-- **Cadence is the real differentiator** — it's what makes this a business partner instead of a chatbot. Claude runs things on a schedule, checks things automatically, and maintains continuity across sessions like a real employee.
-- Claude Fable-5 (the just-released Mythos-class model) powers the system. "My entire life and business now live in one second brain, and Claude Fable understands it better than I do."
+- **The entire video editing pipeline can now run inside Claude Code:** Transcription (via Whisper), cut selection, filler word removal, animation timing, and final render all happen without opening a traditional video editor — this is a full production replacement, not a helper tool.
+- **HyperFrames is the key infrastructure:** It's an HTML-native motion graphics library built on GSAP that lets Claude generate frame-accurate animations as code, which then get composited into the final video — no GUI required.
+- **Two tiers exist for different skill levels:** Claude Design handles simpler, conversational motion graphics for beginners; Claude Code plus HyperFrames is the full-stack pipeline for people who want serious customization and control.
+- **The AIS-OS framework underlies all of it:** The three skills (/onboard, /audit, /level-up) and the 3Ms (Mindset, Method, Machine) give learners a structured operating system, not just a one-off trick.
+- **Nate's GitHub has 12 finished project templates:** The nateherkai/hyperframes-student-kit repo ships complete motion graphics video projects — real starting points, not toy examples.
+- **This workflow is validated at the source:** Thariq from Anthropic's Claude Code team used Fable 5 to edit its own launch video — Nate is showing it works for independent creators at the same level.
 
 THE METHOD OR FRAMEWORK
-1. **Context** — A single foundation document: specialty areas, methodology, client personas, communication style, tools. Written in plain English. Claude reads this before every session.
-2. **Connections** — Link Claude to your data: MLS feeds, CRM, calendar, email. Your "inputs" layer.
-3. **Capabilities** — Skills and workflows: CMA runner, client email drafter, property researcher, due diligence checker.
-4. **Cadence** — Automated rhythms: weekly report prep, new listing alerts, price-drop monitors, daily CRM updates. Runs without you asking.
+1. Record raw footage as you normally would — no special setup required.
+2. Drop the raw file into Claude Code with a prompt describing your editing goals.
+3. Claude runs Whisper transcription to generate a full transcript with timestamps.
+4. Claude reviews the transcript, selects cuts, and writes out its rationale for each decision.
+5. Claude executes frame-accurate cuts, removing stutters, false starts, and filler words based on the transcript.
+6. HyperFrames generates motion graphics as code, synced to the exact timestamps Claude identified.
+7. The pipeline renders the final video ready for upload — no manual assembly step.
+8. If you want to customize, you work inside the 12 HyperFrames templates on GitHub as your starting point, then instruct Claude to modify them for your style.
 
 HOW THIS APPLIES TO AI REAL ESTATE
-Context layer = your market specialties, comp criteria, and client personas. Connections = MLS data, CRM, and calendar. Capabilities = CMA runner, client email drafter, deal analyzer. Cadence = auto-monitor new listings in target neighborhoods, prep weekly client pipeline reports, and alert you when a watched property gets a price cut. The system stops being a tool and starts running the research side of your business.
+An AI real estate consulting business runs on content — explainer videos for clients, walkthroughs of AI tools, recorded demos of automations you've built. Right now, producing that content likely costs hours of manual editing time or money paid to a video editor. With this workflow, you could record a 20-minute raw walkthrough showing a client how your AI lead qualification system works, drop it into Claude Code, and have a polished, branded video with motion graphics highlighting key moments — cut down to 8 minutes with filler removed — in a fraction of the time. More concretely: you're onboarding a new brokerage client and want to send them a personalized video explaining exactly how their new AI follow-up system works. Instead of recording, editing, and exporting manually, you record once, run the pipeline, and deliver a professional artifact the same day. That speed and polish, delivered consistently, is a tangible differentiator when competing for consulting contracts.
 
 ACTION STEP THIS WEEK
-Build your Context file — one document with your real estate specialties, comp criteria, client communication style, and core processes. Aim for 500–1000 words. Save it as CLAUDE.md in your project folder. Everything else you build will rely on this foundation.
+Go to github.com/nateherkai/hyperframes-student-kit, clone the repo, and open one of the 12 finished project templates. Record a 3-to-5 minute raw video explaining one thing your AI real estate business does — it can be rough, just a real take. Then follow Nate's free AI OS Course setup to run that footage through Claude Code using the HyperFrames pipeline. Your goal is one finished, rendered output by end of week. You are not trying to perfect it — you are proving the pipeline works in your hands before you need it for a real client deliverable.
 
 BEST QUOTE
-"My entire life and business now live in one second brain, and Claude Fable understands it better than I do."
+"I never opened a video editor."
 
 ---
 
-## [Claude Mythos is Finally Here.](https://www.youtube.com/watch?v=dYrrEKXtttk)
-*June 11, 2026*
+## [From Zero to Head of AI in 1 Year (as a regular person)](https://www.youtube.com/watch?v=diY71x7GUjI)
+*June 12, 2026*
 
 WHAT IT'S ABOUT
-Nate's Mythos prediction just came true. Anthropic shipped Claude Fable-5 — built on the same Mythos technology — publicly, free until June 22, available to all Pro, Max, Team, and Enterprise subscribers. He explains the two-model release, the June 22 pricing cliff, the benchmark improvements, and what he's most excited to use it for.
+Nate lays out a concrete one-year roadmap for going from zero AI knowledge to holding a Head of AI role — either inside a company or as an independent operator — without a coding background or CS degree. He uses his own path as the proof case: Goldman Sachs business analyst, no coding, left after two months of YouTube to build an AI education business now at 790,000+ subscribers. The video is structured around two distinct paths and is specifically aimed at employed people who think freelancing is the only serious option — Nate argues the internal positioning path is actually more common and more achievable for most people watching.
 
 THE KEY POINTS
-- **Claude Fable-5 IS Mythos** — not a preview or leak artifact. Anthropic released two Mythos-class models: Claude Fable 5 and Claude Mythos 5.
-- **Free until June 22** for Pro, Max, Team, and Enterprise subscribers. On June 23, it moves to usage credits only.
-- Pricing after June 22: **$10/M input tokens, $50/M output tokens** — double the cost of Opus 4.8.
-- Nate's earlier prediction was right: **Mythos capabilities shipped integrated into Claude's product line**, not as a standalone brand. "Fable" is the brand; Mythos is the technology.
-- **Benchmark improvements across coding, knowledge work, and vision** — continuing the trajectory previewed in his "AGI is Here" video.
-- The cybersecurity capability concern (the main delay factor) has passed Anthropic's safety review.
+- **Path B — becoming the most AI-fluent person at your current company — is the less obvious but more common winning move:** Most people watching already have a job, existing credibility, and insider knowledge of their industry; that is a massive head start over starting from scratch as a freelancer.
+- **The credential that matters is shipped work, not certifications:** Walking into a Head of AI conversation with functional automations, deployed agents, and real business outcomes beats any course certificate — employers and clients can see the difference immediately.
+- **No coding background is not a blocker:** Nate's background is Business Analytics and Marketing; the skill stack he teaches is about orchestrating AI systems, not writing software from scratch — Claude Code and similar tools close that gap.
+- **The AIS-OS framework is the foundational operating system for the whole journey:** The three skills (/onboard, /audit, /level-up) and the Four Cs (Context, Connections, Capabilities, Cadence) give learners a repeatable structure rather than a scattered pile of tutorials.
+- **Path A (agency/freelance) requires building a client pipeline from zero:** It's viable but harder to start — the upside is higher ceiling and full independence; the downside is that most people underestimate how much selling is involved before any AI work happens.
+- **One year is the realistic window, not a motivational number:** The timeline assumes consistent application of the framework to real work, not passive consumption — the people who make it in a year are shipping automations in month two, not still watching videos.
 
 HOW THIS APPLIES TO AI REAL ESTATE
-Fable-5's synthesis capability is the biggest unlock for real estate knowledge work: read an entire purchase contract, property history, neighborhood report, and client brief simultaneously — and produce a coherent analysis in minutes. Before June 22, run your most complex research task through Fable-5 and compare to Opus. The gap tells you whether to budget for usage credits.
+If you're running an AI real estate consulting business, you are already on Path A — you made the freelance/agency bet. That means your version of this video's lesson is about the clients you're serving. The brokers, agents, and property managers you work with are almost all in Path B territory: they're employed or running established businesses and need someone internal to own their AI transformation. Your pitch is not just "I'll build you a tool" — it's "I'll make your most promising person into your Head of AI." Concretely: you take on a 10-agent residential brokerage as a client, and instead of just deploying a lead qualification bot, you identify the one agent-admin hybrid on staff who's curious about technology, run them through the AIS-OS framework as part of your engagement, and hand the brokerage a functional internal AI operator when you're done. That stickiness — the trained person plus the deployed systems — is what turns a one-time project into a retainer and a referral.
 
 ACTION STEP THIS WEEK
-URGENT — deadline June 22. Run 2–3 complex real estate tasks through Claude Fable-5 now while it's free: full contract review, multi-property comp analysis, client situation synthesis. Time each task. Decide if you budget for usage credits on those specific workflows after June 22.
+Write a one-paragraph "internal AI champion" pitch that you can drop into your next client proposal or discovery call. It should describe what it looks like for one person at their company to own the AI systems you build — what that person does day-to-day, what they're accountable for, and how you'll upskill them over the engagement. Keep it to four sentences. The goal is to have language ready that reframes your consulting offer from "tool delivery" to "capability building" — because that framing closes larger, longer contracts with real estate businesses who are thinking about where AI goes after the first project is done.
 
 BEST QUOTE
-"I said Mythos would fold into Claude. It did. The model ID is Fable, the capability is Mythos, and the window to use it free closes June 22."
-
----
-
-## [How to Build Claude Subagents Better Than 99% of People](https://www.youtube.com/watch?v=e18sdZLwP7o)
-*June 9, 2026*
-
-WHAT IT'S ABOUT
-Nate breaks down how to properly set up Claude subagents — specialized mini-versions of Claude that each handle one specific job while the main Claude session acts as the manager. Most people use them like a single chatbot and miss 90% of the value.
-
-THE KEY POINTS
-- A subagent runs in its own separate context window with its own tool access — **it never sees your main conversation**. This keeps the main context clean.
-- **Run Opus as the orchestrator, Sonnet as the subagents.** Top-tier reasoning at the top, fast/cheap execution at the bottom — significant cost savings.
-- Anthropic's own research: multi-agent setup outperformed a single Claude Opus by **90.2% on complex research tasks** — nearly doubling output quality.
-- Biggest mistake: running everything sequentially. **Parallel subagents** across independent domains collapse project timelines dramatically.
-- Configure domain-based routing in your `CLAUDE.md` so Claude automatically dispatches the right subagent — no manual decision-making each time.
-- **Context isolation is the hidden benefit.** Fresh subagent = no context drift on long tasks.
-
-HOW THIS APPLIES TO AI REAL ESTATE
-A property research system can have one subagent pulling MLS comps, another analyzing neighborhood trends, a third drafting the client report — all running in parallel. A 45-minute research task becomes under 5 minutes. Apply to client intake: subagents for credit analysis, market positioning, and CRM entry could all run the moment a new lead comes in.
-
-ACTION STEP THIS WEEK
-Build one parallel subagent workflow for your most repetitive research task. Create a CLAUDE.md rule routing "run comps for [address]" to a Sonnet subagent with web search + MLS tools. Time the before/after.
-
-BEST QUOTE
-"Claude Code isn't one AI — it's an orchestration system. Your main chat is the manager. The subagents are the specialists. Most people never make that mental shift."
-
----
-
-## [Is Claude Mythos Coming?](https://www.youtube.com/watch?v=lkR6mvqQQlk)
-*June 7, 2026*
-
-WHAT IT'S ABOUT
-A Mythos identifier appeared on Anthropic's API that morning. Nate explains what Mythos actually is, why widening access ≠ public launch, and why he thinks it may quietly fold into the next Opus release rather than ship as a standalone product.
-
-THE KEY POINTS
-- **Mythos is Anthropic's most powerful model yet** — leaked via a misconfigured CMS in March 2026. Anthropic confirmed it represents "a step change" in performance.
-- Leaked benchmarks: dramatically higher scores than Opus 4.6 across coding, reasoning, and cybersecurity. Anthropic internally called it "currently far ahead of any other AI in cyber capabilities."
-- Access gated to vetted partners only via **Project Glasswing** — no public API, pricing, or SLA.
-- **Nate's thesis: widening access ≠ public launch.** A model ID in the API is a red team artifact, not a product announcement.
-- His prediction: **Mythos capabilities fold into the next Claude Opus release** rather than shipping as a standalone brand.
-- The cybersecurity concern is the real bottleneck — Anthropic's docs say Mythos "presages models that can exploit vulnerabilities far outpacing defenders." Safety review takes time.
-
-HOW THIS APPLIES TO AI REAL ESTATE
-When Mythos-class capabilities go public (likely via Opus integration), AI agents for due diligence, title document analysis, and smart building cybersecurity risk will take a major leap. Build systems modularly now so swapping in a more powerful model is a one-line change — not a rebuild.
-
-ACTION STEP THIS WEEK
-Audit your current AI workflows and tag which ones are model-capability-limited vs. prompt/workflow-limited. The model-limited ones are your priority upgrade candidates when Opus gets the Mythos boost. List 3 tasks you'd automate if the model got 2x smarter.
-
-BEST QUOTE
-"A leak plus widening access still isn't the same as a public launch. Anthropic isn't in a race to name things — they're in a race to not break the world while shipping the most capable AI ever built."
-
----
-
-## [AGI is Here. Anthropic Just Proved It.](https://www.youtube.com/watch?v=NDeyhGnNECc)
-*June 6, 2026*
-
-WHAT IT'S ABOUT
-Nate makes the case that the mainstream debate about "when will AGI arrive" is already settled for professional knowledge work. Using hard benchmark data, he argues AI has crossed the functional AGI threshold for coding, reasoning, and business tasks.
-
-THE KEY POINTS
-- **SWE-bench scores doubled in two years:** 33.4% → 80.8%. This tests real GitHub bug fixes — not trivia. 80%+ means Claude solves 4 out of 5 real engineering problems autonomously.
-- Sonnet 4.6's **ARC-AGI-2 score jumped 4.3× in one generation** — from 13.6% to 58.3%. ARC-AGI tests general reasoning, not memorization. The metric skeptics said would never move fast.
-- Anthropic passed OpenAI in **business adoption** — competitive pressure accelerating on both sides.
-- **Claude Opus 4.8 is the new public flagship.** The ceiling keeps rising with every release.
-- Nate's definition of AGI: not "human-like consciousness" — **"AI that can replace a mid-level knowledge worker on a defined task."** By that definition: already here for coding, legal doc review, market research, financial modeling.
-
-HOW THIS APPLIES TO AI REAL ESTATE
-The competitive advantage window for early adopters is closing, not opening. A Claude Sonnet 4.6 agent can now autonomously research a property, comp it, draft a CMA, and email a summary without human intervention at each step. The question isn't whether to use AI in real estate consulting — it's whether your clients are getting it from you or someone else.
-
-ACTION STEP THIS WEEK
-Send one client a fully AI-generated market analysis this week — under 30 minutes lead time, human review before sending. Track: (1) client reaction, (2) time saved vs. manual, (3) quality gap if any. This is your baseline for the AGI-era service model.
-
-BEST QUOTE
-"The question was never 'will AI get to AGI.' The question is: by the time you believe it, will you have already missed the window?"
-
----
-
-## [The Skill That 10x'd My Claude Code Projects](https://www.youtube.com/watch?v=c0kaKxM2pHg)
-*June 5, 2026*
-
-WHAT IT'S ABOUT
-Nate reveals the single most impactful Claude Code skill in his system and introduces a 6-step framework for building skills that actually work, explaining the difference between skills that teach Claude new abilities vs. skills that encode your preferences.
-
-THE METHOD OR FRAMEWORK
-
-Two types of skills:
-- **Capability Uplift Skills** — Teach Claude something new. Example: how to read your CRM's export format, or structure a deal memo in your firm's template.
-- **Encoded Preference Skills** — Claude already knows the task; the skill locks in *your way* of doing it. Example: "Always comp within 0.5 miles, same school district, within 15% sq ft."
-
-6-Step Skill Authoring Framework:
-1. **Name & Trigger** — What phrase activates this skill? Be specific.
-2. **One-Sentence Goal** — What does perfect execution produce?
-3. **Step-by-Step Process** — Numbered, unambiguous steps. No vague verbs.
-4. **Reference Files** — Templates, example outputs, data sources.
-5. **Rules & Guardrails** — What Claude must never do. Prevents hallucination.
-6. **Self-Improvement Loop** — After each run, Claude notes what to adjust. **This is the 10x factor.**
-
-HOW THIS APPLIES TO AI REAL ESTATE
-Build a "Run CMA" skill: trigger "run CMA for [address]", goal is a 1-page CMA in your standard format, steps pull 5 comps with your criteria, reference your template and comp rules, guardrails prevent using stale/distant comps without flagging, self-improvement logs every manual override. After 10 runs, the skill reflects your professional judgment — not just generic AI judgment.
-
-ACTION STEP THIS WEEK
-Write one Encoded Preference skill for your single most repeated task using the 6-step framework. Keep it under 500 lines. Run it 3 times and use step 6 to log corrections. By Friday you'll have a skill that encodes your judgment.
-
-BEST QUOTE
-"Most people prompt Claude. The top 1% instruct Claude. There's a big difference — instructions persist. Prompts don't."
-
----
-
-## [I Spent 500+ Hours in Claude Code. Here Are the 12 Things That Matter](https://www.youtube.com/watch?v=vfWTyEreOEc)
-*June 4, 2026*
-
-WHAT IT'S ABOUT
-After 500+ hours in Claude Code, Nate ranks every major feature from D-tier to S-tier based purely on how much each one moves the needle on real productivity.
-
-THE KEY POINTS
-- **S-tier (use every day):** Skills (SKILL.md files), subagents with parallel execution, CLAUDE.md context files. These three compound — each makes the others more powerful.
-- **A-tier (high ROI):** Hooks (pre/post-task automation), MCP server connections (real-time data), self-improvement loop in skills. Versatile across project types.
-- **B-tier (specialized):** Dynamic Workflows (100+ parallel agents), custom permissions, multi-model routing (Opus for thinking, Sonnet for doing). Essential at scale; overkill for simple tasks.
-- **C-tier (nice to have):** UI customizations, verbose logging, most default settings. **Don't spend time here until S and A tiers are solid.**
-- Core pattern: **features that compound in value over time are always better than one-time features.** Skills + self-improvement loop = asymmetric ROI.
-- Most underrated insight: **the gap between A-tier and B-tier is not capability — it's context.** Dynamic Workflows are just subagents at a scale that requires orchestration scripts.
-
-HOW THIS APPLIES TO AI REAL ESTATE
-This is your prioritization guide for the AI real estate consulting stack: Start with S-tier (CLAUDE.md with your market/methodology, 3 core skills). Add A-tier hooks to automate handoffs. Don't touch Dynamic Workflows until running 10+ concurrent client engagements. Do less — but do the compounding things first.
-
-ACTION STEP THIS WEEK
-Do a 20-minute audit of your current Claude usage. Tag each use case S/A/B/C. Pick the single S-tier thing you're not doing yet — probably a real CLAUDE.md with your actual business context — and build it this week.
-
-BEST QUOTE
-"500 hours taught me one thing: the people getting 10x results aren't using fancier prompts. They're using the features that remember things. Memory beats cleverness every time."
+"The less obvious path is actually the more common one."
