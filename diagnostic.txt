@@ -1,7 +1,7 @@
-# Run 2026-06-15 08:45 UTC
+# Run 2026-06-15 14:52 UTC
 ```
 === RSS probe ===
-HTTP 200 size=39176
+HTTP 200 size=38735
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,15 +10,22 @@ HTTP 200 size=39176
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-15T08:45:47.874084
+⏰ Time: 2026-06-15T14:52:38.545252
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 39176 bytes
+   RSS feed HTTP 200, 38735 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 3XIGcM7VICc published 2026-06-15 — NEW
    📅 ONmaDdOBGig published 2026-06-12 — already processed
    📅 diY71x7GUjI published 2026-06-12 — already processed
    📅 8QQ_INxAhRs published 2026-06-10 — already processed
    📅 dYrrEKXtttk published 2026-06-09 — already processed
-   📅 e18sdZLwP7o published 2026-06-09 — already processed
-✨ No new videos to analyze
+📹 Found 1 new video(s)
+
+🔍 Analyzing: Learn These 6 AI Skills Now (Before AI Replaces Yo...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=3XIGcM7VICc: RequestBlocked: youtube_transcript_api._errors
+⚠️  Could not get transcript
+⚠️  No videos were successfully analyzed
 ```
