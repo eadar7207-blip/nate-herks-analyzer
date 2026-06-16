@@ -253,13 +253,89 @@ def get_video_transcript(video_url):
         return deduped[:8000]
     except Exception as e:
         print(f"⚠️  Transcript fetch failed for {video_url}: {type(e).__name__}: {e.__class__.__module__}")
-        return None
+        print("   🔄 Trying yt-dlp for transcript...")
+        return _get_transcript_via_ytdlp(video_id, cookies_content, proxy_url)
     finally:
         if tmp_path:
             try:
                 os.unlink(tmp_path)
             except OSError:
                 pass
+
+
+def _get_transcript_via_ytdlp(video_id, cookies_content=None, proxy_url=None):
+    """Fallback transcript extraction using yt-dlp auto-generated captions."""
+    import subprocess
+    import tempfile
+    import shutil
+    import glob as glob_mod
+
+    out_dir = tempfile.mkdtemp()
+    cookies_path = None
+
+    cmd = [
+        "yt-dlp",
+        "--write-auto-subs", "--sub-lang", "en",
+        "--convert-subs", "vtt",
+        "--skip-download",
+        "--no-warnings", "--quiet",
+        "-o", f"{out_dir}/%(id)s",
+        f"https://www.youtube.com/watch?v={video_id}",
+    ]
+
+    if proxy_url:
+        cmd += ["--proxy", proxy_url]
+
+    if cookies_content:
+        try:
+            tmp = tempfile.NamedTemporaryFile(mode='w', suffix='.txt', delete=False)
+            tmp.write(cookies_content)
+            tmp.close()
+            cookies_path = tmp.name
+            cmd += ["--cookies", cookies_path]
+        except Exception as e:
+            print(f"   ⚠️  yt-dlp cookie setup failed: {e}")
+
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
+        vtt_files = glob_mod.glob(f"{out_dir}/*.vtt")
+        if not vtt_files:
+            err = result.stderr.strip()[:200] if result.stderr else "(no stderr)"
+            print(f"   ⚠️  yt-dlp found no VTT file. stderr: {err}")
+            return None
+
+        with open(vtt_files[0]) as f:
+            vtt = f.read()
+
+        lines = []
+        for line in vtt.split('\n'):
+            line = line.strip()
+            if not line or line.startswith('WEBVTT') or '-->' in line or line.isdigit():
+                continue
+            line = re.sub(r'<[^>]+>', '', line)
+            if line:
+                lines.append(line)
+
+        deduped = []
+        prev = None
+        for line in lines:
+            if line != prev:
+                deduped.append(line)
+                prev = line
+
+        text = ' '.join(deduped)
+        print(f"   ✅ yt-dlp transcript ({len(text)} chars)")
+        return text[:8000] if text else None
+    except Exception as e:
+        print(f"   ⚠️  yt-dlp transcript failed: {e}")
+        return None
+    finally:
+        if cookies_path:
+            try:
+                os.unlink(cookies_path)
+            except OSError:
+                pass
+        shutil.rmtree(out_dir, ignore_errors=True)
 
 
 def analyze_video_with_claude(video_title, transcript, video_url):
