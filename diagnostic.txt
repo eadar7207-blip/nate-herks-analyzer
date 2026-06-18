@@ -1,7 +1,7 @@
-# Run 2026-06-18 14:36 UTC
+# Run 2026-06-18 17:51 UTC
 ```
 === RSS probe ===
-HTTP 200 size=38884
+HTTP 200 size=39116
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=38884
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-18T14:36:40.236150
+⏰ Time: 2026-06-18T17:51:10.231813
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 38884 bytes
+   RSS feed HTTP 200, 39116 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 RzLV8sfFdMM published 2026-06-18 — NEW
    📅 DTCyvo6cC54 published 2026-06-17 — NEW
    📅 CvA8-aScqio published 2026-06-16 — NEW
    📅 3XIGcM7VICc published 2026-06-15 — NEW
    📅 ONmaDdOBGig published 2026-06-12 — already processed
-   📅 diY71x7GUjI published 2026-06-12 — already processed
-📹 Found 3 new video(s)
+📹 Found 4 new video(s)
+
+🔍 Analyzing: 1000+ Hours in Claude Code in 60 Mins...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=RzLV8sfFdMM: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] RzLV8sfFdMM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: Every Level of a Claude Second Brain Explained...
    🔑 Using YouTube cookies (2995 chars)
