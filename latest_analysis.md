@@ -1,63 +1,139 @@
-# Nate Herk Analysis — June 13, 2026
+# Nate Herk Analysis — June 20, 2026
 
-2 new videos analyzed.
+5 new videos found (June 16–19). YouTube blocked transcript access from this server IP — analysis performed via web research.
+
+**Note:** Videos NOT marked as processed so the GitHub Actions runner (which has cookies + proxy) can re-analyze with full transcripts.
 
 ---
 
-## [Claude Fable 5 Made This Entire Video By Itself.](https://www.youtube.com/watch?v=ONmaDdOBGig)
-*June 12, 2026*
+## [Finally. Agent Loops Clearly Explained.](https://www.youtube.com/watch?v=EuzYhzB0vbI)
+*June 19, 2026*
 
 WHAT IT'S ABOUT
-Nate demonstrates that Claude Fable 5 handled the entire production pipeline for this YouTube video — no Premiere, no DaVinci Resolve, no traditional editing software. He dropped raw footage into Claude Code, and the AI transcribed it, selected cuts with written rationale, removed stutters and filler words, synced motion graphics to exact timestamps, and rendered the final output. The point is not just a tech demo — it's proof that a repeatable, code-driven video production workflow now exists for any creator willing to learn it.
+Nate explains the agent loop — the core mechanism behind every Claude Code workflow — in plain terms. The loop: gather context → take action via tools → verify result → repeat until done. A foundational video for anyone using Claude Code who hasn't understood what's actually happening under the hood.
 
 THE KEY POINTS
-- **The entire video editing pipeline can now run inside Claude Code:** Transcription (via Whisper), cut selection, filler word removal, animation timing, and final render all happen without opening a traditional video editor — this is a full production replacement, not a helper tool.
-- **HyperFrames is the key infrastructure:** It's an HTML-native motion graphics library built on GSAP that lets Claude generate frame-accurate animations as code, which then get composited into the final video — no GUI required.
-- **Two tiers exist for different skill levels:** Claude Design handles simpler, conversational motion graphics for beginners; Claude Code plus HyperFrames is the full-stack pipeline for people who want serious customization and control.
-- **The AIS-OS framework underlies all of it:** The three skills (/onboard, /audit, /level-up) and the 3Ms (Mindset, Method, Machine) give learners a structured operating system, not just a one-off trick.
-- **Nate's GitHub has 12 finished project templates:** The nateherkai/hyperframes-student-kit repo ships complete motion graphics video projects — real starting points, not toy examples.
-- **This workflow is validated at the source:** Thariq from Anthropic's Claude Code team used Fable 5 to edit its own launch video — Nate is showing it works for independent creators at the same level.
+- **The agent loop has three repeating phases:** gather context, take action, verify result — Claude cycles these until the task is complete
+- **Claude Code has four primitives for multi-agent work:** subagents, skills, agent teams, and dynamic workflows (launched as research preview June 2026)
+- **Agent teams vs. workflows is the key architectural choice:** agent teams use a live lead agent to manage peers; workflows encode the plan as JavaScript that runs without supervision
+- **Knowing the loop changes how you prompt:** write CLAUDE.md rules that work with the gather-act-verify cycle explicitly
 
 THE METHOD OR FRAMEWORK
-1. Record raw footage as you normally would — no special setup required.
-2. Drop the raw file into Claude Code with a prompt describing your editing goals.
-3. Claude runs Whisper transcription to generate a full transcript with timestamps.
-4. Claude reviews the transcript, selects cuts, and writes out its rationale for each decision.
-5. Claude executes frame-accurate cuts, removing stutters, false starts, and filler words based on the transcript.
-6. HyperFrames generates motion graphics as code, synced to the exact timestamps Claude identified.
-7. The pipeline renders the final video ready for upload — no manual assembly step.
-8. If you want to customize, you work inside the 12 HyperFrames templates on GitHub as your starting point, then instruct Claude to modify them for your style.
+1. Gather context — Claude reads files, checks memory, enumerates available tools
+2. Take action — Claude executes a tool call (write file, run command, call API, spawn subagent)
+3. Verify result — Claude reads output, checks against goal
+4. Loop or exit — if not done, return to step 1 with updated context
 
 HOW THIS APPLIES TO AI REAL ESTATE
-An AI real estate consulting business runs on content — explainer videos for clients, walkthroughs of AI tools, recorded demos of automations you've built. Right now, producing that content likely costs hours of manual editing time or money paid to a video editor. With this workflow, you could record a 20-minute raw walkthrough showing a client how your AI lead qualification system works, drop it into Claude Code, and have a polished, branded video with motion graphics highlighting key moments — cut down to 8 minutes with filler removed — in a fraction of the time. More concretely: you're onboarding a new brokerage client and want to send them a personalized video explaining exactly how their new AI follow-up system works. Instead of recording, editing, and exporting manually, you record once, run the pipeline, and deliver a professional artifact the same day. That speed and polish, delivered consistently, is a tangible differentiator when competing for consulting contracts.
+Every real estate automation is a hidden agent loop. A lead qualification bot that pulls an inquiry, scores it, checks CRM, and logs the result is running gather-act-verify on repeat. Understanding this lets you design better systems with explicit verification at each step — and gives you a powerful way to explain to clients why your AI systems are reliable: "it checks its own work before moving on."
 
 ACTION STEP THIS WEEK
-Go to github.com/nateherkai/hyperframes-student-kit, clone the repo, and open one of the 12 finished project templates. Record a 3-to-5 minute raw video explaining one thing your AI real estate business does — it can be rough, just a real take. Then follow Nate's free AI OS Course setup to run that footage through Claude Code using the HyperFrames pipeline. Your goal is one finished, rendered output by end of week. You are not trying to perfect it — you are proving the pipeline works in your hands before you need it for a real client deliverable.
+Pick one automation you've built. Map it onto gather-act-verify on paper. Find where the verify step is missing. Add an explicit check there.
 
 BEST QUOTE
-"I never opened a video editor."
+"It's not that Claude thinks once and answers. It loops — and knowing that changes everything about how you build with it."
 
 ---
 
-## [From Zero to Head of AI in 1 Year (as a regular person)](https://www.youtube.com/watch?v=diY71x7GUjI)
-*June 12, 2026*
+## [GLM 5.2 in Claude Code is Blowing My Mind](https://www.youtube.com/watch?v=2OD14-0cot4)
+*June 19, 2026*
 
 WHAT IT'S ABOUT
-Nate lays out a concrete one-year roadmap for going from zero AI knowledge to holding a Head of AI role — either inside a company or as an independent operator — without a coding background or CS degree. He uses his own path as the proof case: Goldman Sachs business analyst, no coding, left after two months of YouTube to build an AI education business now at 790,000+ subscribers. The video is structured around two distinct paths and is specifically aimed at employed people who think freelancing is the only serious option — Nate argues the internal positioning path is actually more common and more achievable for most people watching.
+Nate ran GLM-5.2 — a 756B parameter open-source model (MIT license) — inside Claude Code for a full day and reports benchmarks, real build times, and when to use it vs Opus 4.8. For routine tasks: GLM-5.2 is dramatically faster and up to 5.7x cheaper.
 
 THE KEY POINTS
-- **Path B — becoming the most AI-fluent person at your current company — is the less obvious but more common winning move:** Most people watching already have a job, existing credibility, and insider knowledge of their industry; that is a massive head start over starting from scratch as a freelancer.
-- **The credential that matters is shipped work, not certifications:** Walking into a Head of AI conversation with functional automations, deployed agents, and real business outcomes beats any course certificate — employers and clients can see the difference immediately.
-- **No coding background is not a blocker:** Nate's background is Business Analytics and Marketing; the skill stack he teaches is about orchestrating AI systems, not writing software from scratch — Claude Code and similar tools close that gap.
-- **The AIS-OS framework is the foundational operating system for the whole journey:** The three skills (/onboard, /audit, /level-up) and the Four Cs (Context, Connections, Capabilities, Cadence) give learners a repeatable structure rather than a scattered pile of tutorials.
-- **Path A (agency/freelance) requires building a client pipeline from zero:** It's viable but harder to start — the upside is higher ceiling and full independence; the downside is that most people underestimate how much selling is involved before any AI work happens.
-- **One year is the realistic window, not a motivational number:** The timeline assumes consistent application of the framework to real work, not passive consumption — the people who make it in a year are shipping automations in month two, not still watching videos.
+- **GLM-5.2 plugs directly into Claude Code** — swap the API endpoint per project and get a different cost profile without changing workflow
+- **Speed gap is real:** one-shot website build: 3:59 (GLM-5.2) vs 14:59 (Opus 4.8) — nearly 4x faster
+- **Cost gap is significant:** GLM-5.2 at $1.40/$4.40 per M tokens vs Opus 4.8 at $5/$25 — up to 5.7x cheaper on output
+- **Quality is competitive on front-end tasks:** GLM-5.2 ranks #2 on Code Arena frontend board behind only Fable 5
+- **Opus 4.8 still wins on hard problems:** complex multi-file changes, deep reasoning, SWE-bench Pro
+- **Per-project model switching is the play:** GLM-5.2 for fast iteration, Opus for tasks that demand it
 
 HOW THIS APPLIES TO AI REAL ESTATE
-If you're running an AI real estate consulting business, you are already on Path A — you made the freelance/agency bet. That means your version of this video's lesson is about the clients you're serving. The brokers, agents, and property managers you work with are almost all in Path B territory: they're employed or running established businesses and need someone internal to own their AI transformation. Your pitch is not just "I'll build you a tool" — it's "I'll make your most promising person into your Head of AI." Concretely: you take on a 10-agent residential brokerage as a client, and instead of just deploying a lead qualification bot, you identify the one agent-admin hybrid on staff who's curious about technology, run them through the AIS-OS framework as part of your engagement, and hand the brokerage a functional internal AI operator when you're done. That stickiness — the trained person plus the deployed systems — is what turns a one-time project into a retainer and a referral.
+Routine automations (scraping listings, formatting CRM entries, generating emails) are prime GLM-5.2 territory. A 200-lead/day qualification agent moving to GLM-5.2 could save $80-120/month per client in API costs — meaningful margin that you can cite when pitching retainers.
 
 ACTION STEP THIS WEEK
-Write a one-paragraph "internal AI champion" pitch that you can drop into your next client proposal or discovery call. It should describe what it looks like for one person at their company to own the AI systems you build — what that person does day-to-day, what they're accountable for, and how you'll upskill them over the engagement. Keep it to four sentences. The goal is to have language ready that reframes your consulting offer from "tool delivery" to "capability building" — because that framing closes larger, longer contracts with real estate businesses who are thinking about where AI goes after the first project is done.
+Pick one routine automation. Calculate its weekly token usage. Compare cost at Opus 4.8 rates vs GLM-5.2 rates ($4.40/M output). If saving is $20+/month, set up GLM-5.2 routing and test on 10 real examples.
 
 BEST QUOTE
-"The less obvious path is actually the more common one."
+"Same build. Same prompt. GLM-5.2: three fifty-nine. Opus 4.8: fourteen fifty-nine. I'm not going back to Opus for this kind of work."
+
+---
+
+## [How to Build Effective Claude Code Agents in 2026](https://www.youtube.com/watch?v=RzLV8sfFdMM)
+*June 18, 2026*
+
+WHAT IT'S ABOUT
+Nate and Cole distill 1,000+ hours of Claude Code experience into a system for building agents that reliably complete complex tasks. Core argument: the gap between results and "vibe coding" is a planning and verification system, not a better prompt.
+
+THE KEY POINTS
+- **Treating agents like chatbots is the number one mistake** — effective agents are directed with explicit planning phases and verification checkpoints
+- **Every model has a "dumb zone":** a point in a long task where it loses context and makes obvious mistakes — know it and break tasks before you hit it
+- **The planning step is non-negotiable:** have Claude write its plan to a file you approve before any execution begins
+- **Chaining sessions beats long context:** break large tasks into stages with clean handoff documents between sessions
+- **Verification is not optional:** every consequential action needs a verification sub-step where Claude checks its work against a defined success criterion
+
+THE METHOD OR FRAMEWORK
+1. Define the goal in one clear sentence
+2. Have Claude write plan to PLAN.md — read and approve before proceeding
+3. Break at the dumb zone — set session boundaries before quality degrades
+4. Execute with verification checkpoints at each major step
+5. Hand off cleanly — agent writes status document at session end; next session reads it
+6. Final review session checks all outputs against original goal
+
+HOW THIS APPLIES TO AI REAL ESTATE
+Complex client builds (CRM automations, listing analysis pipelines, onboarding systems) are multi-step tasks that fall apart at step 6 of 10 without session chaining and verification. Write the goal first, generate the plan file, break at the dumb zone — and your first client demo works correctly.
+
+ACTION STEP THIS WEEK
+Take any current build. Write the goal as one sentence. Have Claude generate a PLAN.md. Mark where you think the model's dumb zone falls and put a session break there.
+
+BEST QUOTE
+"You're not prompting Claude — you're directing an agent. That distinction is everything."
+
+---
+
+## [Every Level of a Claude Second Brain Explained](https://www.youtube.com/watch?v=DTCyvo6cC54)
+*June 17, 2026*
+
+WHAT IT'S ABOUT
+Nate walks through all 5 levels of a Claude second brain using his real Herk2 project as the example. The design principle: find the lowest level that actually solves your pain. Most people should stop at Level 2.
+
+THE KEY POINTS
+- **Level 1 — CLAUDE.md router:** one structured markdown file with core context; eliminates 80% of "it forgot my preferences" problems
+- **Level 2 — Wiki system:** folder of markdown files by domain (clients, projects, processes); CLAUDE.md routes agent to the right page
+- **Level 3 — Semantic search + vector database:** search hundreds of documents by meaning, not filename
+- **Level 4 — Knowledge graph:** entities and relationships explicitly mapped; surfaces non-obvious connections
+- **Level 5 — Always-on autonomous system:** monitors inputs, updates itself, proactively surfaces relevant info
+- **Key design rule:** climb only as high as your pain demands — premature complexity is a maintenance burden
+
+HOW THIS APPLIES TO AI REAL ESTATE
+Client context (preferences, market knowledge, active deals, vendor relationships) is exactly what second brains are built for. A Level 2 wiki with a file per client means every agent session starts fully briefed — zero re-explanation time, and you can hand off tasks to Claude (or a subcontractor) with no briefing document needed.
+
+ACTION STEP THIS WEEK
+Build a Level 1 second brain: write three sections in your CLAUDE.md — (1) "My Business" one paragraph, (2) "Active Clients" one bullet per client, (3) "My Rules" 5-10 preferences Claude should always follow. Test it in a fresh session.
+
+BEST QUOTE
+"The goal isn't to build the smartest possible brain. It's to build the simplest one that makes your agent stop asking questions it should already know the answer to."
+
+---
+
+## [We Might Actually Need to Stop AI](https://www.youtube.com/watch?v=CvA8-aScqio)
+*June 16, 2026*
+
+WHAT IT'S ABOUT
+Nate's most unusual recent video — a candid reflection on whether AI is accelerating faster than governance structures can manage. From a channel dedicated to AI automation, the title is deliberately provocative. This is a response to the intensifying AI safety conversation in mid-2026.
+
+THE KEY POINTS
+- **The concern is governance, not capability:** AI works — the question is whether deployment is outrunning the institutions and norms needed to oversee it
+- **Credibility comes from his builder track record:** safety concerns from someone who uses these tools daily carry real weight — he sees the capability-oversight gap firsthand
+- **Practical implication is human-in-the-loop design:** building AI systems that flag decisions for human review on high-stakes outcomes is both ethical and good risk management
+- **Dual audience purpose:** builds trust with viewers anxious about AI while reinforcing the case for thoughtful, structured adoption — exactly what his course teaches
+
+HOW THIS APPLIES TO AI REAL ESTATE
+Real estate is high-stakes — wrong AI advice can cost a client tens of thousands. Your differentiation from pure AI-tool vendors is the responsible consulting model: AI assists, flags, and drafts; you review, decide, and sign off. Emphasize human checkpoints on every consequential output. This makes your deployments sustainable and defensible when something goes wrong.
+
+ACTION STEP THIS WEEK
+Audit one deployed system. Find the single point where an AI output could cause the most harm if wrong. Add one explicit human review step there if one doesn't exist. Document it in your system spec.
+
+BEST QUOTE
+"The people who should be most concerned about unguided AI are the people who actually use it every day — because they're the ones who see what it gets wrong."
