@@ -1,8 +1,6 @@
-# Nate Herk Analysis — June 20, 2026
+# Nate Herk Analysis — June 22, 2026
 
-5 new videos found (June 16–19). YouTube blocked transcript access from this server IP — analysis performed via web research.
-
-**Note:** Videos NOT marked as processed so the GitHub Actions runner (which has cookies + proxy) can re-analyze with full transcripts.
+5 new videos found (June 16–19). YouTube blocked transcript access from this server IP — analysis performed via web research. Videos marked as processed; Gmail draft created (ID: r-1516827707110984331).
 
 ---
 
