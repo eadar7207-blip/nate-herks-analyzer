@@ -1,27 +1,25 @@
-# Run 2026-06-24 05:54 UTC
+# Run 2026-06-24 08:47 UTC
 ```
 === RSS probe ===
-HTTP 404 size=1613
-<!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 404 (Not Found)!!1</title>
-  <style>
-    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
+HTTP 200 size=40043
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
+ <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
+ <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
+ <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-24T05:54:40.770110
+⏰ Time: 2026-06-24T08:47:38.524386
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
-   🔄 Switching to yt-dlp for video discovery
-   ✅ yt-dlp returned 10 entries
-📺 Found 10 recent videos in feed
-   📅 GpSqBjW6hR4 published 2026-06-24 — NEW
-   📅 -zL_trhnQaI published 2026-06-24 — already processed
-   📅 EuzYhzB0vbI published 2026-06-24 — already processed
-   📅 2OD14-0cot4 published 2026-06-24 — already processed
-   📅 RzLV8sfFdMM published 2026-06-24 — already processed
+   RSS feed HTTP 200, 40043 bytes
+   ✅ RSS feed returned 15 entries
+📺 Found 15 recent videos in feed
+   📅 GpSqBjW6hR4 published 2026-06-23 — NEW
+   📅 -zL_trhnQaI published 2026-06-22 — already processed
+   📅 EuzYhzB0vbI published 2026-06-19 — already processed
+   📅 2OD14-0cot4 published 2026-06-19 — already processed
+   📅 RzLV8sfFdMM published 2026-06-18 — already processed
 📹 Found 1 new video(s)
 
 🔍 Analyzing: I Battle Tested Sakana Fugu's Fable Killer...
