@@ -1,4 +1,4 @@
-# Run 2026-06-25 20:54 UTC
+# Run 2026-06-25 22:13 UTC
 ```
 === RSS probe ===
 HTTP 200 size=38975
@@ -10,17 +10,17 @@ HTTP 200 size=38975
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-25T20:54:15.420107
+⏰ Time: 2026-06-25T22:13:03.650360
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 38975 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
    📅 iTY8Q449YNQ published 2026-06-25 — NEW
    📅 S2ME69hra-k published 2026-06-24 — NEW
-   📅 GpSqBjW6hR4 published 2026-06-23 — NEW
+   📅 GpSqBjW6hR4 published 2026-06-23 — already processed
    📅 -zL_trhnQaI published 2026-06-22 — already processed
    📅 EuzYhzB0vbI published 2026-06-19 — already processed
-📹 Found 3 new video(s)
+📹 Found 2 new video(s)
 
 🔍 Analyzing: I asked Claude Code to make me as much money as po...
    🔑 Using YouTube cookies (2995 chars)
@@ -37,16 +37,5 @@ HTTP 200 size=38975
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] S2ME69hra-k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
-
-🔍 Analyzing: I Battle Tested Sakana Fugu's Fable Killer...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=GpSqBjW6hR4: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ✅ yt-dlp transcript (15162 chars)
-✅ Analysis complete
-❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 5a478bee46e88-30c944999adsm3161171eec.24 - gsmtp')
-📄 Saved latest_analysis.md
-
-✅ Processing complete - 1 video(s) analyzed
+⚠️  No videos were successfully analyzed
 ```
