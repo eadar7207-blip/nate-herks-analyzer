@@ -1,38 +1,44 @@
-# Nate Herk Analysis — June 23, 2026
+# Nate Herk Analysis — June 25, 2026
 
-1 new video found (June 23). YouTube blocked transcript access from this server IP — analysis performed via web research. Video marked as processed; Gmail draft created (ID: r-6952402638459481883).
+## [I Battle Tested Sakana Fugu's Fable Killer](https://www.youtube.com/watch?v=GpSqBjW6hR4)
+*June 23 at 12:26 AM*
 
----
+# WHAT IT'S ABOUT
 
-## [So You Learned Claude, Now What?](https://www.youtube.com/watch?v=-zL_trhnQaI)
-*June 23, 2026*
+Nate made this video to test out a brand-new AI tool called **Sakana Fugu** (made by a Japanese company — "Sakana" means fish). The big claim is that Fugu matches the performance of top-tier AI models without being one single super-smart model itself. Instead, it's a clever system that takes your request, splits it into pieces, and hands each piece to the AI model that's best at that specific job. Nate ran it through 38 tests against Claude Opus (a leading AI model from Anthropic) to see if it actually lives up to the hype.
 
-WHAT IT'S ABOUT
-Nate addresses the natural next question after learning Claude: what do you actually do with it? He argues there are two distinct roads — independent consulting vs. internal employment — and that the path you pick matters far less than whether you understand what's worth building in the first place. A positioning and career-strategy video, not a tech tutorial.
+# THE KEY POINTS
 
-THE KEY POINTS
-- **The underlying skill beats the specific path:** tools change constantly, but the person who identifies what's worth building retains value no matter what platform dominates next
-- **Two roads, not one:** Path A = go independent, take clients, build an agency; Path B = become the most AI-fluent person at your current company and get promoted/hired for it
-- **The audit is the product:** Nate's consulting framework starts with a paid AI opportunity audit (~$5k), then a full implementation roadmap ($20k–$100k)
-- **Agency scales with team, not just skills:** beyond a certain point, growth requires hiring developers and sales support — the bottleneck shifts from ability to relationships and brand
-- **The roadmap is the same on both roads:** identify what's worth automating → build it → prove the ROI → productize the skill as a service or internal leverage
+- **Fugu is not one giant smart AI — it's a "multi-agent system delivered as one model," meaning it's a single tool that secretly coordinates several different AI models behind the scenes.** You send your request to one place, and it routes the work to the best model for each task.
 
-THE METHOD OR FRAMEWORK
-The Two Roads:
-1. Path A — Agency: go independent → audit clients → charge for the audit → implement the plan → hire to scale past $1M/year
-2. Path B — Employment: become the most AI-fluent person at your company → take on AI projects internally → get promoted or headhunted for that skill
+- The way it works is simple: a small "manager" model breaks your task into parts, then hands each part to a specialist. **For example, it might use Claude for writing, GPT for coding and fixing bugs, and Gemini for research and facts.**
 
-Core principle: the person who can figure out what's worth building (not just how to build it) wins in either direction.
+- **This idea is nothing new — Nate stresses that each AI model is good at one specific thing, and the real magic is chaining their outputs together.** Fugu just automates the hand-offs so you don't have to manage them yourself.
 
-HOW THIS APPLIES TO AI REAL ESTATE
-Real estate is a perfect test case for Nate's "figure out what's worth building" principle. There's no shortage of things you could automate, but the valuable consultant is the one who knows which automations actually move the needle — lead qualification, follow-up sequences, market analysis — versus impressive demos that don't change revenue. Nate's paid audit model maps directly: charge $2,500–5,000 for an AI opportunity audit of a real estate firm, then $15k–50k to build the highest-value workflows. The audit is also the best sales tool — it surfaces exactly what they need before you quote the implementation.
+- Nate gave it one big prompt and after almost an hour it built him a full YouTube dashboard (a screen showing his channel stats) with live data, AI analysis, and recommendations — all from a single command.
 
-ACTION STEP THIS WEEK
-Build a one-page "AI Opportunity Audit" template for real estate businesses with three sections: (1) top 5 time drains in the business, (2) which can be automated with current tools, (3) estimated monthly time/cost savings for each. Package this as a paid deliverable priced at $2,500. Use it in your next prospect conversation instead of a free discovery call.
+- **It's different from another similar tool (Open Router's Fusion API), which sends your prompt to three models at once and then picks the best blend — whereas Fugu actually splits up the task and assigns pieces.** Both approaches tend to give better results because you get multiple AI "perspectives."
 
-BEST QUOTE
-"The tools keep changing. The person who can figure out what's worth building doesn't."
+- **The big downside is cost and speed — getting multiple AIs involved is expensive and slower.** Nate burned through his $200/month plan fast, hitting 34% of his weekly limit in just one 5-hour session.
 
----
+# THE METHOD OR FRAMEWORK
 
-*Previous session (June 22): 5 videos analyzed — Agent Loops, GLM 5.2, Effective Agents, Claude Second Brain, AI Safety. See archived analysis in git history.*
+Nate explains the "orchestration" idea (the system of deciding which AI does what) as boiling down to two simple questions:
+
+1. **Who does each part?** If you have a big job with tasks A, B, and C, the system decides which AI model handles each one — sending the writing to one model, the coding to another, and so on.
+
+2. **How do we combine everything?** Once each model finishes its piece, another AI (a "language model," meaning an AI that understands and produces text) stitches all the answers together and gives you one clean final result.
+
+He also describes a spectrum of control: on one end, *you* manually decide who does what; on the other end, a tool like Fugu does all that deciding automatically for you.
+
+# HOW THIS APPLIES TO AI REAL ESTATE
+
+The core lesson here — that **each AI is good at one narrow job, and you get the best results by routing tasks to the right specialist** — is exactly how you'd build smart tools for a real estate business. Imagine you build an AI system for a real estate agent that handles incoming leads. Instead of using one AI for everything, you'd route tasks: one model writes warm, friendly follow-up emails to buyers; another pulls and analyzes neighborhood market data and pricing; another drafts the property listing descriptions; and a final one reviews everything for accuracy before it goes out. You don't necessarily need an expensive all-in-one tool like Fugu — you can build this delegation yourself and keep costs low. The takeaway for your consulting clients: don't pay for fancy "do-everything" AI when you can chain together cheaper, specialized steps that each do one thing extremely well.
+
+# ACTION STEP THIS WEEK
+
+Pick one repeatable task in a real estate workflow — for example, turning raw property details into a finished listing. This week, break that task into 2–3 clear sub-steps (1: write the description, 2: fact-check the details, 3: format for posting). Then test running each step through a *different* AI model and compare the final result against using one model for the whole thing. Write down which combination gave the cleanest output. This gives you a concrete, tested example to show clients.
+
+# BEST QUOTE
+
+"Each AI does one thing really well, one very specific thing, and that is how you achieve great results by chaining those outputs into the next."
