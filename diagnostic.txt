@@ -1,7 +1,7 @@
-# Run 2026-06-25 16:12 UTC
+# Run 2026-06-25 18:59 UTC
 ```
 === RSS probe ===
-HTTP 200 size=38869
+HTTP 200 size=38861
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,9 +10,9 @@ HTTP 200 size=38869
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-25T16:12:17.038992
+⏰ Time: 2026-06-25T18:59:10.793900
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 38869 bytes
+   RSS feed HTTP 200, 38861 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
    📅 S2ME69hra-k published 2026-06-24 — NEW
@@ -22,7 +22,7 @@ HTTP 200 size=38869
    📅 2OD14-0cot4 published 2026-06-19 — already processed
 📹 Found 2 new video(s)
 
-🔍 Analyzing: Two AI Events I Want You At This Summer...
+🔍 Analyzing: Why Watching AI Videos Isn't Enough...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=S2ME69hra-k: RequestBlocked: youtube_transcript_api._errors
