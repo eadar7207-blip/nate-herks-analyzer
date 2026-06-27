@@ -1,4 +1,4 @@
-# Run 2026-06-27 12:03 UTC
+# Run 2026-06-27 14:20 UTC
 ```
 === RSS probe ===
 HTTP 200 size=38977
@@ -10,7 +10,7 @@ HTTP 200 size=38977
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-27T12:03:21.298252
+⏰ Time: 2026-06-27T14:20:23.779243
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 38977 bytes
    ✅ RSS feed returned 15 entries
@@ -33,7 +33,7 @@ HTTP 200 size=38977
 🔍 Analyzing: Why Watching AI Videos Isn't Enough...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=S2ME69hra-k: YouTubeRequestFailed: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=S2ME69hra-k: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] S2ME69hra-k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
