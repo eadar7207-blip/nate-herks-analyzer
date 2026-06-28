@@ -1,7 +1,7 @@
-# Run 2026-06-28 06:17 UTC
+# Run 2026-06-28 09:49 UTC
 ```
 === RSS probe ===
-HTTP 200 size=38977
+HTTP 200 size=38979
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,32 +10,15 @@ HTTP 200 size=38977
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-28T06:17:13.905248
+⏰ Time: 2026-06-28T09:49:15.965319
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 38977 bytes
+   RSS feed HTTP 200, 38979 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
-   📅 iTY8Q449YNQ published 2026-06-25 — NEW
-   📅 S2ME69hra-k published 2026-06-24 — NEW
+   📅 iTY8Q449YNQ published 2026-06-25 — already processed
+   📅 S2ME69hra-k published 2026-06-24 — already processed
    📅 GpSqBjW6hR4 published 2026-06-23 — already processed
    📅 -zL_trhnQaI published 2026-06-22 — already processed
    📅 EuzYhzB0vbI published 2026-06-19 — already processed
-📹 Found 2 new video(s)
-
-🔍 Analyzing: I asked Claude Code to make me as much money as po...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=iTY8Q449YNQ: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] iTY8Q449YNQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Why Watching AI Videos Isn't Enough...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=S2ME69hra-k: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] S2ME69hra-k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+✨ No new videos to analyze
 ```
