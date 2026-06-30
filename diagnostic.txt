@@ -1,4 +1,4 @@
-# Run 2026-06-29 23:47 UTC
+# Run 2026-06-30 01:55 UTC
 ```
 === RSS probe ===
 HTTP 200 size=38960
@@ -10,16 +10,17 @@ HTTP 200 size=38960
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-06-29T23:47:30.398759
+⏰ Time: 2026-06-30T01:55:07.581687
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 38960 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 Tj3018n5MVg published 2026-06-29 — NEW
-   📅 iTY8Q449YNQ published 2026-06-25 — already processed
-   📅 S2ME69hra-k published 2026-06-24 — already processed
-   📅 GpSqBjW6hR4 published 2026-06-23 — already processed
-   📅 -zL_trhnQaI published 2026-06-22 — already processed
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 Tj3018n5MVg published 2026-06-30 — NEW
+   📅 iTY8Q449YNQ published 2026-06-30 — already processed
+   📅 S2ME69hra-k published 2026-06-30 — already processed
+   📅 GpSqBjW6hR4 published 2026-06-30 — already processed
+   📅 -zL_trhnQaI published 2026-06-30 — already processed
 📹 Found 1 new video(s)
 
 🔍 Analyzing: Stanford's Method Turns Claude Into a PHD Level Re...
