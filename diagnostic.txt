@@ -1,27 +1,25 @@
-# Run 2026-07-01 06:59 UTC
+# Run 2026-07-01 10:40 UTC
 ```
 === RSS probe ===
-HTTP 404 size=1613
-<!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 404 (Not Found)!!1</title>
-  <style>
-    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
+HTTP 200 size=38961
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
+ <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
+ <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
+ <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-01T06:59:28.952063
+⏰ Time: 2026-07-01T10:40:49.331722
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
-   🔄 Switching to yt-dlp for video discovery
-   ✅ yt-dlp returned 10 entries
-📺 Found 10 recent videos in feed
-   📅 Tj3018n5MVg published 2026-07-01 — NEW
-   📅 iTY8Q449YNQ published 2026-07-01 — already processed
-   📅 S2ME69hra-k published 2026-07-01 — already processed
-   📅 GpSqBjW6hR4 published 2026-07-01 — already processed
-   📅 -zL_trhnQaI published 2026-07-01 — already processed
+   RSS feed HTTP 200, 38961 bytes
+   ✅ RSS feed returned 15 entries
+📺 Found 15 recent videos in feed
+   📅 Tj3018n5MVg published 2026-06-29 — NEW
+   📅 iTY8Q449YNQ published 2026-06-25 — already processed
+   📅 S2ME69hra-k published 2026-06-24 — already processed
+   📅 GpSqBjW6hR4 published 2026-06-23 — already processed
+   📅 -zL_trhnQaI published 2026-06-22 — already processed
 📹 Found 1 new video(s)
 
 🔍 Analyzing: Stanford's Method Turns Claude Into a PHD Level Re...
