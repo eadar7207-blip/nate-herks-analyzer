@@ -1,7 +1,7 @@
-# Run 2026-07-01 20:30 UTC
+# Run 2026-07-01 22:09 UTC
 ```
 === RSS probe ===
-HTTP 200 size=38794
+HTTP 200 size=38530
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=38794
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-01T20:30:46.726556
+⏰ Time: 2026-07-01T22:09:44.618740
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 38794 bytes
+   RSS feed HTTP 200, 38530 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 vcU85OrwuV0 published 2026-07-01 — NEW
    📅 Tj3018n5MVg published 2026-06-29 — NEW
    📅 iTY8Q449YNQ published 2026-06-25 — already processed
    📅 S2ME69hra-k published 2026-06-24 — already processed
    📅 GpSqBjW6hR4 published 2026-06-23 — already processed
-   📅 -zL_trhnQaI published 2026-06-22 — already processed
-📹 Found 1 new video(s)
+📹 Found 2 new video(s)
+
+🔍 Analyzing: How Anthropic Engineers Actually Prompt Fable 5...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=vcU85OrwuV0: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] vcU85OrwuV0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: Stanford's Method Turns Claude Into a PHD Level Re...
    🔑 Using YouTube cookies (2995 chars)
