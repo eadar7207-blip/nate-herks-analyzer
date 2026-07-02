@@ -1,3 +1,67 @@
+# Nate Herk Analysis — July 2, 2026
+
+## [6 Simple Rules That Change How Fable 5 Works](https://www.youtube.com/watch?v=vcU85OrwuV0)
+*July 2, 2026*
+
+# WHAT IT'S ABOUT
+
+Fable 5 is Anthropic's most capable model yet — and at 2× the price of Opus 4.8 ($10/$50 per million tokens), it's also the easiest to overspend on. Nate's six rules are designed to get Fable-level results without burning through budget before the free window closes July 7th. The central insight: most people use Fable 5 exactly like they used Sonnet, and that's where the waste happens.
+
+# THE KEY POINTS
+
+- **Effort level is the biggest cost lever — not model choice.** The `/effort` parameter (low → medium → high → xhigh → max) controls reasoning turns. Max effort uses roughly 6× the turns of low effort — a swing larger than the entire Sonnet-to-Opus price gap.
+- **Give Fable 5 the right context upfront.** It front-loads reasoning on the first pass. Sparse context wastes expensive turns on clarifying questions. Front-load with role, goal, constraints, and format.
+- **Fable 5 finishes faster than you expect** — often completing in fewer turns than a comparable Opus task, offsetting the 2× sticker price on the right jobs.
+- **Know when it quietly hands off to Opus.** Safeguard-flagged requests get rerouted to Opus 4.8 internally — at Opus rates, not Fable rates.
+- **The newer shared tokenizer produces up to 35% more tokens per the same text** vs pre-Opus-4.7 models — factor this into client cost estimates.
+- **Use Fable 5 as an orchestrator, not a workhorse.** Put it in charge of the plan; let Sonnet 5 or Haiku execute sub-tasks.
+
+# HOW THIS APPLIES TO AI REAL ESTATE
+
+Use Fable 5 as an orchestrator for client engagement plans: strategy and task decomposition at Fable-level quality, execution (listing descriptions, follow-ups, CMAs) routed to Sonnet 5. Before July 7, run your most complex real estate workflow through Fable 5 at high effort to establish a quality baseline for client pitching.
+
+# ACTION STEP THIS WEEK
+
+Before July 7 (free window closes), pick your most complex real estate workflow. Run it through Fable 5 at `/effort high`, then again through Opus 4.8. Compare quality and token cost. You'll have a concrete data point for when Fable 5 is worth paying for — and can build it into your client pricing model.
+
+# BEST QUOTE
+
+"Fable 5 is strong, but it's double the price of Opus, and it's only free on Claude plans through July 7 — these are the rules that keep your costs in check."
+
+---
+
+## [Stanford's Method Turns Claude Into a PHD Level Research Team](https://www.youtube.com/watch?v=Tj3018n5MVg)
+*July 2, 2026*
+
+# WHAT IT'S ABOUT
+
+Nate introduces the Stanford STORM method (from NAACL 2024 — a top academic NLP conference) and packages it as a free Claude Code skill. STORM runs a topic through five expert mindsets, maps where they disagree, then synthesizes a fully cited briefing — in about 5 minutes. Peer-reviewed testing showed this approach produces outputs 25% more organized than the next best method. Nate benchmarks it head-to-head against Claude Code's built-in Deep Research.
+
+# THE METHOD OR FRAMEWORK
+
+STORM works as a 4-prompt sequence:
+
+1. **Multi-Perspective Scan** — Spin up five expert lenses: The Practitioner (daily experience), The Academic (peer-reviewed evidence), The Skeptic (counterarguments), The Economist (financial incentives), The Historian (precedent). Each delivers its own position, evidence, and unique insights.
+2. **Contradiction Map** — Find where those five voices conflict. "The fights are where real understanding lives." Surfaces which perspective has the strongest evidence, what remains genuinely unresolved, and what blind spots the entire field shares.
+3. **Synthesis** — Consolidate into a briefing: executive summary, ranked key findings, hidden connections, actionable insights, frontier questions.
+4. **Peer Review** — Claude critiques its own output: confidence scores per claim, flags weak assertions, overall reliability grade.
+
+The entire sequence completes in ~5 minutes vs 40–60 hours of human research.
+
+# HOW THIS APPLIES TO AI REAL ESTATE
+
+When a client asks "should I buy in this neighborhood?", a single Claude prompt gives one perspective. STORM gives five — practitioner (agent on the ground), academic (market research), skeptic (what could go wrong), economist (interest rate dynamics), historian (what happened in 2008, 2020) — then synthesizes them into a defensible recommendation. The "peer review" step is especially valuable: it flags claims Claude isn't confident in, giving client deliverables built-in uncertainty disclosure. No competing agent produces this.
+
+# ACTION STEP THIS WEEK
+
+Install Nate's free STORM Claude Code skill (linked in video description). Pick a real estate market question you hear often — e.g., "Is [your city] a buyer's or seller's market right now?" Run the full 4-prompt STORM sequence. Save the output as a PDF. You now have a demo to show any potential client as proof of your AI consulting's research quality.
+
+# BEST QUOTE
+
+"This one skill instantly levels up Claude's ability to research — it runs five expert brains on your topic, maps where they fight, and hands you a briefing no single prompt can touch."
+
+---
+
 # Nate Herk Analysis — June 28, 2026
 
 ## [I asked Claude Code to make me as much money as possible](https://www.youtube.com/watch?v=iTY8Q449YNQ)
