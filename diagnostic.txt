@@ -1,4 +1,4 @@
-# Run 2026-07-05 01:29 UTC
+# Run 2026-07-05 05:50 UTC
 ```
 === RSS probe ===
 HTTP 200 size=38009
@@ -10,7 +10,7 @@ HTTP 200 size=38009
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-05T01:29:31.512769
+⏰ Time: 2026-07-05T05:49:57.619609
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 38009 bytes
    ✅ RSS feed returned 15 entries
@@ -25,7 +25,7 @@ HTTP 200 size=38009
 🔍 Analyzing: Fable 5 + Karpathy’s LLM Wiki is Basically Cheatin...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=hQvwMj7IJe4: IpBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=hQvwMj7IJe4: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] hQvwMj7IJe4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
@@ -33,7 +33,7 @@ HTTP 200 size=38009
 🔍 Analyzing: How Claude is Creating a New Generation of Million...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=pbrln2TVeh4: IpBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=pbrln2TVeh4: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] pbrln2TVeh4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
