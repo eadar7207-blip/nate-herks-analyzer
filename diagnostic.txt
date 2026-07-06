@@ -1,4 +1,4 @@
-# Run 2026-07-06 06:12 UTC
+# Run 2026-07-06 08:17 UTC
 ```
 === RSS probe ===
 HTTP 200 size=38009
@@ -10,32 +10,15 @@ HTTP 200 size=38009
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-06T06:12:16.588732
+⏰ Time: 2026-07-06T08:17:53.960992
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 38009 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
-   📅 hQvwMj7IJe4 published 2026-07-03 — NEW
-   📅 pbrln2TVeh4 published 2026-07-03 — NEW
+   📅 hQvwMj7IJe4 published 2026-07-03 — already processed
+   📅 pbrln2TVeh4 published 2026-07-03 — already processed
    📅 vcU85OrwuV0 published 2026-07-01 — already processed
    📅 Tj3018n5MVg published 2026-06-29 — already processed
    📅 iTY8Q449YNQ published 2026-06-25 — already processed
-📹 Found 2 new video(s)
-
-🔍 Analyzing: Fable 5 + Karpathy’s LLM Wiki is Basically Cheatin...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=hQvwMj7IJe4: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] hQvwMj7IJe4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: How Claude is Creating a New Generation of Million...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=pbrln2TVeh4: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] pbrln2TVeh4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+✨ No new videos to analyze
 ```
