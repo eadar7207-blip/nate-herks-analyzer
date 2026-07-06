@@ -100,6 +100,43 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Send analysis email (if new content)
+        env:
+          EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+        run: |
+          # Send email when latest_analysis.md was updated this run OR
+          # when it hasn't been emailed yet (sha mismatch with .last_emailed_sha).
+          CURRENT_SHA=$(git log -1 --format="%H" -- latest_analysis.md 2>/dev/null || echo "")
+          LAST_SHA=$(cat .last_emailed_sha 2>/dev/null || echo "")
+          if [ -n "$CURRENT_SHA" ] && [ "$CURRENT_SHA" != "$LAST_SHA" ]; then
+            echo "New analysis detected (sha $CURRENT_SHA vs last $LAST_SHA) — sending email"
+            python send_analysis_email.py && echo "$CURRENT_SHA" > .last_emailed_sha
+          else
+            echo "Analysis unchanged since last email — skipping"
+          fi
+
+      - name: Commit email-sent marker
+        run: |
+          git config user.name "nate-herks-analyzer[bot]"
+          git config user.email "nate-herks-analyzer[bot]@users.noreply.github.com"
+          if [ -f .last_emailed_sha ]; then
+            git add .last_emailed_sha
+            if git diff --cached --quiet; then
+              echo "Nothing to commit"
+            else
+              git commit -m "chore: update email-sent marker [skip ci]"
+              for attempt in 1 2 3; do
+                git push && break
+                echo "Push attempt $attempt failed, rebasing..."
+                git pull --rebase origin main
+              done
+            fi
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Upload cache
         if: always()
         uses: actions/upload-artifact@v4
