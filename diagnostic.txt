@@ -1,7 +1,7 @@
-# Run 2026-07-08 21:54 UTC
+# Run 2026-07-08 22:51 UTC
 ```
 === RSS probe ===
-HTTP 200 size=37978
+HTTP 200 size=37912
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,15 +10,24 @@ HTTP 200 size=37978
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-08T21:54:46.241620
+⏰ Time: 2026-07-08T22:51:13.206729
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 37978 bytes
+   RSS feed HTTP 200, 37912 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 R0qF17BVl9w published 2026-07-08 — NEW
    📅 XTBWVVcF3Pk published 2026-07-07 — already processed
    📅 hQvwMj7IJe4 published 2026-07-03 — already processed
    📅 pbrln2TVeh4 published 2026-07-03 — already processed
    📅 vcU85OrwuV0 published 2026-07-01 — already processed
-   📅 Tj3018n5MVg published 2026-06-29 — already processed
-✨ No new videos to analyze
+📹 Found 1 new video(s)
+
+🔍 Analyzing: Fable 5 Just Built Me a Business With One Prompt...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=R0qF17BVl9w: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] R0qF17BVl9w: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
+⚠️  No videos were successfully analyzed
 ```
