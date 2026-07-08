@@ -1,4 +1,4 @@
-# Run 2026-07-08 07:18 UTC
+# Run 2026-07-08 10:02 UTC
 ```
 === RSS probe ===
 HTTP 200 size=37978
@@ -10,24 +10,15 @@ HTTP 200 size=37978
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-08T07:18:50.147632
+⏰ Time: 2026-07-08T10:02:11.062117
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 37978 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
-   📅 XTBWVVcF3Pk published 2026-07-07 — NEW
+   📅 XTBWVVcF3Pk published 2026-07-07 — already processed
    📅 hQvwMj7IJe4 published 2026-07-03 — already processed
    📅 pbrln2TVeh4 published 2026-07-03 — already processed
    📅 vcU85OrwuV0 published 2026-07-01 — already processed
    📅 Tj3018n5MVg published 2026-06-29 — already processed
-📹 Found 1 new video(s)
-
-🔍 Analyzing: How I Make Opus Think Like Fable (5 easy steps)...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=XTBWVVcF3Pk: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] XTBWVVcF3Pk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+✨ No new videos to analyze
 ```
