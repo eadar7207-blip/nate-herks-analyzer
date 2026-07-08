@@ -1,3 +1,49 @@
+# Nate Herk Analysis — July 8, 2026
+
+## [How I Make Opus Think Like Fable (5 easy steps)](https://www.youtube.com/watch?v=XTBWVVcF3Pk)
+*July 7, 2026*
+
+# WHAT IT'S ABOUT
+
+Fable 5 costs twice as much as Opus 4.8, but Nate discovered that most of what makes Fable 5 feel smarter isn't in the model — it's in how it structures its reasoning. This video shows how to extract that reasoning pattern into a reusable Claude Code skill called "Fable Mode," so Opus 4.8 follows the same staged execution discipline as Fable 5. The result: Fable-quality outputs at half the price. He also walks through how to actually use effort levels and how to build a simple model routing table so each tier of model handles only the work it's priced for.
+
+# THE KEY POINTS
+
+- **The 5 gates are: Scope → Evidence → Attack → Verify → Report.** Each gate forces the model to complete one phase before moving to the next, eliminating the most common AI failure mode: diving into execution before the problem is defined.
+- **Scope first, always.** The #1 reason AI outputs fail isn't capability — it's starting with the wrong problem definition. Scope forces the model to state what it's solving and what's out of scope before touching the task.
+- **Evidence forces grounding before action.** Rather than reasoning from memory or guesses, the model must gather and cite its sources before forming conclusions — a habit Fable 5 has built in, which you can now install into Opus.
+- **Verify can actually fail.** Unlike a soft "does this look right?" check, the Verify gate tests output against the success criteria from the Scope gate — it's binary pass/fail, not a subjective review.
+- **The model routing table is the cost control layer.** Fable 5 for complex orchestration → Opus 4.8 + Fable Mode for deep single tasks → Sonnet 5 for standard execution → Haiku for high-volume repetitive work. Each tier only handles work it's priced for.
+- **This is a skill, not a prompt.** Install it once as a Claude Code slash command or CLAUDE.md rule and it applies automatically to every future task.
+
+# THE METHOD OR FRAMEWORK
+
+Step 1 — **Scope**: Before touching the task, write out what you're solving, what counts as success, and what is explicitly out of scope.
+
+Step 2 — **Evidence**: Gather the information, data, or context needed. The model doesn't guess or rely on training memory — it finds it.
+
+Step 3 — **Attack**: Execute using only the scoped definition and gathered evidence. No freelancing beyond the scope.
+
+Step 4 — **Verify**: Test the output against the success criteria from Step 1. Binary — pass or fail. If it fails, loop back to Evidence or Attack.
+
+Step 5 — **Report**: Deliver the result with references to the evidence used and a clear statement of what was solved vs. what was out of scope.
+
+Installation: search GitHub for "fable-mode claude skill" — it's a single markdown file you add to your Claude Code skills directory.
+
+# HOW THIS APPLIES TO AI REAL ESTATE
+
+Real estate analysis is exactly where models go wrong by skipping the Scope step. "What's a good price for this neighborhood?" produces generic answers unless you force scoping first: which city, which price tier, which property type, what comparison period, what's the client's exit strategy. Install Fable Mode in your real estate workflow and run every CMA through it: Scope the property analysis (neighborhood, bed/bath count, sold-in-90-days comparable criteria), Evidence (pull comps, days-on-market, price-per-sqft trends), Attack (run the valuation), Verify (does the recommendation match the comps — pass or fail?), Report (deliver to client with source citations). You now have a repeatable, auditable process for every CMA — and because it runs on Opus 4.8 instead of Fable 5, you're cutting your AI costs in half on every engagement.
+
+# ACTION STEP THIS WEEK
+
+Search GitHub for "fable-mode claude skill" (or "mrtooher/fable-mode"). Download the skill markdown file. Add it to your Claude Code skills directory. Run your next CMA through it with this Scope: "Find comparable 3-bed properties in [target neighborhood] sold in the last 90 days, within 10% of [target price]. Success = at least 3 valid comps with price/sqft variance under 15%." Compare the output to your usual approach. The structure alone will catch gaps you'd normally miss.
+
+# BEST QUOTE
+
+"Fable 5 is strong, but it's double the price of Opus — and most of what makes it feel smarter isn't in the model weights, it's in how it structures its reasoning. You can install that structure yourself."
+
+---
+
 # Nate Herk Analysis — July 6, 2026
 
 ## [Fable 5 + Karpathy's LLM Wiki is Basically Cheating](https://www.youtube.com/watch?v=hQvwMj7IJe4)
