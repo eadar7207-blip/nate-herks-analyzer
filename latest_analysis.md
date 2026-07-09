@@ -1,3 +1,36 @@
+# Nate Herk Analysis — July 9, 2026
+
+## [Fable 5 Just Built Me a Business With One Prompt](https://www.youtube.com/watch?v=R0qF17BVl9w)
+*July 8, 2026*
+
+WHAT IT'S ABOUT
+Nate demonstrates the /goal command in Claude Code — a single instruction that lets Fable 5 (Claude's most capable model) work entirely on its own from start to finish. He gave Fable 5 one high-level prompt to build a business, left to go to the gym, and came back to find the whole thing complete — landing page copy, business structure, a demo video, and even sound effects. The video is a live proof-of-concept showing what "autonomous AI" actually looks like in practice, not just in theory.
+
+THE KEY POINTS
+- **The /goal command turns Fable 5 into an autonomous agent.** You give it one high-level objective — "build me a business" — and it plans sub-tasks, executes each one, checks its own output, and delivers a finished result. You don't type another word.
+- **One prompt, complete output.** Nate didn't give follow-up instructions. Fable 5 broke the goal down itself, decided what to build, built it, and produced a deliverable — including sound effects for a video.
+- **The bottleneck is no longer execution — it's deciding what to build.** When one prompt generates a full business output, the skill that matters is knowing which goal to give the model, not how to operate it step by step.
+- **Fable 5 is still free on Claude plans through July 12.** Running /goal experiments now costs nothing — that window closes in days.
+- **This is the "go to the gym" workflow.** Start the task, leave, come back to a deliverable. It's the closest thing to delegation without hiring anyone.
+
+THE METHOD OR FRAMEWORK
+Step 1 — Write one complete goal prompt: what you want built, who it's for, what "done" looks like, and any hard constraints. Front-load everything — the more specific the goal, the tighter the output.
+
+Step 2 — Type /goal [your prompt] in Claude Code with Fable 5 active. The model takes over: it plans sub-tasks, executes each one, reviews its own work, and loops until the goal is satisfied.
+
+Step 3 — Come back when it's done. Review the output, refine the goal if needed, and ship or iterate.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+The /goal workflow is exactly what an AI real estate business needs for high-leverage deliverables. Instead of walking Claude through each step of a market analysis, type: "/goal Build a buyer's market analysis for [neighborhood] — 90-day sold comps, price-per-sqft trends, days on market, and a 3-paragraph executive summary for a first-time buyer. Format as a client-ready email, 400 words." Come back to a finished report. That shifts your role from operator (typing prompts step by step) to director (deciding which reports to run and for whom). At scale: 10 client reports before lunch, each started with one prompt.
+
+ACTION STEP THIS WEEK
+Before July 12 (free Fable 5 closes): Open Claude Code, switch to Fable 5 with /model fable. Write one /goal prompt for a deliverable you produce repeatedly — a neighborhood overview, a buyer brief, a listing description set. Example: /goal Write a market snapshot for [your target neighborhood] — median price, days-on-market trend, inventory vs. last year, and 3 buyer talking points. Client email tone, 400 words. Run it. Save the output as your starter template. That one test run becomes your proof of concept to show the first client.
+
+BEST QUOTE
+"I gave it a /goal prompt, went to the gym, and came back to this. Even the sound effects."
+
+---
+
 # Nate Herk Analysis — July 8, 2026
 
 ## [How I Make Opus Think Like Fable (5 easy steps)](https://www.youtube.com/watch?v=XTBWVVcF3Pk)
