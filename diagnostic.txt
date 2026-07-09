@@ -1,7 +1,7 @@
-# Run 2026-07-09 14:20 UTC
+# Run 2026-07-09 17:09 UTC
 ```
 === RSS probe ===
-HTTP 200 size=37914
+HTTP 200 size=36601
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,15 +10,20 @@ HTTP 200 size=37914
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-09T14:20:17.565921
+⏰ Time: 2026-07-09T17:09:14.207910
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 37914 bytes
+   RSS feed HTTP 200, 36601 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 qH8qd4DgY7A published 2026-07-09 — NEW
    📅 R0qF17BVl9w published 2026-07-08 — already processed
    📅 XTBWVVcF3Pk published 2026-07-07 — already processed
    📅 hQvwMj7IJe4 published 2026-07-03 — already processed
    📅 pbrln2TVeh4 published 2026-07-03 — already processed
-   📅 vcU85OrwuV0 published 2026-07-01 — already processed
-✨ No new videos to analyze
+📹 Found 1 new video(s)
+
+🔍 Analyzing: This AI Builds Entire Apps For You...
+⚠️  Could not extract video ID from https://www.youtube.com/shorts/qH8qd4DgY7A
+⚠️  Could not get transcript
+⚠️  No videos were successfully analyzed
 ```
