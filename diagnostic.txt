@@ -1,7 +1,7 @@
-# Run 2026-07-11 16:38 UTC
+# Run 2026-07-11 17:43 UTC
 ```
 === RSS probe ===
-HTTP 200 size=35009
+HTTP 200 size=33818
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,21 @@ HTTP 200 size=35009
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-11T16:38:25.147961
+⏰ Time: 2026-07-11T17:43:03.668186
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 35009 bytes
+   RSS feed HTTP 200, 33819 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 4fKn9O-YhtI published 2026-07-11 — NEW
    📅 jdbOVepEtUE published 2026-07-11 — NEW
    📅 AZXV1zzuFuQ published 2026-07-11 — NEW
    📅 EthxaDswUFo published 2026-07-10 — NEW
    📅 J_jswzXhYJA published 2026-07-09 — NEW
-   📅 qH8qd4DgY7A published 2026-07-09 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: OpenArt Director: The New Way to Make AI Videos...
+⚠️  Could not extract video ID from https://www.youtube.com/shorts/4fKn9O-YhtI
+⚠️  Could not get transcript
 
 🔍 Analyzing: Claude Code for Normal People (6 Hour Course)...
    🔑 Using YouTube cookies (2995 chars)
@@ -48,10 +52,6 @@ HTTP 200 size=35009
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=J_jswzXhYJA: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] J_jswzXhYJA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: This AI Builds Entire Apps For You...
-⚠️  Could not extract video ID from https://www.youtube.com/shorts/qH8qd4DgY7A
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
