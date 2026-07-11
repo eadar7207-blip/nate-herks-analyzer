@@ -1,4 +1,4 @@
-# Run 2026-07-11 11:40 UTC
+# Run 2026-07-11 12:43 UTC
 ```
 === RSS probe ===
 HTTP 200 size=34175
@@ -10,7 +10,7 @@ HTTP 200 size=34175
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-11T11:40:14.400571
+⏰ Time: 2026-07-11T12:43:08.161374
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 34175 bytes
    ✅ RSS feed returned 15 entries
@@ -29,7 +29,7 @@ HTTP 200 size=34175
 🔍 Analyzing: I Tested GPT 5.6 Sol vs Fable 5. What You Need To ...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=EthxaDswUFo: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=EthxaDswUFo: IpBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] EthxaDswUFo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
@@ -37,7 +37,7 @@ HTTP 200 size=34175
 🔍 Analyzing: GPT 5.6 Sol Made This Entire Video...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=J_jswzXhYJA: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=J_jswzXhYJA: IpBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] J_jswzXhYJA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
