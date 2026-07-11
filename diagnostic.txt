@@ -1,7 +1,7 @@
-# Run 2026-07-10 23:43 UTC
+# Run 2026-07-11 01:14 UTC
 ```
 === RSS probe ===
-HTTP 200 size=35980
+HTTP 200 size=34173
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,21 @@ HTTP 200 size=35980
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-10T23:43:41.051905
+⏰ Time: 2026-07-11T01:14:12.973149
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 35980 bytes
+   RSS feed HTTP 200, 34173 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 AZXV1zzuFuQ published 2026-07-11 — NEW
    📅 EthxaDswUFo published 2026-07-10 — NEW
    📅 J_jswzXhYJA published 2026-07-09 — NEW
    📅 qH8qd4DgY7A published 2026-07-09 — NEW
    📅 R0qF17BVl9w published 2026-07-08 — already processed
-   📅 XTBWVVcF3Pk published 2026-07-07 — already processed
-📹 Found 3 new video(s)
+📹 Found 4 new video(s)
+
+🔍 Analyzing: ClickUp Brain2: The AI That Replaces All Your Soft...
+⚠️  Could not extract video ID from https://www.youtube.com/shorts/AZXV1zzuFuQ
+⚠️  Could not get transcript
 
 🔍 Analyzing: I Tested GPT 5.6 Sol vs Fable 5. What You Need To ...
    🔑 Using YouTube cookies (2995 chars)
