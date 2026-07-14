@@ -1,7 +1,7 @@
-# Run 2026-07-14 11:14 UTC
+# Run 2026-07-14 12:57 UTC
 ```
 === RSS probe ===
-HTTP 200 size=34063
+HTTP 200 size=34699
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=34063
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-14T11:14:04.436712
+⏰ Time: 2026-07-14T12:57:21.561244
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 34063 bytes
+   RSS feed HTTP 200, 34698 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 eFOTQpbGcy8 published 2026-07-14 — NEW
    📅 zyvdl__Ywfk published 2026-07-12 — NEW
    📅 4fKn9O-YhtI published 2026-07-11 — NEW
    📅 jdbOVepEtUE published 2026-07-11 — NEW
    📅 AZXV1zzuFuQ published 2026-07-11 — NEW
-   📅 EthxaDswUFo published 2026-07-10 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: The $200K AI Job That Didn't Exist Last Year...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=eFOTQpbGcy8: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] eFOTQpbGcy8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: Claude Code + Clay Makes Lead Generation Actually ...
    🔑 Using YouTube cookies (2995 chars)
@@ -44,14 +52,6 @@ HTTP 200 size=34063
 
 🔍 Analyzing: ClickUp Brain2: The AI That Replaces All Your Soft...
 ⚠️  Could not extract video ID from https://www.youtube.com/shorts/AZXV1zzuFuQ
-⚠️  Could not get transcript
-
-🔍 Analyzing: I Tested GPT 5.6 Sol vs Fable 5. What You Need To ...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=EthxaDswUFo: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] EthxaDswUFo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
