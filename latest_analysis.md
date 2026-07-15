@@ -1,3 +1,70 @@
+# Nate Herk Analysis — July 15, 2026
+
+## [What Codex 5.6 is amazing at!](https://www.youtube.com/watch?v=6osxCi89ET4)
+*July 11, 2026*
+
+WHAT IT'S ABOUT
+Nate ran GPT-5.6 Sol (the model powering OpenAI's Codex 5.6) head-to-head against Fable 5 (Claude's flagship model) on real work — browser games, interactive websites, open-ended builds, and quick API tasks. His verdict is clear: Fable 5 is the better manager and more creative model; Sol is a faster, cheaper worker that ships concrete tasks reliably at roughly half the price. The video shows which tool to reach for depending on the type of work, and includes a live content creation demo where Sol built a full YouTube video autonomously across multiple specialized tools.
+
+THE KEY POINTS
+- **Fable 5 wins at strategy and creative direction; Sol wins at speed and execution cost.** In a head-to-head browser bike game build: Fable 5 = 21:37, $14.22 vs Sol = 23:00, $4.50 — similar output quality, 3× the price difference.
+- **The real comparison is Sol vs Opus 4.8, not Sol vs Fable 5.** Both Sol and Opus 4.8 cost ~$5/million input tokens. Framing it as Sol vs Fable 5 sets up a false choice.
+- **Sol is best for tasks with a visible finish line** — browser interfaces, video processing, workflow automation, long-running builds where speed and token efficiency matter.
+- **The routing rule: Fable for ambiguity; Sol for execution.** Use a high-judgment model to define the product, acceptance criteria, and creative bar; use Sol to execute, run tools, inspect results, and close the gap.
+- **Content creation automation is production-ready.** Sol researched the GPT-5.6 launch, drafted a script in Nate's voice, generated audio via ElevenLabs, created an avatar via HeyGen, and edited with HyperFrames — all in one autonomous run.
+- **Parallel agents multiply machine spend fast.** Running Ultra + parallel agents for a short video cost ~$300. Track your token burn before you parallelize at scale.
+
+THE METHOD OR FRAMEWORK
+Step 1 — Define: Write the outcome, constraints, reference material, and acceptance tests before the model touches anything.
+Step 2 — Build: Let the model create a complete first pass without interruption. Don't micromanage the middle.
+Step 3 — Inspect: Run the app, watch the video, open the files, check logs. Observe real output before giving feedback.
+Step 4 — Feedback: Describe observable failures only. Don't debug for the model — show it what broke.
+Step 5 — Verify: Rerun tests and confirm the fix didn't create a regression.
+Step 6 — Stop: End when acceptance criteria pass or the budget is exhausted.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+The Fable/Sol routing table maps directly to a real estate AI consulting workflow. Use Fable 5 or Opus 4.8 to define and plan each deliverable: write the outcome, the comps criteria, what the client email should look like. Then hand the execution to Sol: pull the data, format the comps, write the draft. You get Fable-quality strategy at Sol execution costs. For content: run your weekly market update newsletter through Sol as the production model — it drafts in your voice, formats for email, and can generate a talking-head video via HeyGen if you wire up the tool chain. A full newsletter cycle could run autonomously for under $5.
+
+ACTION STEP THIS WEEK
+Pick one task you repeat weekly — a market update email, a listing description, a CMA summary. Write the Define step first: outcome, constraints, what "done" looks like. Save it as your task template. Run it once through Sol (GPT-5.6 in Codex) and once through Opus 4.8. Compare speed, cost, and output quality. You'll know within one test which model to route that task to permanently — and you'll have a reusable template to deploy every week with no setup.
+
+BEST QUOTE
+"Fable is the better manager and the more creative, capable model. Sol is a really good worker that ships fast and costs a fraction of the price."
+
+---
+
+## [Claude Code for Non-Coders (6 Hour Course)](https://www.youtube.com/watch?v=jdbOVepEtUE)
+*July 11, 2026*
+
+WHAT IT'S ABOUT
+Nate drops a free 6-hour course aimed directly at people who have never written code — agents, consultants, small business owners — who want to use Claude Code for real, repeatable work. The course builds from the very first prompt all the way to cloud automations that run while you sleep. Unlike a crash course, this is a complete curriculum with step-by-step builds, producing AI systems that actually do work for you by the end. The target learner is the business owner who finds every "beginner" AI resource still assumes you know how to code.
+
+THE KEY POINTS
+- **No coding required — this is built for the non-technical business owner.** Nate designed it for the real estate agent, the consultant, the entrepreneur who wants to use AI but can't get past the assumption that coding is a prerequisite.
+- **The progression is the curriculum:** First prompt → Skills → Sub-agents → Second Brain → Cloud Automations. Each stage makes the previous one more powerful.
+- **Skills (slash commands) are the first real leverage point.** One skill file turns a one-off prompt into a repeatable command that any future session can call in seconds. That's the shift from "using AI" to "operating AI."
+- **Sub-agents unlock parallelism without needing to manage it.** You define a high-level goal; the agent spawns and coordinates the execution. One prompt, many simultaneous outputs.
+- **A Second Brain persists your knowledge between sessions.** No more starting cold — the wiki stores everything the model needs across every future run.
+- **Cloud automations remove you from the operator role entirely.** Once built and scheduled, the workflow runs whether you're at your desk or not. This is the "go to the gym" principle applied to every recurring task.
+
+THE METHOD OR FRAMEWORK
+Stage 1 — First Prompt: Learn the anatomy of a good prompt — role, context, task, constraints, output format. One well-structured prompt beats ten vague ones every time.
+Stage 2 — Skills: Build slash commands for anything you repeat. /cma-report, /listing-description, /market-snapshot. Saves setup time and removes human error from recurring tasks.
+Stage 3 — Sub-agents: Define a goal at the top level; let sub-agents decompose and execute in parallel. Scales one person's throughput to a team's.
+Stage 4 — Second Brain: Feed your source material — CMAs, client notes, market research — and let Claude build a cross-linked wiki. Every future session draws from the wiki, not cold memory.
+Stage 5 — Cloud Automations: Wire the workflow into a scheduled process that triggers, runs, and delivers results with no human present.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+This course is the onboarding curriculum for an AI real estate consulting practice. Walk any agent client through these 5 stages with real estate examples and you've delivered a full consulting engagement: Stage 1 is their first CMA session. Stage 2 gives them a /cma-report skill they run in under a minute. Stage 3 lets one person manage 10 concurrent client analyses via sub-agents. Stage 4 builds a neighborhood knowledge base from 12 months of market data. Stage 5 runs a weekly market digest for every active client automatically. That's a productized service, not a one-off help session — and the 6-hour course is the free asset you use to pre-educate clients before they hire you.
+
+ACTION STEP THIS WEEK
+Start Stage 2 today: pick one task you do every week (neighborhood market summary, comp data pull, listing description). Write a markdown skill file that tells Claude exactly how to execute it — what inputs it needs, what format the output should take, what "done" looks like. Save it to your Claude Code skills directory. Next week, run /your-skill-name instead of writing the prompt from scratch. That one file is your first productizable deliverable — and the proof of concept you can show the next client.
+
+BEST QUOTE
+"By the end of this, you'll have AI systems that actually do work for you — not tools you have to babysit."
+
+---
+
 # Nate Herk Analysis — July 9, 2026
 
 ## [Fable 5 Just Built Me a Business With One Prompt](https://www.youtube.com/watch?v=R0qF17BVl9w)
@@ -28,199 +95,3 @@ Before July 12 (free Fable 5 closes): Open Claude Code, switch to Fable 5 with /
 
 BEST QUOTE
 "I gave it a /goal prompt, went to the gym, and came back to this. Even the sound effects."
-
----
-
-# Nate Herk Analysis — July 8, 2026
-
-## [How I Make Opus Think Like Fable (5 easy steps)](https://www.youtube.com/watch?v=XTBWVVcF3Pk)
-*July 7, 2026*
-
-# WHAT IT'S ABOUT
-
-Fable 5 costs twice as much as Opus 4.8, but Nate discovered that most of what makes Fable 5 feel smarter isn't in the model — it's in how it structures its reasoning. This video shows how to extract that reasoning pattern into a reusable Claude Code skill called "Fable Mode," so Opus 4.8 follows the same staged execution discipline as Fable 5. The result: Fable-quality outputs at half the price. He also walks through how to actually use effort levels and how to build a simple model routing table so each tier of model handles only the work it's priced for.
-
-# THE KEY POINTS
-
-- **The 5 gates are: Scope → Evidence → Attack → Verify → Report.** Each gate forces the model to complete one phase before moving to the next, eliminating the most common AI failure mode: diving into execution before the problem is defined.
-- **Scope first, always.** The #1 reason AI outputs fail isn't capability — it's starting with the wrong problem definition. Scope forces the model to state what it's solving and what's out of scope before touching the task.
-- **Evidence forces grounding before action.** Rather than reasoning from memory or guesses, the model must gather and cite its sources before forming conclusions — a habit Fable 5 has built in, which you can now install into Opus.
-- **Verify can actually fail.** Unlike a soft "does this look right?" check, the Verify gate tests output against the success criteria from the Scope gate — it's binary pass/fail, not a subjective review.
-- **The model routing table is the cost control layer.** Fable 5 for complex orchestration → Opus 4.8 + Fable Mode for deep single tasks → Sonnet 5 for standard execution → Haiku for high-volume repetitive work. Each tier only handles work it's priced for.
-- **This is a skill, not a prompt.** Install it once as a Claude Code slash command or CLAUDE.md rule and it applies automatically to every future task.
-
-# THE METHOD OR FRAMEWORK
-
-Step 1 — **Scope**: Before touching the task, write out what you're solving, what counts as success, and what is explicitly out of scope.
-
-Step 2 — **Evidence**: Gather the information, data, or context needed. The model doesn't guess or rely on training memory — it finds it.
-
-Step 3 — **Attack**: Execute using only the scoped definition and gathered evidence. No freelancing beyond the scope.
-
-Step 4 — **Verify**: Test the output against the success criteria from Step 1. Binary — pass or fail. If it fails, loop back to Evidence or Attack.
-
-Step 5 — **Report**: Deliver the result with references to the evidence used and a clear statement of what was solved vs. what was out of scope.
-
-Installation: search GitHub for "fable-mode claude skill" — it's a single markdown file you add to your Claude Code skills directory.
-
-# HOW THIS APPLIES TO AI REAL ESTATE
-
-Real estate analysis is exactly where models go wrong by skipping the Scope step. "What's a good price for this neighborhood?" produces generic answers unless you force scoping first: which city, which price tier, which property type, what comparison period, what's the client's exit strategy. Install Fable Mode in your real estate workflow and run every CMA through it: Scope the property analysis (neighborhood, bed/bath count, sold-in-90-days comparable criteria), Evidence (pull comps, days-on-market, price-per-sqft trends), Attack (run the valuation), Verify (does the recommendation match the comps — pass or fail?), Report (deliver to client with source citations). You now have a repeatable, auditable process for every CMA — and because it runs on Opus 4.8 instead of Fable 5, you're cutting your AI costs in half on every engagement.
-
-# ACTION STEP THIS WEEK
-
-Search GitHub for "fable-mode claude skill" (or "mrtooher/fable-mode"). Download the skill markdown file. Add it to your Claude Code skills directory. Run your next CMA through it with this Scope: "Find comparable 3-bed properties in [target neighborhood] sold in the last 90 days, within 10% of [target price]. Success = at least 3 valid comps with price/sqft variance under 15%." Compare the output to your usual approach. The structure alone will catch gaps you'd normally miss.
-
-# BEST QUOTE
-
-"Fable 5 is strong, but it's double the price of Opus — and most of what makes it feel smarter isn't in the model weights, it's in how it structures its reasoning. You can install that structure yourself."
-
----
-
-# Nate Herk Analysis — July 6, 2026
-
-## [Fable 5 + Karpathy's LLM Wiki is Basically Cheating](https://www.youtube.com/watch?v=hQvwMj7IJe4)
-*July 3, 2026*
-
-# WHAT IT'S ABOUT
-
-Nate shows how to build a persistent, self-improving AI knowledge base — called an LLM Wiki — using Claude Code, Obsidian (a free note-taking app), and Andrej Karpathy's pattern for AI memory. The core insight: instead of feeding Claude raw files and watching it rediscover your knowledge every session, you let it write and maintain a cross-linked wiki once, then query that wiki forever. He fed all 36 of his YouTube video transcripts in one batch and Claude built the entire knowledge base in 14 minutes. He then uses Fable 5 as the reasoning layer on top.
-
-# THE KEY POINTS
-
-- **The wiki is a persistent artifact — it compounds.** Every new source you add makes it smarter. Knowledge doesn't disappear between sessions; it accumulates.
-- **Token cost drops by ~95% vs. querying raw files.** One user consolidated 383 files and 100+ meeting transcripts; their Claude query costs fell by 95% because the wiki is far more compact than raw source material.
-- Claude Code auto-generates cross-linked pages for every tool, technique, and concept — you don't write any of the wiki yourself.
-- **Fable 5 as orchestrator, not workhorse.** Put Fable 5 in charge of reasoning over the wiki; cheaper models handle routine queries.
-- The full build takes about 5 minutes to set up and 14 minutes to process 36 video transcripts.
-- Obsidian is the interface — files live locally, no subscriptions, no lock-in.
-
-# THE METHOD OR FRAMEWORK
-
-Step 1 — Drop sources into a folder. Transcripts, PDFs, meeting notes, video content — anything you want Claude to know.
-
-Step 2 — Claude Code reads and writes wiki pages. It creates one page per concept/tool/technique, with backlinks between related pages.
-
-Step 3 — Add routing rules. Tell Claude which types of queries draw from which sections of the wiki.
-
-Step 4 — Query the wiki, not the files. Future questions are answered from the structured wiki, which is far smaller and more precise than the raw sources.
-
-Step 5 — Feed new sources as they arrive. The wiki updates itself; it never forgets what it already built.
-
-# HOW THIS APPLIES TO AI REAL ESTATE
-
-A real estate AI consulting business runs on repeated knowledge: local market data, property types, client needs, past analyses, scripts that worked, comparables databases. Right now that knowledge likely lives in scattered files — spreadsheets, PDFs, past Claude sessions that vanish. Build an LLM wiki for your real estate practice. Feed it: every CMA you've run, every listing description you've written, every client Q&A, your local market research. Claude Code builds a cross-linked knowledge base. When a new client asks "what's the cap rate trend in downtown Phoenix this year?" — Claude answers from your curated wiki, not from a cold search. It's like having a junior analyst who has read every file you've ever touched and can find anything in seconds. Show a client this system in action and you have an immediate differentiator: "Our AI knows this market from the inside."
-
-# ACTION STEP THIS WEEK
-
-Open Claude Code. Create a folder called /real-estate-wiki. Drop in your last 5 CMAs, your top 3 listing descriptions, and any market research notes you have. Run: "Read all files in this folder. Create a wiki with one page per concept — neighborhoods, property types, pricing methods, client objections. Add backlinks between related pages." You'll have a working knowledge base in under an hour that every future session can draw from.
-
-# BEST QUOTE
-
-"Instead of asking an LLM to rediscover your knowledge from raw files every time, you let it maintain a persistent wiki that keeps improving as new sources come in."
-
----
-
-## [How Claude is Creating a New Generation of Millionaires](https://www.youtube.com/watch?v=pbrln2TVeh4)
-*July 3, 2026*
-
-# WHAT IT'S ABOUT
-
-Nate drops the theory and shows real outcomes: people who acted on AI automation skills are winning contracts, running companies without engineers, and scaling to seven figures — using Claude as their execution layer. He makes a pointed argument: the wealth window is open right now, but it is closing fast as the market gets more educated. This is not a "someday" video — it's a "this week" video.
-
-# THE KEY POINTS
-
-- **A 3-person team just won a state government contract by building with Claude** — a deal that previously required a large technical team. The competitive edge was AI execution speed, not headcount.
-- Founders are running full companies without writing a line of code — Claude Code handles technical execution; the founder handles the relationship and direction.
-- **The opportunity window is closing.** Early movers capture the largest contracts before the market normalizes. Nate himself built an AI automation agency to $100K+/month, then sold it.
-- The 5-step playbook doesn't require a technical background — niche selection and client relationships are the real skills.
-- **The constraint is not capability — it's speed to market.** Claude can build what you need. The question is whether you ship before the market catches up.
-- Nate's community has 350,000+ members; the video features student success stories, not hypotheticals.
-
-# THE METHOD OR FRAMEWORK
-
-Step 1 — Pick a niche. One specific type of business (real estate agents, property managers, mortgage brokers). Narrow beats broad.
-
-Step 2 — Build one automation. A lead follow-up sequence, a listing data puller, a document formatter — one real workflow, automated end-to-end.
-
-Step 3 — Land one client. Show one person in that niche the time savings. Charge for the outcome, not the hours.
-
-Step 4 — Productize. Turn what you built into a repeatable package with a fixed price.
-
-Step 5 — Scale. Use templates and SOPs to deliver the same product to more clients without starting from scratch each time.
-
-# HOW THIS APPLIES TO AI REAL ESTATE
-
-Real estate is the perfect niche for this playbook — it has clear, repeated workflows, agents who are not technical, and a strong willingness to pay for time savings. The 3-person state contract story is directly analogous: an AI real estate consulting firm of 1–3 people can now compete for enterprise-level clients (large brokerages, property management companies, REITs) that previously required large teams. The move is to productize one high-value workflow — for example, a fully automated CMA report that an agent can generate in 2 minutes — and price it as a monthly service. The brokerage pays $500/month, you deliver 50 CMAs, you make $25K/month at scale. The window is right now: most agents still think AI is a novelty.
-
-# ACTION STEP THIS WEEK
-
-Contact one real estate agent you know. Tell them: "I'm piloting an AI service that cuts CMA prep time from 45 minutes to under 5. I'll run your next 3 CMAs for free in exchange for feedback." Run the CMAs using Claude. Track the actual time difference. That case study is your sales asset. You now have proof, not a pitch.
-
-# BEST QUOTE
-
-"From a three-person team winning a state contract to founders running whole companies without writing code — this is the real story behind a new wave of wealth being built with Claude."
-
----
-
-# Nate Herk Analysis — July 2, 2026
-
-## [6 Simple Rules That Change How Fable 5 Works](https://www.youtube.com/watch?v=vcU85OrwuV0)
-*July 2, 2026*
-
-# WHAT IT'S ABOUT
-
-Fable 5 is Anthropic's most capable model yet — and at 2× the price of Opus 4.8 ($10/$50 per million tokens), it's also the easiest to overspend on. Nate's six rules are designed to get Fable-level results without burning through budget before the free window closes July 7th. The central insight: most people use Fable 5 exactly like they used Sonnet, and that's where the waste happens.
-
-# THE KEY POINTS
-
-- **Effort level is the biggest cost lever — not model choice.** The `/effort` parameter (low → medium → high → xhigh → max) controls reasoning turns. Max effort uses roughly 6× the turns of low effort — a swing larger than the entire Sonnet-to-Opus price gap.
-- **Give Fable 5 the right context upfront.** It front-loads reasoning on the first pass. Sparse context wastes expensive turns on clarifying questions. Front-load with role, goal, constraints, and format.
-- **Fable 5 finishes faster than you expect** — often completing in fewer turns than a comparable Opus task, offsetting the 2× sticker price on the right jobs.
-- **Know when it quietly hands off to Opus.** Safeguard-flagged requests get rerouted to Opus 4.8 internally — at Opus rates, not Fable rates.
-- **The newer shared tokenizer produces up to 35% more tokens per the same text** vs pre-Opus-4.7 models — factor this into client cost estimates.
-- **Use Fable 5 as an orchestrator, not a workhorse.** Put it in charge of the plan; let Sonnet 5 or Haiku execute sub-tasks.
-
-# HOW THIS APPLIES TO AI REAL ESTATE
-
-Use Fable 5 as an orchestrator for client engagement plans: strategy and task decomposition at Fable-level quality, execution (listing descriptions, follow-ups, CMAs) routed to Sonnet 5. Before July 7, run your most complex real estate workflow through Fable 5 at high effort to establish a quality baseline for client pitching.
-
-# ACTION STEP THIS WEEK
-
-Before July 7 (free window closes), pick your most complex real estate workflow. Run it through Fable 5 at `/effort high`, then again through Opus 4.8. Compare quality and token cost. You'll have a concrete data point for when Fable 5 is worth paying for — and can build it into your client pricing model.
-
-# BEST QUOTE
-
-"Fable 5 is strong, but it's double the price of Opus, and it's only free on Claude plans through July 7 — these are the rules that keep your costs in check."
-
----
-
-## [Stanford's Method Turns Claude Into a PHD Level Research Team](https://www.youtube.com/watch?v=Tj3018n5MVg)
-*July 2, 2026*
-
-# WHAT IT'S ABOUT
-
-Nate introduces the Stanford STORM method (from NAACL 2024 — a top academic NLP conference) and packages it as a free Claude Code skill. STORM runs a topic through five expert mindsets, maps where they disagree, then synthesizes a fully cited briefing — in about 5 minutes. Peer-reviewed testing showed this approach produces outputs 25% more organized than the next best method. Nate benchmarks it head-to-head against Claude Code's built-in Deep Research.
-
-# THE METHOD OR FRAMEWORK
-
-STORM works as a 4-prompt sequence:
-
-1. **Multi-Perspective Scan** — Spin up five expert lenses: The Practitioner (daily experience), The Academic (peer-reviewed evidence), The Skeptic (counterarguments), The Economist (financial incentives), The Historian (precedent). Each delivers its own position, evidence, and unique insights.
-2. **Contradiction Map** — Find where those five voices conflict. "The fights are where real understanding lives." Surfaces which perspective has the strongest evidence, what remains genuinely unresolved, and what blind spots the entire field shares.
-3. **Synthesis** — Consolidate into a briefing: executive summary, ranked key findings, hidden connections, actionable insights, frontier questions.
-4. **Peer Review** — Claude critiques its own output: confidence scores per claim, flags weak assertions, overall reliability grade.
-
-The entire sequence completes in ~5 minutes vs 40–60 hours of human research.
-
-# HOW THIS APPLIES TO AI REAL ESTATE
-
-When a client asks "should I buy in this neighborhood?", a single Claude prompt gives one perspective. STORM gives five — practitioner (agent on the ground), academic (market research), skeptic (what could go wrong), economist (interest rate dynamics), historian (what happened in 2008, 2020) — then synthesizes them into a defensible recommendation. The "peer review" step is especially valuable: it flags claims Claude isn't confident in, giving client deliverables built-in uncertainty disclosure. No competing agent produces this.
-
-# ACTION STEP THIS WEEK
-
-Install Nate's free STORM Claude Code skill (linked in video description). Pick a real estate market question you hear often — e.g., "Is [your city] a buyer's or seller's market right now?" Run the full 4-prompt STORM sequence. Save the output as a PDF. You now have a demo to show any potential client as proof of your AI consulting's research quality.
-
-# BEST QUOTE
-
-"This one skill instantly levels up Claude's ability to research — it runs five expert brains on your topic, maps where they fight, and hands you a briefing no single prompt can touch."
