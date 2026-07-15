@@ -1,4 +1,4 @@
-# Run 2026-07-15 07:03 UTC
+# Run 2026-07-15 09:44 UTC
 ```
 === RSS probe ===
 HTTP 200 size=34701
@@ -10,7 +10,7 @@ HTTP 200 size=34701
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-15T07:03:05.110376
+⏰ Time: 2026-07-15T09:44:45.909128
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 34701 bytes
    ✅ RSS feed returned 15 entries
@@ -18,9 +18,9 @@ HTTP 200 size=34701
    📅 eFOTQpbGcy8 published 2026-07-14 — NEW
    📅 zyvdl__Ywfk published 2026-07-12 — NEW
    📅 4fKn9O-YhtI published 2026-07-11 — NEW
-   📅 jdbOVepEtUE published 2026-07-11 — NEW
+   📅 jdbOVepEtUE published 2026-07-11 — already processed
    📅 AZXV1zzuFuQ published 2026-07-11 — NEW
-📹 Found 5 new video(s)
+📹 Found 4 new video(s)
 
 🔍 Analyzing: The $200K AI Job That Didn't Exist Last Year...
    🔑 Using YouTube cookies (2995 chars)
@@ -40,14 +40,6 @@ HTTP 200 size=34701
 
 🔍 Analyzing: OpenArt Director: The New Way to Make AI Videos...
 ⚠️  Could not extract video ID from https://www.youtube.com/shorts/4fKn9O-YhtI
-⚠️  Could not get transcript
-
-🔍 Analyzing: Claude Code for Non-Coders (6 Hour Course)...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=jdbOVepEtUE: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] jdbOVepEtUE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 
 🔍 Analyzing: ClickUp Brain2: The AI That Replaces All Your Soft...
