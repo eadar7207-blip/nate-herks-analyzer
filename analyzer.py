@@ -201,7 +201,7 @@ def get_video_transcript(video_url):
     from youtube_transcript_api import YouTubeTranscriptApi
     from youtube_transcript_api.proxies import GenericProxyConfig
 
-    video_id_match = re.search(r'(?:v=|youtu\.be/)([A-Za-z0-9_-]{11})', video_url)
+    video_id_match = re.search(r'(?:v=|youtu\.be/|/shorts/)([A-Za-z0-9_-]{11})', video_url)
     if not video_id_match:
         print(f"⚠️  Could not extract video ID from {video_url}")
         return None

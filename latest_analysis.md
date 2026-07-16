@@ -1,3 +1,77 @@
+# Nate Herk Analysis — July 16, 2026
+
+## [The $200K AI Job That Didn't Exist Last Year](https://www.youtube.com/watch?v=eFOTQpbGcy8)
+*July 14, 2026*
+
+WHAT IT'S ABOUT
+Nate lays out the case for a specific new job title that barely existed two years ago: the In-House AI Consultant. Companies that used to outsource their AI needs to agencies are now hiring one person internally to own everything — identifying automation opportunities, building the workflows, tracking the ROI, and training the team. The role pays $150K–$250K+ and doesn't require a coding background or a data science degree. Nate argues this is the highest-leverage career move available right now for anyone who already understands AI tools.
+
+THE KEY POINTS
+- **The role didn't exist two years ago — now it pays $200K+.** Companies aren't building AI labs; they're hiring one well-rounded person who can identify what to automate and make it happen with off-the-shelf tools.
+- **You don't need to code to qualify.** The job is about business judgment and tool fluency — knowing which workflow to automate, which tool to use, and how to measure the outcome. Technical teams handle engineering; you handle strategy and implementation.
+- **Documented outcomes beat credentials.** A portfolio of 3 case studies showing $200K+ in ROI delivered to past employers or clients is worth more than any degree. Hiring managers are buying proven results, not academic pedigree.
+- **The 5 skills that get you hired:** AI Workflow Redesign, Cloud Fundamentals (AWS/Azure basics), Prompt Engineering, Business Acumen (translating AI output into decisions stakeholders understand), and Adaptability.
+- **The window is open right now.** Supply is thin — most people who understand AI tools are building agencies or SaaS products. Companies are urgently hiring the small pool of people who can do this in-house. Early movers command the highest salaries.
+- **The fastest path in: audit your current job first.** Find the tasks that are repetitive, time-consuming, or error-prone. Automate them. Document the time and cost savings. That case study is your interview.
+
+THE METHOD OR FRAMEWORK
+Step 1 — Audit: Map your current or most recent role. List every task that is repetitive, takes more than 2 hours/week, or is prone to human error.
+
+Step 2 — Automate: Pick the highest-value item and build an AI workflow for it using Claude Code, n8n, or another off-the-shelf tool. No custom engineering required — most solutions already exist.
+
+Step 3 — Document: Record the before/after. Time saved per week, error rate reduction, cost impact. Put it in a one-page case study with real numbers.
+
+Step 4 — Repeat: Build 2–3 more case studies across different business functions (marketing, ops, finance, sales). Each one adds credibility and broadens the types of roles you can target.
+
+Step 5 — Apply: Target in-house AI Consultant, AI Operations Lead, or Head of AI titles at mid-market companies ($10M–$500M revenue) — big enough to pay well, small enough to let one person own the entire AI function.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+This video is directly about the business you're building — except from the other side of the table. You are the in-house AI consultant your real estate clients need but can't yet afford to hire full-time. That's the pitch. A $200K in-house hire is out of reach for a 5-person brokerage; a $2,000/month AI consulting retainer is not. Your deliverable is the same as what a full-time hire would do: identify the workflows worth automating (lead response, CMA generation, listing descriptions, market snapshots), build them, and track the ROI. Use the 5-skill framework as your service menu — every skill is a billable engagement. The case study format Nate describes is also exactly how you should present client wins: before/after numbers, hours saved, revenue generated.
+
+ACTION STEP THIS WEEK
+Build your first real estate AI case study. Pick one workflow you've already automated — CMA generation, listing descriptions, market emails. Write a one-page document: what the task was, how long it took before, what you built, how long it takes now, and what that time is worth at your hourly rate. That document is your proof of concept for the next client conversation and the foundation of your consulting pitch.
+
+BEST QUOTE
+"The highest-paying AI job in 2026 isn't at OpenAI. It's at the mid-market company that needs someone to own everything AI — and they'll pay $200K for the right person."
+
+---
+
+## [Claude Code + Clay Makes Lead Generation Actually Fun](https://www.youtube.com/watch?v=zyvdl__Ywfk)
+*July 12, 2026*
+
+WHAT IT'S ABOUT
+Nate shows how to combine Claude Code (an AI coding assistant you talk to in plain English) with Clay (a tool that finds and enriches business contacts — their emails, phone numbers, company info) to build a complete lead generation machine. You type what you want in plain English, Claude Code writes the integration, Clay pulls the real business data, and you end up with a ready-to-send outreach list. He demos this live with a real HVAC example that produced 50 fully enriched leads with custom subject lines — no manual research, no copy-paste.
+
+THE KEY POINTS
+- **Claude Code is the brain; Clay is the data engine.** Claude Code orchestrates the whole workflow — it writes the scripts that talk to Clay's API, applies your targeting logic, and generates personalized emails for each lead. Clay does the heavy data work: finding the right businesses and filling in every contact field.
+- **You command it in plain English.** No coding required. Tell Claude Code: "Find 50 HVAC companies in Phoenix with under 20 employees and pull their owner's email and phone number." Claude writes the Clay query, runs it, and returns a table.
+- **Clay's waterfall covers every data source.** LinkedIn profiles, company news, recent funding rounds, tech stack, verified email via Hunter or Findymail, phone numbers — all in one enrichment pass. You get a full contact card without touching five different tools.
+- **Personalization at scale is now free labor.** Claude Code reads each enriched record and writes a personalized subject line and first line of the email for every contact. 50 leads = 50 unique emails, generated in minutes.
+- **MCP servers are what make this work in 2026.** MCP (a way for Claude to connect directly to other software tools) lets Claude Code read your live Clay account data and take real actions — not just describe what you could do, but actually do it.
+- **The HVAC demo was the proof.** A real industry, a real target list, 50 fully enriched leads with personalized outreach — ready to send. The whole thing ran in one Claude Code session.
+
+THE METHOD OR FRAMEWORK
+Step 1 — Define your target in plain English: industry, geography, company size, decision-maker title. Be specific. "HVAC companies in Phoenix with under 20 employees" beats "small businesses."
+
+Step 2 — Connect Claude Code to Clay via MCP. Claude Code will prompt you through the setup; you authorize it to read your Clay account.
+
+Step 3 — Give Claude Code the command: "Pull [X] leads matching [criteria], enrich with [email/phone/LinkedIn], and write a personalized subject line for each." Claude writes and runs the Clay query automatically.
+
+Step 4 — Review the enriched table. Filter out any records missing key fields. Clay's waterfall fills gaps across multiple data sources, so most records come back complete.
+
+Step 5 — Export and send. The output is a CSV or direct integration to your email tool. Every lead has verified contact info and a custom first line ready to copy or automate into a campaign.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+This is the exact lead generation stack an AI real estate consulting practice needs. Replace "HVAC companies" with "real estate brokerages with under 10 agents in [your target city]" and you have a list of ideal clients in under an hour. The real leverage: personalization. Every outreach email can reference the brokerage's recent listings, their specialty (luxury, rentals, commercial), or a recent market shift in their area — because Clay pulls all of that. The message lands as researched, not blasted. Run this weekly: define a new target segment, pull 50 leads, generate the emails, send. At $2,000/month per client, landing one from every 50-lead batch covers your time and then some.
+
+ACTION STEP THIS WEEK
+Set up Clay if you don't have it (they offer a free trial). Then open Claude Code and type: "I want to find 20 independent real estate brokerages in [your city] with under 10 agents. Pull the broker's name, office email, and LinkedIn URL if available. Write a one-line personalized intro for each that mentions their market." Run it. Review what comes back. That output — even if imperfect — is your proof of concept for an outreach system you can deploy every week.
+
+BEST QUOTE
+"Finding leads is the thing that blocks most people from landing their first client. This setup solves that — you just ask for leads instead of having to go find them yourself."
+
+---
+
 # Nate Herk Analysis — July 15, 2026
 
 ## [What Codex 5.6 is amazing at!](https://www.youtube.com/watch?v=6osxCi89ET4)
