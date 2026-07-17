@@ -179,15 +179,16 @@ def send_email(recipient: str, subject: str, html_content: str) -> bool:
 
 
 def main():
+    import sys
     analysis_path = Path(__file__).parent / "latest_analysis.md"
     if not analysis_path.exists():
         print("❌ latest_analysis.md not found")
-        return
+        sys.exit(1)
 
     analysis_md = analysis_path.read_text(encoding="utf-8")
     if not analysis_md.strip():
         print("⚠️  latest_analysis.md is empty — nothing to send")
-        return
+        sys.exit(1)
 
     date_str = datetime.now().strftime("%B %d, %Y")
     recipient = os.getenv("EMAIL_RECIPIENT", "eadar7207@gmail.com")
@@ -195,7 +196,8 @@ def main():
     html_content = build_email_html(analysis_md, date_str)
 
     print(f"📧 Sending analysis email to {recipient}…")
-    send_email(recipient, subject, html_content)
+    if not send_email(recipient, subject, html_content):
+        sys.exit(1)
 
 
 if __name__ == "__main__":
