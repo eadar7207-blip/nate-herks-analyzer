@@ -1,4 +1,4 @@
-# Run 2026-07-27 17:25 UTC
+# Run 2026-07-27 19:05 UTC
 ```
 === RSS probe ===
 HTTP 200 size=34428
@@ -10,17 +10,17 @@ HTTP 200 size=34428
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-27T17:25:10.234016
+⏰ Time: 2026-07-27T19:05:05.918951
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 34428 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
    📅 Ums8suyAG1A published 2026-07-26 — NEW
-   📅 2J3uX8iRNng published 2026-07-24 — NEW
+   📅 2J3uX8iRNng published 2026-07-24 — already processed
    📅 Ek1NBfnnTH0 published 2026-07-23 — NEW
    📅 vY0EzTP-7EA published 2026-07-22 — already processed
    📅 c1TWmKILaeM published 2026-07-21 — already processed
-📹 Found 3 new video(s)
+📹 Found 2 new video(s)
 
 🔍 Analyzing: This AI Technology Will Replace Millions (Here's H...
    🔑 Using YouTube cookies (2995 chars)
@@ -30,14 +30,6 @@ HTTP 200 size=34428
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Ums8suyAG1A: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 
-🔍 Analyzing: I Tested Opus 5 vs. Fable 5. What You Need to Know...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=2J3uX8iRNng: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ✅ yt-dlp transcript (36324 chars)
-✅ Analysis complete
-
 🔍 Analyzing: 5 Hacks to Instantly Level Up Your AI OS...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
@@ -45,8 +37,5 @@ HTTP 200 size=34428
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Ek1NBfnnTH0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
-❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 6a1803df08f44-907e858195csm68952146d6.21 - gsmtp')
-📄 Saved latest_analysis.md
-
-✅ Processing complete - 1 video(s) analyzed
+⚠️  No videos were successfully analyzed
 ```
