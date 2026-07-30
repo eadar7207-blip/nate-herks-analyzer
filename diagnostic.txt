@@ -1,27 +1,25 @@
-# Run 2026-07-30 04:42 UTC
+# Run 2026-07-30 07:23 UTC
 ```
 === RSS probe ===
-HTTP 404 size=1613
-<!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 404 (Not Found)!!1</title>
-  <style>
-    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
+HTTP 200 size=34434
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
+ <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
+ <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
+ <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-07-30T04:42:22.367604
+⏰ Time: 2026-07-30T07:23:49.356579
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
-   🔄 Switching to yt-dlp for video discovery
-   ✅ yt-dlp returned 10 entries
-📺 Found 10 recent videos in feed
-   📅 Ums8suyAG1A published 2026-07-30 — NEW
-   📅 2J3uX8iRNng published 2026-07-30 — already processed
-   📅 Ek1NBfnnTH0 published 2026-07-30 — NEW
-   📅 vY0EzTP-7EA published 2026-07-30 — already processed
-   📅 8MEJen0nblQ published 2026-07-30 — already processed
+   RSS feed HTTP 200, 34434 bytes
+   ✅ RSS feed returned 15 entries
+📺 Found 15 recent videos in feed
+   📅 Ums8suyAG1A published 2026-07-26 — NEW
+   📅 2J3uX8iRNng published 2026-07-24 — already processed
+   📅 Ek1NBfnnTH0 published 2026-07-23 — NEW
+   📅 vY0EzTP-7EA published 2026-07-22 — already processed
+   📅 c1TWmKILaeM published 2026-07-21 — already processed
 📹 Found 2 new video(s)
 
 🔍 Analyzing: This AI Technology Will Replace Millions (Here's H...
