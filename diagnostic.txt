@@ -1,23 +1,49 @@
-# Run 2026-08-04 08:14 UTC (second run)
+# Run 2026-08-04 10:22 UTC
 ```
-=== Status ===
-YouTube RSS: BLOCKED (proxy policy denial — www.youtube.com:443 rejected)
-yt-dlp: NOT INSTALLED (pip install timed out)
-Transcripts: BLOCKED (no proxy bypass available)
+=== RSS probe ===
+HTTP 200 size=34566
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
+ <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
+ <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
+ <title>Nate Herk | AI 
+--- analyzer output ---
+🎬 Nate Herks Video Analyzer Started
+⏰ Time: 2026-08-04T10:22:45.843839
+   🔑 Using YouTube cookies for RSS feed (2995 chars)
+   RSS feed HTTP 200, 34566 bytes
+   ✅ RSS feed returned 15 entries
+📺 Found 15 recent videos in feed
+   📅 Lg5TYWPSg6M published 2026-08-01 — NEW
+   📅 Ums8suyAG1A published 2026-07-26 — NEW
+   📅 2J3uX8iRNng published 2026-07-24 — already processed
+   📅 Ek1NBfnnTH0 published 2026-07-23 — NEW
+   📅 vY0EzTP-7EA published 2026-07-22 — already processed
+📹 Found 3 new video(s)
 
-=== New Videos Found (from prior run at 07:27 UTC) ===
-- Lg5TYWPSg6M | 18 Months of Pricing AI Automations in 21 Mins | Aug 01, 2026
-- Ums8suyAG1A | This AI Technology Will Replace Millions (Here's How to Prepare) | Jul 26, 2026
-- Ek1NBfnnTH0 | 5 Hacks to Instantly Level Up Your AI OS | Jul 23, 2026
+🔍 Analyzing: 18 Months of Pricing AI Automations in 21 Mins...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Lg5TYWPSg6M: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Lg5TYWPSg6M: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
-=== Action Taken ===
-- Researched all 3 videos via web search + Nate's published frameworks
-- Wrote full structured analyses (WHAT IT'S ABOUT, KEY POINTS, METHOD, AI REAL ESTATE, ACTION STEP, BEST QUOTE)
-- Created Gmail DRAFT (id: r5958610866221780507) — sent to eadar7207@gmail.com
-- Videos NOT marked processed (so they re-run when transcript access is restored)
+🔍 Analyzing: This AI Technology Will Replace Millions (Here's H...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Ums8suyAG1A: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Ums8suyAG1A: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
-=== Fix Required ===
-To enable transcript fetching, set PROXY_URL env var to a residential HTTP proxy.
-See: analyzer.py line 238 — GenericProxyConfig(http_url=proxy_url, https_url=proxy_url)
-YouTube transcript API and yt-dlp both honour PROXY_URL.
+🔍 Analyzing: Steal My Exact AI OS Setup (5 simple tips)...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Ek1NBfnnTH0: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Ek1NBfnnTH0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
+⚠️  No videos were successfully analyzed
 ```
