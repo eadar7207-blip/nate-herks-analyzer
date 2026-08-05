@@ -1,30 +1,28 @@
-# Run 2026-08-05 04:50 UTC
+# Run 2026-08-05 07:28 UTC
 ```
 === RSS probe ===
-HTTP 500 size=1730
-<!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 500 (Server Error)!!1</title>
-  <style>
-    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{backgroun
+HTTP 200 size=35722
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
+ <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
+ <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
+ <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-05T04:49:52.329003
+⏰ Time: 2026-08-05T07:28:25.481425
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
-   🔄 Switching to yt-dlp for video discovery
-   ✅ yt-dlp returned 10 entries
-📺 Found 10 recent videos in feed
-   📅 7WZ6XldxX0U published 2026-08-05 — NEW
-   📅 Lg5TYWPSg6M published 2026-08-05 — NEW
-   📅 Ums8suyAG1A published 2026-08-05 — NEW
-   📅 2J3uX8iRNng published 2026-08-05 — already processed
-   📅 Ek1NBfnnTH0 published 2026-08-05 — NEW
+   RSS feed HTTP 200, 35722 bytes
+   ✅ RSS feed returned 15 entries
+📺 Found 15 recent videos in feed
+   📅 7WZ6XldxX0U published 2026-08-04 — NEW
+   📅 Lg5TYWPSg6M published 2026-08-01 — NEW
+   📅 Ums8suyAG1A published 2026-07-26 — NEW
+   📅 2J3uX8iRNng published 2026-07-24 — already processed
+   📅 Ek1NBfnnTH0 published 2026-07-23 — NEW
 📹 Found 4 new video(s)
 
-🔍 Analyzing: Everything I've Learned After 5000 Hours of Buildi...
+🔍 Analyzing: 5000 Hours of Building AI in Just 17 Minutes...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=7WZ6XldxX0U: RequestBlocked: youtube_transcript_api._errors
@@ -32,7 +30,7 @@ HTTP 500 size=1730
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 7WZ6XldxX0U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 
-🔍 Analyzing: I’ve Sold 100+ AI Automations. Here’s How to Price...
+🔍 Analyzing: 18 Months of Pricing AI Automations in 21 Mins...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Lg5TYWPSg6M: RequestBlocked: youtube_transcript_api._errors
