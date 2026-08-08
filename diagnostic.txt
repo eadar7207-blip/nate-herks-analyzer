@@ -1,4 +1,4 @@
-# Run 2026-08-08 07:38 UTC
+# Run 2026-08-08 08:23 UTC
 ```
 === RSS probe ===
 HTTP 200 size=34828
@@ -10,7 +10,7 @@ HTTP 200 size=34828
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-08T07:38:19.591964
+⏰ Time: 2026-08-08T08:23:27.559420
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 34828 bytes
    ✅ RSS feed returned 15 entries
