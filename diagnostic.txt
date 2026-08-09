@@ -1,4 +1,4 @@
-# Run 2026-08-09 07:42 UTC
+# Run 2026-08-09 08:26 UTC
 ```
 === RSS probe ===
 HTTP 200 size=34829
@@ -10,48 +10,15 @@ HTTP 200 size=34829
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-09T07:42:01.384361
+⏰ Time: 2026-08-09T08:26:08.941381
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 34829 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
-   📅 NClayXM8pU0 published 2026-08-06 — NEW
-   📅 7WZ6XldxX0U published 2026-08-04 — NEW
-   📅 Lg5TYWPSg6M published 2026-08-01 — NEW
-   📅 Ums8suyAG1A published 2026-07-26 — NEW
+   📅 NClayXM8pU0 published 2026-08-06 — already processed
+   📅 7WZ6XldxX0U published 2026-08-04 — already processed
+   📅 Lg5TYWPSg6M published 2026-08-01 — already processed
+   📅 Ums8suyAG1A published 2026-07-26 — already processed
    📅 2J3uX8iRNng published 2026-07-24 — already processed
-📹 Found 4 new video(s)
-
-🔍 Analyzing: Give ChatGPT and Claude the Same Memory...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/NClayXM8pU0: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] NClayXM8pU0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: 5000 Hours of Building AI in Just 17 Minutes...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=7WZ6XldxX0U: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 7WZ6XldxX0U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: 18 Months of Pricing AI Automations in 21 Mins...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Lg5TYWPSg6M: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Lg5TYWPSg6M: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: This AI Technology Will Replace Millions (Here's H...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Ums8suyAG1A: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Ums8suyAG1A: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+✨ No new videos to analyze
 ```
