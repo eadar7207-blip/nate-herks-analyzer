@@ -1,33 +1,35 @@
-# Run 2026-08-12 00:46 UTC
+# Run 2026-08-12 03:14 UTC
 ```
 === RSS probe ===
-HTTP 200 size=34159
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
- <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
- <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
- <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
- <title>Nate Herk | AI 
+HTTP 404 size=1613
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-12T00:46:17.799203
+⏰ Time: 2026-08-12T03:14:39.138871
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 34159 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 bzSN73XXiC4 published 2026-08-11 — NEW
-   📅 LVAHYV4Xrto published 2026-08-11 — NEW
-   📅 IVx8OSMbTss published 2026-08-10 — NEW
-   📅 NClayXM8pU0 published 2026-08-06 — already processed
-   📅 7WZ6XldxX0U published 2026-08-04 — already processed
+⚠️  RSS feed fetch failed: HTTP Error 500: Internal Server Error — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 PQBYZQqan2g published 2026-08-12 — NEW
+   📅 LVAHYV4Xrto published 2026-08-12 — NEW
+   📅 IVx8OSMbTss published 2026-08-12 — NEW
+   📅 7WZ6XldxX0U published 2026-08-12 — already processed
+   📅 Lg5TYWPSg6M published 2026-08-12 — already processed
 📹 Found 3 new video(s)
 
-🔍 Analyzing: I Build Features Just By Talking to My Code...
+🔍 Analyzing: Grok Bot is For Real. What You Need to Know....
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/bzSN73XXiC4: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=PQBYZQqan2g: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] bzSN73XXiC4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] PQBYZQqan2g: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 
 🔍 Analyzing: How to Build a One Person AI Business (Using Claud...
@@ -38,7 +40,7 @@ HTTP 200 size=34159
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] LVAHYV4Xrto: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 
-🔍 Analyzing: Build & Sell AI SaaS Products (2 HOUR COURSE)...
+🔍 Analyzing: Watch Me Build an AI SaaS in a Day (2 HOUR COURSE)...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=IVx8OSMbTss: RequestBlocked: youtube_transcript_api._errors
