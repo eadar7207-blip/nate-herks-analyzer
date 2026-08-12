@@ -1,7 +1,7 @@
-# Run 2026-08-12 19:53 UTC
+# Run 2026-08-12 20:28 UTC
 ```
 === RSS probe ===
-HTTP 200 size=34824
+HTTP 200 size=34828
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,9 +10,9 @@ HTTP 200 size=34824
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-12T19:53:46.591510
+⏰ Time: 2026-08-12T20:28:03.811338
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 34824 bytes
+   RSS feed HTTP 200, 34828 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
    📅 XNQBCRcwXV4 published 2026-08-12 — NEW
@@ -22,7 +22,7 @@ HTTP 200 size=34824
    📅 IVx8OSMbTss published 2026-08-10 — NEW
 📹 Found 5 new video(s)
 
-🔍 Analyzing: 3 Secret Ways Claude Code’s Creator Actually Uses ...
+🔍 Analyzing: I Deleted All My Claude Skills... And Claude Got S...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=XNQBCRcwXV4: RequestBlocked: youtube_transcript_api._errors
