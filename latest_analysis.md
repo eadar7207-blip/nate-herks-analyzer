@@ -1,152 +1,177 @@
-# Nate Herk Analysis — August 09, 2026
+# Nate Herk Analysis — August 15, 2026
 
-## [This AI Technology Will Replace Millions (Here's How to Prepare)](https://www.youtube.com/watch?v=Ums8suyAG1A)
-*July 26 at 12:00 AM*
+## [Never Miss a Customer Call Again (AI Receptionist)](https://www.youtube.com/shorts/MmrKvQxtlwE)
+*August 14 — YouTube Short*
 
 WHAT IT'S ABOUT
 
-Nate argues that agentic AI — AI that can take actions and complete multi-step tasks on its own, without a human clicking each button — is no longer a future threat. It is already displacing workers right now, with hundreds of thousands of jobs already gone. But rather than a doom-and-gloom warning, the video is a roadmap: learn to build and deploy these AI agents before they're deployed on top of you.
+A quick demonstration showing how to set up an AI receptionist that answers every inbound customer call 24/7, captures leads, and books appointments automatically — even when you (or your client) aren't available. Nate targets the most expensive missed-call problem in service businesses: a ringing phone that goes to voicemail equals a lost customer.
 
 THE KEY POINTS
 
-- **Agentic AI is already handling roughly 60% of tasks inside companies** — this is not a projection, it's happening right now in 2026.
-- Hundreds of thousands of workers have already lost their jobs to AI agents that autonomously handle customer service, data entry, analysis, scheduling, and content workflows.
-- **The people most at risk are those doing repetitive, process-driven work** — the kind of work that can be broken into predictable steps.
-- The people least at risk — and most positioned to thrive — are those who know how to **design, build, and maintain** the AI systems doing that work.
-- Nate positions AI automation consulting as the highest-leverage career move right now: you become the person companies pay to **replace their old workflows with AI-powered ones**.
-- **The window to position yourself is closing**: as more people enter the space, the advantage goes to those who start now and build a track record.
-
-THE METHOD OR FRAMEWORK
-
-Nate's prepare-before-displacement framework:
-
-1. **Identify the workflow** — find a job function in a business that is repetitive and rule-based (customer follow-up, lead qualification, invoice processing, report generation).
-2. **Map the steps** — break it into a clear sequence of inputs, decisions, and outputs.
-3. **Build an AI agent for it** — use tools like n8n (a visual workflow builder) to automate each step with AI.
-4. **Sell the outcome** — don't pitch the technology; pitch the result ("I'll save your team 20 hours a week on this process").
-5. **Collect the retainer** — ongoing maintenance and optimization of the AI system keeps you paid month after month.
+- **Every missed call is a lost lead.** AI receptionists answer in under one second, any time of day, and never put a caller on hold.
+- The setup handles: answering, qualifying (is this a real lead?), booking directly into a calendar, and sending a confirmation text.
+- **No code required.** Tools like GHL (GoHighLevel), n8n, or dedicated platforms like Dialzara handle the heavy lifting with pre-built templates.
+- This short shows a live demo — the AI answers a real call, routes it, and books an appointment in a single take.
 
 HOW THIS APPLIES TO AI REAL ESTATE
 
-This is the clearest possible business case for an AI real estate consulting business. Real estate is full of repetitive, expensive workflows: lead nurturing, listing description writing, CMA (comparative market analysis) preparation, follow-up sequences, contract review summaries. Every one of those is a job that agentic AI can do — and a service you can sell. A concrete example: a real estate brokerage is paying an inside sales agent $60K/year to call leads and book appointments. You build an AI agent that qualifies inbound leads via SMS, books appointments into the agent's calendar, and sends a personalized follow-up after each showing. You charge $5,000 setup and $3,500/month. The brokerage saves money, you build recurring income, and the ISA gets redeployed to higher-value work.
+Property inquiries come in at all hours — someone sees a listing at 10pm, calls, and goes to voicemail. Your competition answers. An AI receptionist for a real estate team means every inbound inquiry gets an immediate, intelligent response: qualifying questions (budget, timeline, property type), answers to basic listing questions, and a showing booked into the agent's calendar. Charge this as a bolt-on to any real estate client's AI package: $500/month added to your retainer for 24/7 AI call coverage.
 
 ACTION STEP THIS WEEK
 
-Identify one repetitive workflow inside a real estate business you know (your own, a broker's, a property manager's). Write out the exact steps: what triggers it, what decisions get made, what the output is. Then sketch how an AI agent would handle each step. You don't need to build it yet — just mapping it clearly is the work that unlocks the pitch.
+Sign up for a free trial on Dialzara or configure an inbound voice agent inside n8n. Script out 5 qualifying questions for a real estate inquiry (budget, timeline, property type, location, pre-approved?). Test it by calling your own number. This is a ready-to-sell service.
 
 BEST QUOTE
 
-"Agentic AI is already doing 60% of the tasks inside companies. Hundreds of thousands of people have already lost their jobs to it. I'm showing you how to prepare before this AI technology replaces millions more."
+"Every missed call is a missed client. An AI receptionist doesn't sleep, doesn't put people on hold, and never has a bad day."
 
 ---
 
-## [18 Months of Pricing AI Automations in 21 Mins](https://www.youtube.com/watch?v=Lg5TYWPSg6M)
-*August 01 at 12:00 AM*
+## [I Made Codex and Claude Code Build the Same App. Only One Made Me Want to Keep Using It.](https://www.youtube.com/watch?v=WCrnS09vpfo)
+*August 14*
 
 WHAT IT'S ABOUT
 
-Nate distills 18 months of hard-won experience running Uppit AI — his AI automation agency that crossed $1M/year — into a practical pricing guide. He covers how to structure deals, what setup fees to charge, how to set monthly retainers, and where most beginners leave money on the table. This is one of the most directly actionable videos for anyone running or starting an AI automation business.
+Nate gives both Claude Code and Codex the exact same prompt to build a full-stack app and films the raw results side by side. This is a direct sequel to his "100 Hours Testing" article and resolves the "which tool should I use?" question with real build data — not theory.
 
 THE KEY POINTS
 
-- **Never charge only a monthly retainer — always combine a setup fee with ongoing maintenance**. The setup fee covers your build time; the retainer covers support, optimization, and the client's peace of mind.
-- Nate's students are closing deals like **$11,795 setup fee + $7,732/month retainer** — these are real numbers from real clients in his community.
-- **Three pricing tiers** reflect the complexity of the automation:
-  - Entry: $2,500–$4,000/month (one workflow, straightforward automation)
-  - Mid: $4,000–$8,000/month (two to four integrated workflows)
-  - Full-service: $8,000–$15,000/month (end-to-end AI system with multiple departments)
-- **Don't price on time — price on value**. A workflow that saves a business $30K/month in labor costs is worth far more than $1,500, even if it only took you 10 hours to build.
-- The biggest pricing mistake beginners make: **undercharging because they feel like imposters**. Confidence in pricing comes from being able to explain ROI clearly.
-- **Retainers compound**: once you have 5 clients at $5K/month, you're at $25K/month recurring without taking on new clients.
+- **The core difference is the mental model, not the output quality.** Claude Code puts you in *steer* mode — you guide each step, review output, redirect as needed. Codex puts you in *dispatch* mode — you assign a task, wait for a result, and demand proof of completion.
+- **Codex lasts longer per session** because GPT-5.5 is extremely token-efficient compared to Claude.
+- Claude Code produced better code quality for complex, interdependent logic. Codex was faster for well-defined, isolated tasks.
+- **Best workflow: use both from the same directory.** Plan with Claude, dispatch to Codex, review back in Claude.
+- Claude skills don't automatically transfer to Codex — you need portable context that works in both environments.
 
 THE METHOD OR FRAMEWORK
 
-Nate's pricing structure for AI automation deals:
-
-1. **Discovery first** — before quoting, understand what the automation replaces. How many hours? How much does those hours cost the business?
-2. **Calculate the ROI** — if your automation saves 40 hours/month at $50/hour, that's $2,000/month in labor savings. Your retainer should be 30–50% of that savings.
-3. **Anchor high, then justify** — quote your mid-tier price first, then explain why it's fair given the ROI.
-4. **Setup fee = your build cost + 20%** — this ensures you're profitable from day one, even if the client churns early.
-5. **Package, don't hourly** — never charge by the hour. Clients buy certainty; give them a fixed monthly number they can budget for.
+Nate's two-tool workflow:
+1. **Brainstorm & plan in Claude Code.** Use Claude's reasoning to map out architecture, edge cases, and dependencies.
+2. **Dispatch isolated tasks to Codex.** Well-defined subtasks are faster in Codex with better token efficiency.
+3. **Review and integrate in Claude Code.** Claude understands full context; use it to review Codex output and catch anything that doesn't fit.
 
 HOW THIS APPLIES TO AI REAL ESTATE
 
-This video is a direct pricing playbook you can copy for AI real estate consulting. A real estate team spending $8K/month on a full-time admin to handle paperwork, follow-ups, and scheduling could be your $4K/month retainer client. You replace 50% of that cost with AI and they're still saving $4K/month — a clear win. Concrete deal structure: $6,500 setup fee to build and configure the automation stack, then $3,500/month retainer for maintenance, monitoring, and quarterly optimization. When a client asks "why $3,500/month?" you show them the math: "You're currently spending $8K/month on this workflow. I'm reducing that by $4,500, and you keep $1,000 in savings every month while I make sure nothing breaks."
+If you're building AI tools for real estate clients (property analysis scripts, lead qualification bots, listing description generators), this framework saves build time and money. Use Claude to architect the system and define exactly what each piece should do. Use Codex to build those pieces in parallel as clear tasks. Review output in Claude. You'll ship faster, spend fewer tokens, and produce more reliable code.
 
 ACTION STEP THIS WEEK
 
-Write out a pricing sheet with three tiers for your AI real estate service. Give each tier a name (e.g., Starter, Growth, Full Stack), list what's included, and set the price using the ROI formula above. Even if you don't have clients yet, having a real pricing sheet changes how you present yourself — and forces you to be specific about what you actually deliver.
+Pick one automation you're building. Break it into 3-5 clearly defined modules. Plan the architecture in Claude Code. Then dispatch one module to Codex as a specific task and compare the output speed vs. doing it all in Claude.
 
 BEST QUOTE
 
-"Don't price on time. Price on value. A workflow that saves a business $30,000 a month is not a $1,500 automation."
+"Claude Code and Codex aren't competing tools. They train two opposite habits: steer the work, or dispatch it and demand proof."
 
 ---
 
-## [Everything I've Learned After 5000 Hours of Building with AI](https://www.youtube.com/watch?v=7WZ6XldxX0U)
-*August 04 at 12:00 AM*
+## [Codex's Browser Agent Automates Literally Anything](https://www.youtube.com/watch?v=CB5bG4mvnS0)
+*August 13*
 
 WHAT IT'S ABOUT
 
-Nate condenses the most important lessons from 5,000+ hours of hands-on AI building — the journey that took him from Goldman Sachs business intelligence analyst to building a 7-figure AI automation agency. He shares 12 principles he believes will remain true no matter what model, tool, or platform dominates next year. This is a meta-lesson video: less about any specific tool and more about how to think about AI work durably.
+Nate tests Codex's browser agent — a feature that lets Codex see a webpage, decide where to click, type into fields, stay signed in to logged-in sites, and save the entire process as a reusable skill. He calls it "probably the best browser operator I've tested" and shows it completing a multi-step financial workflow on the first attempt.
 
 THE KEY POINTS
 
-- **The model will change, but the workflow is what compounds**. ChatGPT, Claude, Gemini — these will keep evolving. The thing that doesn't change is a well-designed workflow that survives model swaps.
-- **The durable skill is systems thinking, not tool memorization**: know how to break work into steps, preserve the right context, verify outputs, and turn a one-off win into a repeatable, sellable process.
-- **Context management is the hidden skill** that separates average AI builders from great ones. The AI is only as good as the information you feed it before it starts.
-- **Design your automations to survive connection failures**. Nate literally runs automations on a ship with metered satellite links that drop without warning — if your workflow can't handle an interrupted connection, it will break in production.
-- **Verification beats trust**: always build a check into your AI workflow that confirms the output is correct before it's used. Don't assume the AI finished the job just because it stopped generating text.
-- **Teach the AI your standards, not just your task**. The prompt isn't just instructions — it's a document that conveys your quality bar, your tone, and what "done" looks like.
-- **Repeatability is the product**. The goal isn't to do one impressive demo — it's to build something you can run 500 times without touching it.
+- **Codex can now operate browsers like a human:** it sees the page visually, understands what's clickable, navigates authenticated portals, and completes multi-step sequences.
+- The demo: asked it to open Accounts, find Statements, download CSVs for two accounts, and file them in the correct folder. **Completed the entire workflow on the first attempt** and saved the process as a reusable skill.
+- Saved skills mean you run it once, and Codex repeats the same browser sequence on demand — without you present.
+- **The decision hierarchy for automation:** Use an API first (most reliable). Use a deterministic macro second. Use AI browser automation only when the task genuinely requires vision or human-like judgment.
+- This closes the "I can't automate that" gap — any website with a login and a clickable UI is now automatable.
 
 THE METHOD OR FRAMEWORK
 
-Nate's 12-lesson framework boils down to a core loop for building AI automations that last:
-
-1. **Break the work into clear steps** — every task the AI touches should be a discrete, verifiable unit.
-2. **Preserve the right context** — identify what information the AI needs at each step and make sure it's available (not assumed).
-3. **Verify the output** — build a check at the end of each step so you know the AI did what you expected.
-4. **Make it repeatable** — once it works once, document the structure so it runs reliably without you.
-5. **Iterate on failure** — when it breaks, fix the step that failed, don't rebuild the whole system.
+Nate's three-tier automation decision tree:
+1. **API first.** If the platform has an API, use it. Faster, cheaper, more reliable.
+2. **Deterministic macro second.** If no API, use keyboard shortcuts, Selenium, or scripted clicks.
+3. **AI browser agent last.** Only when the task requires vision or dynamic navigation. Codex's browser agent slots in here.
 
 HOW THIS APPLIES TO AI REAL ESTATE
 
-This is the operating philosophy for building AI real estate tools that clients can actually trust. Say you build an AI that generates property valuation summaries for a real estate investment firm. The lesson here: don't just prompt the AI and hand over the output. Break it into steps — data ingestion, comparable selection, analysis, formatting. Verify at each stage (did the AI pull the right comps? Is the math correct?). Make the whole pipeline repeatable so a junior analyst can run it without you present. The result is a tool the client relies on every week, not a demo they saw once. That reliability is what justifies your retainer.
+Real estate workflows are full of manual web tasks with no API: pulling property records from county assessor sites, downloading rent rolls from landlord portals, checking MLS for status changes. Every one of these is now a candidate for a Codex browser agent. Build a skill that logs into a county assessor portal, pulls recent sales in a target zip code, and files them into a spreadsheet — fully automated, on a schedule. That's a service real estate investors will pay for monthly.
 
 ACTION STEP THIS WEEK
 
-Pick one AI automation you've built or are building. Map it as a series of discrete steps and identify which step has no verification — no check that the AI actually did the right thing. Add a simple verification to that step: a rule-based check, a secondary AI review, or a human spot-check step. This one addition is often the difference between a workflow that breaks silently and one that can run in production.
+Identify one manual web task in a real estate workflow that has no API and is done repeatedly. Write out the exact click-by-click steps a human takes. That's your Codex browser agent spec. You don't need to build it yet — the spec is what you sell first.
 
 BEST QUOTE
 
-"The durable skill isn't memorizing which tool is best today — it's knowing how to break work into steps, preserve the right context, verify the output, and turn a one-off win into a repeatable system."
+"It can see a page, decide where to click, type into fields, stay signed in to websites, and save the whole process as a reusable skill. Completed the whole workflow on the first attempt."
 
 ---
 
-## [Give ChatGPT and Claude the Same Memory](https://www.youtube.com/shorts/NClayXM8pU0)
-*August 06 at 12:00 AM*
+## [I Deleted All My Claude Skills... And Claude Got Smarter](https://www.youtube.com/watch?v=XNQBCRcwXV4)
+*August 12*
 
 WHAT IT'S ABOUT
 
-This short video shows a quick but powerful setup: using a shared memory layer called Walrus Memory so that Claude and ChatGPT can both read and write to the same persistent context. Instead of having two AIs that each forget what the other knows, you get a single source of truth both tools access automatically via MCP (Model Context Protocol — a standard that lets AI tools connect to external data sources).
+Nate introduces a framework for thinking about Claude Code skills — then makes a surprising move: he deleted most of his installed skills and found Claude performed the same or better without them. The lesson is about understanding which type of skill actually adds value as Claude's base model improves.
 
 THE KEY POINTS
 
-- **The problem**: Claude and ChatGPT have separate, siloed memory systems. What you tell one, the other doesn't know — forcing you to repeat yourself constantly.
-- **The fix**: Walrus Memory acts as a shared profile that both AIs connect to via MCP. You keep one profile; both tools read it at session start and can save new context back to it.
-- **The result**: switch between Claude and ChatGPT mid-workflow without losing context — they both know who you are, what project you're working on, and what your preferences are.
-- This is a **zero-code setup**: connecting both tools to Walrus Memory is done through their respective MCP settings, not through custom code.
-- **This matters for client work**: if you use Claude for writing and ChatGPT for analysis on the same client project, shared memory means neither session starts from zero.
+- Nate defines two categories: **Capability Uplift** skills (teach Claude something it genuinely couldn't do before) and **Encoded Preference** skills (encode how *you* want Claude to do something it already knows how to do).
+- **Capability uplift skills have a lifespan:** as the base model improves, Claude learns those capabilities natively and the skill stops adding value. They're doomed by the next model release.
+- **Encoded preference skills never go stale** because they encode your judgment — your NDA review checklist, your commit message format, your code review standards — not Claude's missing knowledge.
+- The experiment: Nate deleted his capability uplift skills, ran the same tasks, and found Claude 5's base model had already caught up. Those skills were adding noise rather than capability.
+- The surviving skills that actually matter are all encoded preferences: his standards, his voice, his checklists.
+
+THE METHOD OR FRAMEWORK
+
+Skill audit process:
+1. List every Claude skill you have installed.
+2. For each one, ask: "Is this teaching Claude a new *ability*, or encoding my specific *preference* for how to do something it already knows?"
+3. If it's a capability skill, test whether Claude 5 can do the same task without it. Often it can.
+4. Delete capability skills that no longer add value. Keep all preference skills.
+5. What survives is a lean, high-signal skill set that gets better with each model release rather than fighting it.
 
 HOW THIS APPLIES TO AI REAL ESTATE
 
-For an AI real estate consulting business, this solves a real workflow problem. You might use Claude for drafting client communications and ChatGPT for analyzing market data — two different tools, same project. With shared memory, both tools know the client's preferences, the property details, and where the deal stands. You don't waste five minutes re-briefing the AI every session. More importantly, this is a setup you can demo to clients: showing them that your AI stack is integrated and context-aware signals professionalism and sets you apart from someone who just opens ChatGPT fresh every day.
+Audit your current Claude skills: a skill that "teaches Claude to write listing descriptions" is a capability skill that newer models handle natively. A skill that encodes *your* specific listing description format — your bullet structure, your headline formula, your local market tone — is a preference skill that will always add value. Every real estate workflow has standards that should be codified: how to analyze a CMA, how to structure a client report, what to include in a due diligence summary. Those become permanent, compounding assets in your AI stack.
 
 ACTION STEP THIS WEEK
 
-Set up Walrus Memory and connect it to whichever AI tools you use daily (Claude, ChatGPT, or both) via their MCP settings. Write a "project brief" template: client name, property details, current deal status, communication preferences. Save it to your shared memory profile. Then, next time you switch AI tools mid-project, check whether both tools pick up the same context automatically.
+Audit your Claude skills this week. For each one, classify it as capability uplift or encoded preference. Test your capability skills by running the same task without them on Claude 5. Delete the ones that don't add anything. Write one new encoded preference skill that documents a real estate standard you hold that Claude doesn't know yet.
 
 BEST QUOTE
 
-"Claude and ChatGPT can't share memory natively — but the fix is a shared context layer both connect to over MCP. You keep one profile, both tools read it at session start, and either can save new context back to it."
+"Capability uplift skills are doomed by the next model release. Encoded preference skills compound. Know which is which."
+
+---
+
+## [Grok Bot is For Real. What You Need to Know.](https://www.youtube.com/watch?v=PQBYZQqan2g)
+*August 12*
+
+WHAT IT'S ABOUT
+
+xAI launched Grok Bot on August 11, 2026 — a persistent AI teammate product that goes beyond chat or coding tools. Nate breaks down what Grok Bot actually is, how it differs from every other AI agent product, and why he thinks it's the most credible new competitor to established automation workflows. He built a multi-agent website workflow in 20 minutes to demonstrate.
+
+THE KEY POINTS
+
+- **Grok Bot is not a chatbot — it's a persistent AI teammate.** Each bot gets its own cloud computer, its own saved logins, and keeps working after you close your device.
+- **Agent computers:** every Grok Bot runs on a dedicated virtual machine with memory, a browser, and the ability to stay signed in to your tools.
+- **Teachable skills:** train a bot by demonstrating a workflow once. The bot saves the skill and can repeat it on demand or on a schedule.
+- **Scheduled routines:** bots can run tasks automatically — daily reports, weekly audits, nightly data pulls — without any trigger from you.
+- **Slack integration and multi-agent messaging:** bots can be triggered from Slack and can message each other to hand off tasks (Researcher → Writer → Publisher pipeline).
+- Pricing: approximately **$200/month** on the SuperGrok tier (launched August 11, 2026).
+- Key limitation: still in beta, occasional reliability issues. Not production-ready for mission-critical workflows yet.
+
+THE METHOD OR FRAMEWORK
+
+Nate's 20-minute Grok Bot setup for a multi-agent workflow:
+1. **Define the output** — what does the completed task look like?
+2. **Break it into agent roles** — each becomes a separate bot with a clear job.
+3. **Assign persistent credentials** — give each bot the logins it needs.
+4. **Set the handoff signal** — one bot messages another in Slack when its job is done.
+5. **Schedule the trigger** — set the first bot to start at a specific time; the pipeline runs itself.
+
+HOW THIS APPLIES TO AI REAL ESTATE
+
+This opens a new service category: *persistent AI agents that run client workflows around the clock*. A concrete example: a Grok Bot fleet for a property management company — one bot monitors rental listing platforms and flags new comparable listings each morning, a second bot pulls maintenance request tickets and drafts response templates, a third bot generates a weekly owner report. All three run on a schedule, hand off to each other, and drop the final report into the owner's inbox every Friday. Build it once, charge $5K setup and $3K/month retainer. This is a new recurring revenue line that didn't exist two weeks ago.
+
+ACTION STEP THIS WEEK
+
+Sign up for SuperGrok ($200/mo) and build one Grok Bot that handles a single, repeatable task for your business or a client's. Start small: a bot that monitors a specific real estate data source and sends you a daily summary in Slack. Get comfortable with the teachable skills interface. Early familiarity is the advantage here.
+
+BEST QUOTE
+
+"A Grok Bot isn't a chat window. It's a teammate with its own computer, its own logins, and a job it keeps doing after you log off."
