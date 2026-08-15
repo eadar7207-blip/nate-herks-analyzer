@@ -1,4 +1,4 @@
-# Run 2026-08-15 08:11 UTC
+# Run 2026-08-15 09:12 UTC
 ```
 === RSS probe ===
 HTTP 200 size=34503
@@ -10,56 +10,15 @@ HTTP 200 size=34503
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-15T08:11:44.812162
+⏰ Time: 2026-08-15T09:12:49.655330
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 34503 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
-   📅 MmrKvQxtlwE published 2026-08-14 — NEW
-   📅 WCrnS09vpfo published 2026-08-14 — NEW
-   📅 CB5bG4mvnS0 published 2026-08-13 — NEW
-   📅 XNQBCRcwXV4 published 2026-08-12 — NEW
-   📅 PQBYZQqan2g published 2026-08-12 — NEW
-📹 Found 5 new video(s)
-
-🔍 Analyzing: Never Miss a Customer Call Again (AI Receptionist)...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/MmrKvQxtlwE: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] MmrKvQxtlwE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: I Made Codex and Claude Code Build the Same App. O...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=WCrnS09vpfo: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] WCrnS09vpfo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Codex's Browser Agent Automates Literally Anything...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=CB5bG4mvnS0: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] CB5bG4mvnS0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: I Deleted All My Claude Skills... And Claude Got S...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=XNQBCRcwXV4: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] XNQBCRcwXV4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Grok Bot is For Real. What You Need to Know....
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=PQBYZQqan2g: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] PQBYZQqan2g: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+   📅 MmrKvQxtlwE published 2026-08-14 — already processed
+   📅 WCrnS09vpfo published 2026-08-14 — already processed
+   📅 CB5bG4mvnS0 published 2026-08-13 — already processed
+   📅 XNQBCRcwXV4 published 2026-08-12 — already processed
+   📅 PQBYZQqan2g published 2026-08-12 — already processed
+✨ No new videos to analyze
 ```
