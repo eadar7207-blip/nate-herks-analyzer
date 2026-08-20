@@ -1,7 +1,7 @@
-# Run 2026-08-20 14:22 UTC
+# Run 2026-08-20 15:21 UTC
 ```
 === RSS probe ===
-HTTP 200 size=32834
+HTTP 200 size=31623
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=32834
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-20T14:22:21.789854
+⏰ Time: 2026-08-20T15:21:08.455020
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 32834 bytes
+   RSS feed HTTP 200, 31621 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 rhv61m8n3Nc published 2026-08-20 — NEW
    📅 tgjYMym_0-c published 2026-08-20 — NEW
    📅 TMPUUyQC5aM published 2026-08-19 — NEW
    📅 lM3KWEmBdMg published 2026-08-18 — NEW
    📅 zpS6JGJNaGg published 2026-08-18 — NEW
-   📅 MmrKvQxtlwE published 2026-08-14 — already processed
-📹 Found 4 new video(s)
+📹 Found 5 new video(s)
+
+🔍 Analyzing: This AI Cloned Me in 15 Seconds...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/rhv61m8n3Nc: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] rhv61m8n3Nc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: Sell These 5 Most In Demand AI Automations in 2026...
    🔑 Using YouTube cookies (2995 chars)
