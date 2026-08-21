@@ -1,35 +1,27 @@
-# Run 2026-08-21 04:25 UTC
+# Run 2026-08-21 05:20 UTC
 ```
 === RSS probe ===
-HTTP 404 size=1613
-<!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 404 (Not Found)!!1</title>
-  <style>
-    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
+HTTP 200 size=31626
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
+ <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
+ <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
+ <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-21T04:25:02.558200
+⏰ Time: 2026-08-21T05:19:56.596152
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 31626 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 rhv61m8n3Nc published 2026-08-20 — NEW
-   📅 tgjYMym_0-c published 2026-08-20 — NEW
-   📅 TMPUUyQC5aM published 2026-08-19 — NEW
-   📅 lM3KWEmBdMg published 2026-08-18 — NEW
-   📅 zpS6JGJNaGg published 2026-08-18 — NEW
-📹 Found 5 new video(s)
-
-🔍 Analyzing: This AI Cloned Me in 15 Seconds...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/rhv61m8n3Nc: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] rhv61m8n3Nc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 tgjYMym_0-c published 2026-08-21 — NEW
+   📅 TMPUUyQC5aM published 2026-08-21 — NEW
+   📅 zpS6JGJNaGg published 2026-08-21 — NEW
+   📅 WCrnS09vpfo published 2026-08-21 — already processed
+   📅 CB5bG4mvnS0 published 2026-08-21 — already processed
+📹 Found 3 new video(s)
 
 🔍 Analyzing: Sell These 5 Most In Demand AI Automations in 2026...
    🔑 Using YouTube cookies (2995 chars)
@@ -45,14 +37,6 @@ HTTP 404 size=1613
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=TMPUUyQC5aM: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] TMPUUyQC5aM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Practice Any Hard Conversation Before It Matters...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/lM3KWEmBdMg: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] lM3KWEmBdMg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 
 🔍 Analyzing: How to Sell Claude Workflows (Without Starting an ...
