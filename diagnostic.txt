@@ -1,4 +1,4 @@
-# Run 2026-08-22 03:30 UTC
+# Run 2026-08-22 04:18 UTC
 ```
 === RSS probe ===
 HTTP 404 size=1613
@@ -11,9 +11,9 @@ HTTP 404 size=1613
     *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-22T03:30:25.403341
+⏰ Time: 2026-08-22T04:18:44.897877
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-⚠️  RSS feed fetch failed: HTTP Error 500: Internal Server Error — trying yt-dlp fallback
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
    🔄 Switching to yt-dlp for video discovery
    ✅ yt-dlp returned 10 entries
 📺 Found 10 recent videos in feed
