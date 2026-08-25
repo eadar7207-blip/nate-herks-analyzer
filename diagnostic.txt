@@ -1,4 +1,4 @@
-# Run 2026-08-25 02:09 UTC
+# Run 2026-08-25 03:36 UTC
 ```
 === RSS probe ===
 HTTP 200 size=32968
@@ -10,16 +10,17 @@ HTTP 200 size=32968
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-25T02:09:37.951284
+⏰ Time: 2026-08-25T03:36:29.355949
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 32968 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 ZzHsJW10iq4 published 2026-08-24 — NEW
-   📅 UsfCe5fJK6A published 2026-08-23 — NEW
-   📅 QUI6Ug4cHnE published 2026-08-22 — NEW
-   📅 _kK_4cOYF4o published 2026-08-21 — NEW
-   📅 yCACmFTiCto published 2026-08-21 — NEW
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 ZzHsJW10iq4 published 2026-08-25 — NEW
+   📅 UsfCe5fJK6A published 2026-08-25 — NEW
+   📅 QUI6Ug4cHnE published 2026-08-25 — NEW
+   📅 _kK_4cOYF4o published 2026-08-25 — NEW
+   📅 yCACmFTiCto published 2026-08-25 — NEW
 📹 Found 5 new video(s)
 
 🔍 Analyzing: Everything Goldman Sachs Taught Me About AI (In 10...
