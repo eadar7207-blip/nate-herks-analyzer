@@ -1,7 +1,7 @@
-# Run 2026-08-26 12:21 UTC
+# Run 2026-08-26 13:42 UTC
 ```
 === RSS probe ===
-HTTP 200 size=32987
+HTTP 200 size=32898
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=32987
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-26T12:20:58.114234
+⏰ Time: 2026-08-26T13:42:31.753166
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 32987 bytes
+   RSS feed HTTP 200, 32898 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 bg0C-2iUUqM published 2026-08-26 — NEW
    📅 DoHPZf7jEQ4 published 2026-08-25 — NEW
    📅 ZzHsJW10iq4 published 2026-08-24 — NEW
    📅 UsfCe5fJK6A published 2026-08-23 — NEW
    📅 QUI6Ug4cHnE published 2026-08-22 — NEW
-   📅 _kK_4cOYF4o published 2026-08-21 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: I Tested Claude Code vs. Codex on Design. It Wasn'...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=bg0C-2iUUqM: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] bg0C-2iUUqM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: The 3 AI Agency Mistakes Keeping You From $20K/Mon...
    🔑 Using YouTube cookies (2995 chars)
@@ -52,14 +60,6 @@ HTTP 200 size=32987
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=QUI6Ug4cHnE: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] QUI6Ug4cHnE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: This Stealth Model Makes Claude Code Free. Here's ...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=_kK_4cOYF4o: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] _kK_4cOYF4o: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
