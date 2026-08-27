@@ -1,25 +1,27 @@
-# Run 2026-08-26 21:20 UTC
+# Run 2026-08-27 02:17 UTC
 ```
 === RSS probe ===
-HTTP 200 size=32901
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
- <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
- <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
- <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
- <title>Nate Herk | AI 
+HTTP 404 size=1613
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-26T21:20:00.633063
+⏰ Time: 2026-08-27T02:17:12.862810
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 32901 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 bg0C-2iUUqM published 2026-08-26 — NEW
-   📅 DoHPZf7jEQ4 published 2026-08-25 — NEW
-   📅 ZzHsJW10iq4 published 2026-08-24 — NEW
-   📅 UsfCe5fJK6A published 2026-08-23 — NEW
-   📅 QUI6Ug4cHnE published 2026-08-22 — NEW
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 bg0C-2iUUqM published 2026-08-27 — NEW
+   📅 DoHPZf7jEQ4 published 2026-08-27 — NEW
+   📅 ZzHsJW10iq4 published 2026-08-27 — NEW
+   📅 UsfCe5fJK6A published 2026-08-27 — NEW
+   📅 QUI6Ug4cHnE published 2026-08-27 — NEW
 📹 Found 5 new video(s)
 
 🔍 Analyzing: I Tested Claude Code vs. Codex on Design. It Wasn'...
@@ -30,7 +32,7 @@ HTTP 200 size=32901
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] bg0C-2iUUqM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 
-🔍 Analyzing: The 3 AI Agency Mistakes Keeping You From $20K/Mon...
+🔍 Analyzing: The 3-Step System Behind My $20K/Month AI Agency R...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=DoHPZf7jEQ4: RequestBlocked: youtube_transcript_api._errors
