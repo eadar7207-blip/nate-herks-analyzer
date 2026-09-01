@@ -1,31 +1,41 @@
-# Run 2026-09-01 00:49 UTC
+# Run 2026-09-01 05:46 UTC
 ```
 === RSS probe ===
-HTTP 200 size=34254
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
- <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
- <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
- <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
- <title>Nate Herk | AI 
+HTTP 404 size=1613
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-01T00:49:13.277227
+⏰ Time: 2026-09-01T05:45:57.540738
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 34254 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 4hKJ9X6rGFo published 2026-08-31 — NEW
-   📅 PYjbeY8sGLs published 2026-08-28 — NEW
-   📅 gQef3d3erOs published 2026-08-27 — NEW
-   📅 bg0C-2iUUqM published 2026-08-26 — NEW
-   📅 DoHPZf7jEQ4 published 2026-08-25 — NEW
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 NyfYxpXiw_0 published 2026-09-01 — NEW
+   📅 4hKJ9X6rGFo published 2026-09-01 — NEW
+   📅 PYjbeY8sGLs published 2026-09-01 — NEW
+   📅 gQef3d3erOs published 2026-09-01 — NEW
+   📅 bg0C-2iUUqM published 2026-09-01 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: Every Grok Bot Concept Explained for Normal People...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=NyfYxpXiw_0: IpBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] NyfYxpXiw_0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: Build & Sell Grok Bots (2 Hour Course)...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=4hKJ9X6rGFo: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=4hKJ9X6rGFo: IpBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 4hKJ9X6rGFo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
@@ -33,7 +43,7 @@ HTTP 200 size=34254
 🔍 Analyzing: I Cloned Calendly and Now It’s Free Forever...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=PYjbeY8sGLs: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=PYjbeY8sGLs: IpBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] PYjbeY8sGLs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
@@ -41,7 +51,7 @@ HTTP 200 size=34254
 🔍 Analyzing: Set Up a Personal Hermes in 14 Mins (no VPS or mac...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=gQef3d3erOs: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=gQef3d3erOs: IpBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] gQef3d3erOs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
@@ -49,17 +59,9 @@ HTTP 200 size=34254
 🔍 Analyzing: I Tested Claude Code vs. Codex on Design. It Wasn'...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=bg0C-2iUUqM: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=bg0C-2iUUqM: IpBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] bg0C-2iUUqM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: The 3-Step System Behind My $20K/Month AI Agency R...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=DoHPZf7jEQ4: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] DoHPZf7jEQ4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
