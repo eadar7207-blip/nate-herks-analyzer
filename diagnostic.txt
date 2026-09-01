@@ -1,4 +1,4 @@
-# Run 2026-08-31 21:40 UTC
+# Run 2026-09-01 00:49 UTC
 ```
 === RSS probe ===
 HTTP 200 size=34254
@@ -10,7 +10,7 @@ HTTP 200 size=34254
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-08-31T21:40:04.769761
+⏰ Time: 2026-09-01T00:49:13.277227
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 34254 bytes
    ✅ RSS feed returned 15 entries
@@ -33,7 +33,7 @@ HTTP 200 size=34254
 🔍 Analyzing: I Cloned Calendly and Now It’s Free Forever...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=PYjbeY8sGLs: ConnectionError: requests.exceptions
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=PYjbeY8sGLs: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] PYjbeY8sGLs: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
