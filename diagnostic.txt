@@ -1,4 +1,4 @@
-# Run 2026-09-02 18:59 UTC
+# Run 2026-09-02 21:36 UTC
 ```
 === RSS probe ===
 HTTP 200 size=35370
@@ -10,7 +10,7 @@ HTTP 200 size=35370
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-02T18:59:21.784193
+⏰ Time: 2026-09-02T21:34:48.740271
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 35370 bytes
    ✅ RSS feed returned 15 entries
@@ -25,10 +25,8 @@ HTTP 200 size=35370
 🔍 Analyzing: Fable 5.1 FINALLY Kills AI Website Slop...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=FFWtxjvW2ts: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] FFWtxjvW2ts: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
+   ✅ Got transcript (20836 chars)
+✅ Analysis complete
 
 🔍 Analyzing: Fable 5.1 Just Dropped. It Looks Unreal....
    🔑 Using YouTube cookies (2995 chars)
@@ -41,18 +39,14 @@ HTTP 200 size=35370
 🔍 Analyzing: Anthropic is Teaching Claude to be Evil (real resu...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Lbax7_pW2Nw: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Lbax7_pW2Nw: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
+   ✅ Got transcript (18198 chars)
+✅ Analysis complete
 
 🔍 Analyzing: Every Grok Bot Concept Explained for Normal People...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=NyfYxpXiw_0: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] NyfYxpXiw_0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
+   ✅ Got transcript (29546 chars)
+✅ Analysis complete
 
 🔍 Analyzing: Build & Sell Grok Bots (2 Hour Course)...
    🔑 Using YouTube cookies (2995 chars)
@@ -61,5 +55,10 @@ HTTP 200 size=35370
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 4hKJ9X6rGFo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d9443c01a7336-2dafe62d1b4sm877345ad.18 - gsmtp')
+❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 98e67ed59e1d1-39b083e7167sm1265933a91.5 - gsmtp')
+❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 98e67ed59e1d1-39b083e4fafsm1252501a91.1 - gsmtp')
+📄 Saved latest_analysis.md
+
+✅ Processing complete - 3 video(s) analyzed
 ```
