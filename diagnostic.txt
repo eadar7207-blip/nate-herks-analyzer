@@ -1,7 +1,7 @@
-# Run 2026-09-02 21:36 UTC
+# Run 2026-09-02 23:37 UTC
 ```
 === RSS probe ===
-HTTP 200 size=35370
+HTTP 200 size=36386
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,23 +10,25 @@ HTTP 200 size=35370
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-02T21:34:48.740271
+⏰ Time: 2026-09-02T23:37:06.915485
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 35370 bytes
+   RSS feed HTTP 200, 36386 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
-   📅 FFWtxjvW2ts published 2026-09-02 — NEW
+   📅 FBVNS1l5Vb8 published 2026-09-02 — NEW
+   📅 FFWtxjvW2ts published 2026-09-02 — already processed
    📅 8IyORt-7rOQ published 2026-09-01 — NEW
-   📅 Lbax7_pW2Nw published 2026-09-01 — NEW
-   📅 NyfYxpXiw_0 published 2026-09-01 — NEW
-   📅 4hKJ9X6rGFo published 2026-08-31 — NEW
-📹 Found 5 new video(s)
+   📅 Lbax7_pW2Nw published 2026-09-01 — already processed
+   📅 NyfYxpXiw_0 published 2026-09-01 — already processed
+📹 Found 2 new video(s)
 
-🔍 Analyzing: Fable 5.1 FINALLY Kills AI Website Slop...
+🔍 Analyzing: I Analyzed How Anthropic ACTUALLY Prompts Fable 5....
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-   ✅ Got transcript (20836 chars)
-✅ Analysis complete
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=FBVNS1l5Vb8: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] FBVNS1l5Vb8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: Fable 5.1 Just Dropped. It Looks Unreal....
    🔑 Using YouTube cookies (2995 chars)
@@ -35,30 +37,5 @@ HTTP 200 size=35370
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 8IyORt-7rOQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
-
-🔍 Analyzing: Anthropic is Teaching Claude to be Evil (real resu...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-   ✅ Got transcript (18198 chars)
-✅ Analysis complete
-
-🔍 Analyzing: Every Grok Bot Concept Explained for Normal People...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-   ✅ Got transcript (29546 chars)
-✅ Analysis complete
-
-🔍 Analyzing: Build & Sell Grok Bots (2 Hour Course)...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=4hKJ9X6rGFo: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 4hKJ9X6rGFo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d9443c01a7336-2dafe62d1b4sm877345ad.18 - gsmtp')
-❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 98e67ed59e1d1-39b083e7167sm1265933a91.5 - gsmtp')
-❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 98e67ed59e1d1-39b083e4fafsm1252501a91.1 - gsmtp')
-📄 Saved latest_analysis.md
-
-✅ Processing complete - 3 video(s) analyzed
+⚠️  No videos were successfully analyzed
 ```
