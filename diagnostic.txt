@@ -1,7 +1,7 @@
-# Run 2026-09-03 18:54 UTC
+# Run 2026-09-03 21:26 UTC
 ```
 === RSS probe ===
-HTTP 200 size=36366
+HTTP 200 size=35901
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,15 +10,24 @@ HTTP 200 size=36366
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-03T18:54:44.527364
+⏰ Time: 2026-09-03T21:26:29.573511
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 36366 bytes
+   RSS feed HTTP 200, 35901 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 NbUTIFEEXLY published 2026-09-03 — NEW
    📅 FBVNS1l5Vb8 published 2026-09-02 — already processed
    📅 FFWtxjvW2ts published 2026-09-02 — already processed
    📅 8IyORt-7rOQ published 2026-09-01 — already processed
    📅 Lbax7_pW2Nw published 2026-09-01 — already processed
-   📅 NyfYxpXiw_0 published 2026-09-01 — already processed
-✨ No new videos to analyze
+📹 Found 1 new video(s)
+
+🔍 Analyzing: AI News in 5 Mins: GPT-6 Astra...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=NbUTIFEEXLY: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] NbUTIFEEXLY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
+⚠️  No videos were successfully analyzed
 ```
