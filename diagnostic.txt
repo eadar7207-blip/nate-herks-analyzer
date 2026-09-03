@@ -1,4 +1,4 @@
-# Run 2026-09-03 11:46 UTC
+# Run 2026-09-03 15:15 UTC
 ```
 === RSS probe ===
 HTTP 200 size=36366
@@ -10,32 +10,15 @@ HTTP 200 size=36366
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-03T11:45:46.402820
+⏰ Time: 2026-09-03T15:15:46.943136
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 36366 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
-   📅 FBVNS1l5Vb8 published 2026-09-02 — NEW
+   📅 FBVNS1l5Vb8 published 2026-09-02 — already processed
    📅 FFWtxjvW2ts published 2026-09-02 — already processed
-   📅 8IyORt-7rOQ published 2026-09-01 — NEW
+   📅 8IyORt-7rOQ published 2026-09-01 — already processed
    📅 Lbax7_pW2Nw published 2026-09-01 — already processed
    📅 NyfYxpXiw_0 published 2026-09-01 — already processed
-📹 Found 2 new video(s)
-
-🔍 Analyzing: How Anthropic ACTUALLY Prompts Fable 5.1...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-   ✅ Got transcript (14515 chars)
-✅ Analysis complete
-
-🔍 Analyzing: Fable 5.1 Just Dropped. It Looks Unreal....
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-   ✅ Got transcript (6809 chars)
-✅ Analysis complete
-❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 5a478bee46e88-3325680d493sm6687547eec.29 - gsmtp')
-❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 5a478bee46e88-332501e5447sm8576351eec.0 - gsmtp')
-📄 Saved latest_analysis.md
-
-✅ Processing complete - 2 video(s) analyzed
+✨ No new videos to analyze
 ```
