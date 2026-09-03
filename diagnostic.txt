@@ -1,43 +1,41 @@
-# Run 2026-09-03 06:32 UTC
+# Run 2026-09-03 11:46 UTC
 ```
 === RSS probe ===
-HTTP 404 size=1613
-<!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 404 (Not Found)!!1</title>
-  <style>
-    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
+HTTP 200 size=36366
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
+ <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
+ <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
+ <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-03T06:32:40.392606
+⏰ Time: 2026-09-03T11:45:46.402820
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
-   🔄 Switching to yt-dlp for video discovery
-   ✅ yt-dlp returned 10 entries
-📺 Found 10 recent videos in feed
-   📅 FBVNS1l5Vb8 published 2026-09-03 — NEW
-   📅 FFWtxjvW2ts published 2026-09-03 — already processed
-   📅 8IyORt-7rOQ published 2026-09-03 — NEW
-   📅 Lbax7_pW2Nw published 2026-09-03 — already processed
-   📅 NyfYxpXiw_0 published 2026-09-03 — already processed
+   RSS feed HTTP 200, 36366 bytes
+   ✅ RSS feed returned 15 entries
+📺 Found 15 recent videos in feed
+   📅 FBVNS1l5Vb8 published 2026-09-02 — NEW
+   📅 FFWtxjvW2ts published 2026-09-02 — already processed
+   📅 8IyORt-7rOQ published 2026-09-01 — NEW
+   📅 Lbax7_pW2Nw published 2026-09-01 — already processed
+   📅 NyfYxpXiw_0 published 2026-09-01 — already processed
 📹 Found 2 new video(s)
 
 🔍 Analyzing: How Anthropic ACTUALLY Prompts Fable 5.1...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=FBVNS1l5Vb8: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] FBVNS1l5Vb8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
+   ✅ Got transcript (14515 chars)
+✅ Analysis complete
 
 🔍 Analyzing: Fable 5.1 Just Dropped. It Looks Unreal....
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=8IyORt-7rOQ: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 8IyORt-7rOQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+   ✅ Got transcript (6809 chars)
+✅ Analysis complete
+❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 5a478bee46e88-3325680d493sm6687547eec.29 - gsmtp')
+❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 5a478bee46e88-332501e5447sm8576351eec.0 - gsmtp')
+📄 Saved latest_analysis.md
+
+✅ Processing complete - 2 video(s) analyzed
 ```
