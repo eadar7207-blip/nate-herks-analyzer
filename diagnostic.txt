@@ -1,4 +1,4 @@
-# Run 2026-09-04 11:47 UTC
+# Run 2026-09-04 15:10 UTC
 ```
 === RSS probe ===
 HTTP 200 size=35678
@@ -10,17 +10,25 @@ HTTP 200 size=35678
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-04T11:47:05.167985
+⏰ Time: 2026-09-04T15:10:44.312528
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 35678 bytes
+   RSS feed HTTP 200, 34822 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 21QbJo6s0xA published 2026-09-04 — NEW
    📅 5FukkI4fbiU published 2026-09-03 — NEW
    📅 NbUTIFEEXLY published 2026-09-03 — NEW
    📅 FBVNS1l5Vb8 published 2026-09-02 — already processed
    📅 FFWtxjvW2ts published 2026-09-02 — already processed
-   📅 8IyORt-7rOQ published 2026-09-01 — already processed
-📹 Found 2 new video(s)
+📹 Found 3 new video(s)
+
+🔍 Analyzing: I Gave an AI Engineer Access to My Whole Business...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/21QbJo6s0xA: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 21QbJo6s0xA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: I Had Fable 5.1 and 5 Build Me the Same App...
    🔑 Using YouTube cookies (2995 chars)
