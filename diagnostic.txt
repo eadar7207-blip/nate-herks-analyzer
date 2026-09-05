@@ -1,28 +1,26 @@
-# Run 2026-09-05 06:21 UTC
+# Run 2026-09-05 10:57 UTC
 ```
 === RSS probe ===
-HTTP 500 size=1730
-<!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 500 (Server Error)!!1</title>
-  <style>
-    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{backgroun
+HTTP 200 size=34583
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
+ <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
+ <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
+ <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-05T06:21:23.001570
+⏰ Time: 2026-09-05T10:57:10.404797
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
-   🔄 Switching to yt-dlp for video discovery
-   ✅ yt-dlp returned 10 entries
-📺 Found 10 recent videos in feed
-   📅 QhmhUgccaS0 published 2026-09-05 — NEW
-   📅 dT5-x3u5nCg published 2026-09-05 — NEW
-   📅 5FukkI4fbiU published 2026-09-05 — NEW
-   📅 NbUTIFEEXLY published 2026-09-05 — NEW
-   📅 FBVNS1l5Vb8 published 2026-09-05 — already processed
-📹 Found 4 new video(s)
+   RSS feed HTTP 200, 34583 bytes
+   ✅ RSS feed returned 15 entries
+📺 Found 15 recent videos in feed
+   📅 QhmhUgccaS0 published 2026-09-04 — NEW
+   📅 dT5-x3u5nCg published 2026-09-04 — NEW
+   📅 21QbJo6s0xA published 2026-09-04 — NEW
+   📅 5FukkI4fbiU published 2026-09-03 — NEW
+   📅 NbUTIFEEXLY published 2026-09-03 — NEW
+📹 Found 5 new video(s)
 
 🔍 Analyzing: GPT-6 Astra FINALLY Kills AI Website Slop...
    🔑 Using YouTube cookies (2995 chars)
@@ -38,6 +36,14 @@ HTTP 500 size=1730
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=dT5-x3u5nCg: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] dT5-x3u5nCg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
+
+🔍 Analyzing: I Gave an AI Engineer Access to My Whole Business...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/21QbJo6s0xA: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 21QbJo6s0xA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 
 🔍 Analyzing: I Had Fable 5.1 and 5 Build Me the Same App...
