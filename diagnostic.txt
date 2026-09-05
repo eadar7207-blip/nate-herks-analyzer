@@ -1,7 +1,7 @@
-# Run 2026-09-04 23:27 UTC
+# Run 2026-09-05 01:29 UTC
 ```
 === RSS probe ===
-HTTP 200 size=34600
+HTTP 200 size=34578
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=34600
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-04T23:27:18.622837
+⏰ Time: 2026-09-05T01:29:21.569597
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 34600 bytes
+   RSS feed HTTP 200, 34578 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 QhmhUgccaS0 published 2026-09-04 — NEW
    📅 dT5-x3u5nCg published 2026-09-04 — NEW
    📅 21QbJo6s0xA published 2026-09-04 — NEW
    📅 5FukkI4fbiU published 2026-09-03 — NEW
    📅 NbUTIFEEXLY published 2026-09-03 — NEW
-   📅 FBVNS1l5Vb8 published 2026-09-02 — already processed
-📹 Found 4 new video(s)
+📹 Found 5 new video(s)
+
+🔍 Analyzing: GPT-6 Astra FINALLY Kills AI Website Slop...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=QhmhUgccaS0: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] QhmhUgccaS0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: GPT-6 Astra Made This Entire Video...
    🔑 Using YouTube cookies (2995 chars)
