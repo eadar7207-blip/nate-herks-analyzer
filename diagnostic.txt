@@ -1,7 +1,7 @@
-# Run 2026-09-08 22:03 UTC
+# Run 2026-09-09 00:44 UTC
 ```
 === RSS probe ===
-HTTP 200 size=34682
+HTTP 200 size=34356
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=34682
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-08T22:03:27.866046
+⏰ Time: 2026-09-09T00:44:47.155869
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 34682 bytes
+   RSS feed HTTP 200, 34356 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 o3IEkKXXXvo published 2026-09-08 — NEW
    📅 TLQLfa7yH4I published 2026-09-07 — NEW
    📅 yysILVsfLFM published 2026-09-07 — NEW
    📅 WfJPBVXPt8k published 2026-09-06 — NEW
    📅 9oi-b5Dvtso published 2026-09-05 — NEW
-   📅 QhmhUgccaS0 published 2026-09-04 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: GPT-6 Astra Finally Solves AI Video Editing (full ...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=o3IEkKXXXvo: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] o3IEkKXXXvo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: I Turned GPT-6 Astra Into a 24/7 Stock Trader (tut...
    🔑 Using YouTube cookies (2995 chars)
@@ -52,14 +60,6 @@ HTTP 200 size=34682
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=9oi-b5Dvtso: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 9oi-b5Dvtso: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: GPT-6 Astra FINALLY Kills AI Website Slop...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=QhmhUgccaS0: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] QhmhUgccaS0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
