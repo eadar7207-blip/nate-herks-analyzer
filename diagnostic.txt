@@ -1,7 +1,7 @@
-# Run 2026-09-09 14:50 UTC
+# Run 2026-09-09 18:02 UTC
 ```
 === RSS probe ===
-HTTP 200 size=34359
+HTTP 200 size=35025
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=34359
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-09T14:49:53.239397
+⏰ Time: 2026-09-09T18:02:38.358532
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 34359 bytes
+   RSS feed HTTP 200, 35025 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 5QmOhvVssxY published 2026-09-09 — NEW
    📅 o3IEkKXXXvo published 2026-09-08 — NEW
-   📅 TLQLfa7yH4I published 2026-09-07 — NEW
+   📅 TLQLfa7yH4I published 2026-09-07 — already processed
    📅 yysILVsfLFM published 2026-09-07 — NEW
    📅 WfJPBVXPt8k published 2026-09-06 — NEW
-   📅 9oi-b5Dvtso published 2026-09-05 — NEW
-📹 Found 5 new video(s)
+📹 Found 4 new video(s)
+
+🔍 Analyzing: Thank You for 1M Subscribers...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=5QmOhvVssxY: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 5QmOhvVssxY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: GPT-6 Astra Finally Solves AI Video Editing (full ...
    🔑 Using YouTube cookies (2995 chars)
@@ -29,14 +37,6 @@ HTTP 200 size=34359
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] o3IEkKXXXvo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
-
-🔍 Analyzing: I Turned GPT-6 Astra Into a 24/7 Stock Trader (tut...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=TLQLfa7yH4I: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ✅ yt-dlp transcript (20487 chars)
-✅ Analysis complete
 
 🔍 Analyzing: I Turned GPT-6 Astra Into the Ultimate AI Second B...
    🔑 Using YouTube cookies (2995 chars)
@@ -53,16 +53,5 @@ HTTP 200 size=34359
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] WfJPBVXPt8k: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
-
-🔍 Analyzing: GPT-6 Astra Voice Mode Automates Literally Anythin...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=9oi-b5Dvtso: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 9oi-b5Dvtso: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-❌ Failed to send email: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 98e67ed59e1d1-39b3312f9a8sm30148416a91.2 - gsmtp')
-📄 Saved latest_analysis.md
-
-✅ Processing complete - 1 video(s) analyzed
+⚠️  No videos were successfully analyzed
 ```
