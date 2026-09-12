@@ -1,25 +1,27 @@
-# Run 2026-09-12 01:39 UTC
+# Run 2026-09-12 06:33 UTC
 ```
 === RSS probe ===
-HTTP 200 size=34004
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
- <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
- <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
- <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
- <title>Nate Herk | AI 
+HTTP 404 size=1613
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-12T01:39:13.232855
+⏰ Time: 2026-09-12T06:33:49.299707
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 34004 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 6LNlCpQPYFc published 2026-09-11 — NEW
-   📅 iW-yLZjbFjo published 2026-09-10 — NEW
-   📅 5QmOhvVssxY published 2026-09-09 — NEW
-   📅 o3IEkKXXXvo published 2026-09-08 — NEW
-   📅 TLQLfa7yH4I published 2026-09-07 — already processed
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 6LNlCpQPYFc published 2026-09-12 — NEW
+   📅 5QmOhvVssxY published 2026-09-12 — NEW
+   📅 o3IEkKXXXvo published 2026-09-12 — NEW
+   📅 TLQLfa7yH4I published 2026-09-12 — already processed
+   📅 yysILVsfLFM published 2026-09-12 — NEW
 📹 Found 4 new video(s)
 
 🔍 Analyzing: How to Actually Choose the Right AI Agent...
@@ -28,14 +30,6 @@ HTTP 200 size=34004
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=6LNlCpQPYFc: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 6LNlCpQPYFc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Claude Can Now Plan Your Whole Day by Location...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/iW-yLZjbFjo: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] iW-yLZjbFjo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 
 🔍 Analyzing: Thank You for 1M Subscribers...
@@ -52,6 +46,14 @@ HTTP 200 size=34004
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=o3IEkKXXXvo: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] o3IEkKXXXvo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
+
+🔍 Analyzing: I Turned GPT-6 Astra Into the Ultimate AI Second B...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=yysILVsfLFM: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] yysILVsfLFM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
