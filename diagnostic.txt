@@ -1,67 +1,33 @@
-# Run 2026-09-15 05:52 UTC
+# Run 2026-09-15 10:30 UTC
 ```
 === RSS probe ===
-HTTP 404 size=1613
-<!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 404 (Not Found)!!1</title>
-  <style>
-    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
+HTTP 200 size=33950
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
+ <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
+ <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
+ <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-15T05:52:47.722975
+⏰ Time: 2026-09-15T10:30:36.759358
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
-   🔄 Switching to yt-dlp for video discovery
-   ✅ yt-dlp returned 10 entries
-📺 Found 10 recent videos in feed
-   📅 68HH9HVFJDM published 2026-09-15 — NEW
-   📅 HIRDzMtuWFk published 2026-09-15 — NEW
-   📅 6LNlCpQPYFc published 2026-09-15 — NEW
-   📅 5QmOhvVssxY published 2026-09-15 — NEW
-   📅 o3IEkKXXXvo published 2026-09-15 — NEW
-📹 Found 5 new video(s)
+   RSS feed HTTP 200, 33950 bytes
+   ✅ RSS feed returned 15 entries
+📺 Found 15 recent videos in feed
+   📅 68HH9HVFJDM published 2026-09-13 — already processed
+   📅 HIRDzMtuWFk published 2026-09-13 — already processed
+   📅 6LNlCpQPYFc published 2026-09-11 — already processed
+   📅 iW-yLZjbFjo published 2026-09-10 — NEW
+   📅 5QmOhvVssxY published 2026-09-09 — already processed
+📹 Found 1 new video(s)
 
-🔍 Analyzing: AI News in 10 mins: 10% chance AI kills humans wit...
+🔍 Analyzing: Claude Can Now Plan Your Whole Day by Location...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=68HH9HVFJDM: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/iW-yLZjbFjo: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 68HH9HVFJDM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Anthropic Engineer Explains: What to Build Instead...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=HIRDzMtuWFk: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] HIRDzMtuWFk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: How to Actually Choose the Right AI Agent...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=6LNlCpQPYFc: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 6LNlCpQPYFc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Thank You for 1M Subscribers...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=5QmOhvVssxY: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 5QmOhvVssxY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: GPT-6 Astra Finally Solves AI Video Editing (full ...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=o3IEkKXXXvo: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] o3IEkKXXXvo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] iW-yLZjbFjo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
