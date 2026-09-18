@@ -1,7 +1,7 @@
-# Run 2026-09-18 10:05 UTC
+# Run 2026-09-18 14:40 UTC
 ```
 === RSS probe ===
-HTTP 200 size=35053
+HTTP 200 size=34406
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,33 @@ HTTP 200 size=35053
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-18T10:05:49.554678
+⏰ Time: 2026-09-18T14:40:16.596790
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 35053 bytes
+   RSS feed HTTP 200, 34406 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 TIYCa6hOx1Q published 2026-09-18 — NEW
+   📅 QDsenEcAJIk published 2026-09-18 — NEW
    📅 oWCcN6hSFjA published 2026-09-18 — NEW
    📅 FqnNL8fnUWo published 2026-09-16 — NEW
    📅 ff7om2bBLKM published 2026-09-16 — already processed
-   📅 68HH9HVFJDM published 2026-09-13 — already processed
-   📅 HIRDzMtuWFk published 2026-09-13 — already processed
-📹 Found 2 new video(s)
+📹 Found 4 new video(s)
+
+🔍 Analyzing: Run Your Entire Cold Outreach From One Tool...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/TIYCa6hOx1Q: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] TIYCa6hOx1Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
+
+🔍 Analyzing: Anthropic’s CEO: How to Build a 1 Person Business ...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=QDsenEcAJIk: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] QDsenEcAJIk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: This ONE GPT-6 Astra Skill Replaces Your Higgsfiel...
    🔑 Using YouTube cookies (2995 chars)
