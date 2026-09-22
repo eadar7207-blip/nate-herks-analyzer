@@ -1,28 +1,34 @@
-# Run 2026-09-22 06:53 UTC
+# Run 2026-09-22 12:08 UTC
 ```
 === RSS probe ===
-HTTP 404 size=1613
-<!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 404 (Not Found)!!1</title>
-  <style>
-    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
+HTTP 200 size=33763
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
+ <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
+ <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
+ <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-22T06:52:59.762495
+⏰ Time: 2026-09-22T12:07:56.985330
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
-   🔄 Switching to yt-dlp for video discovery
-   ✅ yt-dlp returned 10 entries
-📺 Found 10 recent videos in feed
-   📅 X-pbJWKmwi0 published 2026-09-22 — NEW
-   📅 ymgH8jS6Wb8 published 2026-09-22 — already processed
-   📅 9KOtMsZ9I28 published 2026-09-22 — already processed
-   📅 QDsenEcAJIk published 2026-09-22 — already processed
-   📅 oWCcN6hSFjA published 2026-09-22 — already processed
-📹 Found 1 new video(s)
+   RSS feed HTTP 200, 33763 bytes
+   ✅ RSS feed returned 15 entries
+📺 Found 15 recent videos in feed
+   📅 xcxbOcc36dM published 2026-09-21 — NEW
+   📅 X-pbJWKmwi0 published 2026-09-21 — NEW
+   📅 ymgH8jS6Wb8 published 2026-09-19 — already processed
+   📅 9KOtMsZ9I28 published 2026-09-19 — already processed
+   📅 TIYCa6hOx1Q published 2026-09-18 — already processed
+📹 Found 2 new video(s)
+
+🔍 Analyzing: This New AI Makes Decisions for 18 Cents...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/xcxbOcc36dM: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] xcxbOcc36dM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: Build & Sell with Codex (5+ Hour Course)...
    🔑 Using YouTube cookies (2995 chars)
