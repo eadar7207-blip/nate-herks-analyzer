@@ -1,4 +1,4 @@
-# Run 2026-09-27 21:40 UTC
+# Run 2026-09-28 00:02 UTC
 ```
 === RSS probe ===
 HTTP 200 size=35749
@@ -10,7 +10,7 @@ HTTP 200 size=35749
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-27T21:40:11.802107
+⏰ Time: 2026-09-28T00:02:05.651356
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 35749 bytes
    ✅ RSS feed returned 15 entries
@@ -25,7 +25,7 @@ HTTP 200 size=35749
 🔍 Analyzing: No, Seriously. Claude Code is Starting To Get Dang...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Ktnwygcnd8U: IpBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Ktnwygcnd8U: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Ktnwygcnd8U: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
@@ -33,7 +33,7 @@ HTTP 200 size=35749
 🔍 Analyzing: Opus 5.5 Just Changed Video Editing Forever (free ...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=7jHXoPGnA4c: IpBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=7jHXoPGnA4c: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 7jHXoPGnA4c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
