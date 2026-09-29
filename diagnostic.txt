@@ -1,7 +1,7 @@
-# Run 2026-09-28 23:59 UTC
+# Run 2026-09-29 04:11 UTC
 ```
 === RSS probe ===
-HTTP 200 size=35857
+HTTP 200 size=36265
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=35857
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-28T23:59:20.185621
+⏰ Time: 2026-09-29T04:11:45.936686
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 35857 bytes
+   RSS feed HTTP 200, 36265 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 7eo-11K2e3c published 2026-09-29 — NEW
    📅 eg_1NXDcoPk published 2026-09-28 — NEW
    📅 Ktnwygcnd8U published 2026-09-27 — NEW
    📅 7jHXoPGnA4c published 2026-09-25 — NEW
    📅 QCkHIyEPIYo published 2026-09-24 — already processed
-   📅 GmLcJVzkxPA published 2026-09-23 — already processed
-📹 Found 3 new video(s)
+📹 Found 4 new video(s)
+
+🔍 Analyzing: I Tested Sonnet 5.5 vs Opus 5.5. What You Need to ...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=7eo-11K2e3c: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 7eo-11K2e3c: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: I Gave GPT 6 Astra $10,000 to Trade Stocks...And T...
    🔑 Using YouTube cookies (2995 chars)
