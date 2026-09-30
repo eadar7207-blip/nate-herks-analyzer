@@ -1,7 +1,7 @@
-# Run 2026-09-30 13:04 UTC
+# Run 2026-09-30 18:37 UTC
 ```
 === RSS probe ===
-HTTP 200 size=34990
+HTTP 200 size=35124
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=34990
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-30T13:04:55.216430
+⏰ Time: 2026-09-30T18:37:47.980676
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 34990 bytes
+   RSS feed HTTP 200, 35124 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 BvvfZKKz4Yo published 2026-09-30 — NEW
    📅 iafsAWrB8GQ published 2026-09-29 — NEW
    📅 7eo-11K2e3c published 2026-09-29 — already processed
    📅 eg_1NXDcoPk published 2026-09-28 — already processed
    📅 Ktnwygcnd8U published 2026-09-27 — already processed
-   📅 7jHXoPGnA4c published 2026-09-25 — already processed
-📹 Found 1 new video(s)
+📹 Found 2 new video(s)
+
+🔍 Analyzing: OpenAI's Dots vs. Meta's Muse in under 17 minutes...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=BvvfZKKz4Yo: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] BvvfZKKz4Yo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: Claude Can Now Run Your Entire Email Platform...
    🔑 Using YouTube cookies (2995 chars)
