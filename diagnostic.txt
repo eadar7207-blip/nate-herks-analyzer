@@ -1,34 +1,28 @@
-# Run 2026-09-30 00:48 UTC
+# Run 2026-09-30 06:03 UTC
 ```
 === RSS probe ===
-HTTP 200 size=34989
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
- <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
- <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
- <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
- <title>Nate Herk | AI 
+HTTP 404 size=1613
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-30T00:48:03.909448
+⏰ Time: 2026-09-30T06:03:25.162930
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 34989 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 iafsAWrB8GQ published 2026-09-29 — NEW
-   📅 7eo-11K2e3c published 2026-09-29 — NEW
-   📅 eg_1NXDcoPk published 2026-09-28 — NEW
-   📅 Ktnwygcnd8U published 2026-09-27 — NEW
-   📅 7jHXoPGnA4c published 2026-09-25 — NEW
-📹 Found 5 new video(s)
-
-🔍 Analyzing: Claude Can Now Run Your Entire Email Platform...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/iafsAWrB8GQ: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] iafsAWrB8GQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 7eo-11K2e3c published 2026-09-30 — NEW
+   📅 eg_1NXDcoPk published 2026-09-30 — NEW
+   📅 Ktnwygcnd8U published 2026-09-30 — NEW
+   📅 7jHXoPGnA4c published 2026-09-30 — NEW
+   📅 QCkHIyEPIYo published 2026-09-30 — already processed
+📹 Found 4 new video(s)
 
 🔍 Analyzing: I Tested Sonnet 5.5 vs Opus 5.5. What You Need to ...
    🔑 Using YouTube cookies (2995 chars)
@@ -46,7 +40,7 @@ HTTP 200 size=34989
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] eg_1NXDcoPk: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 
-🔍 Analyzing: No, Seriously. Claude Code is Starting To Get Dang...
+🔍 Analyzing: No, Seriously. Claude is Starting To Get Dangerous...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Ktnwygcnd8U: RequestBlocked: youtube_transcript_api._errors
