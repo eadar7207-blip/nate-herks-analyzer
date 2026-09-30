@@ -1,7 +1,7 @@
-# Run 2026-09-30 18:37 UTC
+# Run 2026-09-30 22:40 UTC
 ```
 === RSS probe ===
-HTTP 200 size=35124
+HTTP 200 size=35153
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,9 +10,9 @@ HTTP 200 size=35124
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-09-30T18:37:47.980676
+⏰ Time: 2026-09-30T22:40:22.334054
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 35124 bytes
+   RSS feed HTTP 200, 35153 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
    📅 BvvfZKKz4Yo published 2026-09-30 — NEW
@@ -22,7 +22,7 @@ HTTP 200 size=35124
    📅 Ktnwygcnd8U published 2026-09-27 — already processed
 📹 Found 2 new video(s)
 
-🔍 Analyzing: OpenAI's Dots vs. Meta's Muse in under 17 minutes...
+🔍 Analyzing: I Tested OpenAI's Dots vs. Meta's Muse. What You N...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=BvvfZKKz4Yo: RequestBlocked: youtube_transcript_api._errors
