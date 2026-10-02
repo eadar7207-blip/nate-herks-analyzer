@@ -1,26 +1,28 @@
-# Run 2026-10-01 23:30 UTC
+# Run 2026-10-02 02:38 UTC
 ```
 === RSS probe ===
-HTTP 200 size=35266
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
- <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
- <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
- <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
- <title>Nate Herk | AI 
+HTTP 404 size=1613
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-01T23:30:08.695644
+⏰ Time: 2026-10-02T02:38:28.640362
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 35266 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 pY5_Ux_YJjo published 2026-10-01 — NEW
-   📅 BvvfZKKz4Yo published 2026-09-30 — NEW
-   📅 iafsAWrB8GQ published 2026-09-29 — NEW
-   📅 7eo-11K2e3c published 2026-09-29 — already processed
-   📅 eg_1NXDcoPk published 2026-09-28 — already processed
-📹 Found 3 new video(s)
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 pY5_Ux_YJjo published 2026-10-02 — NEW
+   📅 BvvfZKKz4Yo published 2026-10-02 — NEW
+   📅 7eo-11K2e3c published 2026-10-02 — already processed
+   📅 eg_1NXDcoPk published 2026-10-02 — already processed
+   📅 Ktnwygcnd8U published 2026-10-02 — already processed
+📹 Found 2 new video(s)
 
 🔍 Analyzing: I Tested Codex's $500/mo Ultrafast. What You Need ...
    🔑 Using YouTube cookies (2995 chars)
@@ -36,14 +38,6 @@ HTTP 200 size=35266
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=BvvfZKKz4Yo: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] BvvfZKKz4Yo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Claude Can Now Run Your Entire Email Platform...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/iafsAWrB8GQ: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] iafsAWrB8GQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
