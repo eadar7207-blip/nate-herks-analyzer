@@ -1,4 +1,4 @@
-# Run 2026-10-03 21:52 UTC
+# Run 2026-10-04 00:09 UTC
 ```
 === RSS probe ===
 HTTP 200 size=32111
@@ -10,7 +10,7 @@ HTTP 200 size=32111
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-03T21:51:57.629345
+⏰ Time: 2026-10-04T00:09:18.068256
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 32111 bytes
    ✅ RSS feed returned 15 entries
@@ -25,7 +25,7 @@ HTTP 200 size=32111
 🔍 Analyzing: Every Codex Concept Explained for Non-Coders...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=DFlELTiSPk8: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=DFlELTiSPk8: IpBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] DFlELTiSPk8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
@@ -33,7 +33,7 @@ HTTP 200 size=32111
 🔍 Analyzing: Claude Code Mods Are Game Changers. This One Saves...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/26rQLqoxBHA: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/26rQLqoxBHA: IpBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 26rQLqoxBHA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
@@ -41,7 +41,7 @@ HTTP 200 size=32111
 🔍 Analyzing: I Tested Codex's NEW $500/mo Ultrafast mode...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/NWd86IwfnrU: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/NWd86IwfnrU: IpBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] NWd86IwfnrU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
