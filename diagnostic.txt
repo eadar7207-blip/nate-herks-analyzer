@@ -1,7 +1,7 @@
-# Run 2026-10-05 09:39 UTC
+# Run 2026-10-05 18:53 UTC
 ```
 === RSS probe ===
-HTTP 200 size=32113
+HTTP 200 size=31944
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=32113
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-05T09:39:03.458689
+⏰ Time: 2026-10-05T18:52:53.889181
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 32113 bytes
+   RSS feed HTTP 200, 31944 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 bvGptCLDhyo published 2026-10-05 — NEW
    📅 DFlELTiSPk8 published 2026-10-03 — NEW
    📅 26rQLqoxBHA published 2026-10-03 — NEW
    📅 9hetShMMp2s published 2026-10-02 — already processed
    📅 l8ywUsEJ2XQ published 2026-10-02 — already processed
-   📅 NWd86IwfnrU published 2026-10-02 — NEW
 📹 Found 3 new video(s)
+
+🔍 Analyzing: I Built Another Andrej Karpathy Using Claude...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=bvGptCLDhyo: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] bvGptCLDhyo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: Every Codex Concept Explained for Non-Coders...
    🔑 Using YouTube cookies (2995 chars)
@@ -36,14 +44,6 @@ HTTP 200 size=32113
 ⚠️  Transcript fetch failed for https://www.youtube.com/shorts/26rQLqoxBHA: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 26rQLqoxBHA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: I Tested Codex's NEW $500/mo Ultrafast mode...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/NWd86IwfnrU: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] NWd86IwfnrU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
