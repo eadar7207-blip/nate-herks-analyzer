@@ -1,7 +1,7 @@
-# Run 2026-10-09 15:36 UTC
+# Run 2026-10-09 20:22 UTC
 ```
 === RSS probe ===
-HTTP 200 size=27869
+HTTP 200 size=27819
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=27869
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-09T15:36:27.379667
+⏰ Time: 2026-10-09T20:22:07.814197
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 27869 bytes
+   RSS feed HTTP 200, 27819 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 A8YuAEUQEos published 2026-10-09 — NEW
    📅 f_WsOXdGm4w published 2026-10-09 — NEW
    📅 kebGZLyrvZg published 2026-10-09 — NEW
    📅 MgvwZaDPCs4 published 2026-10-09 — NEW
    📅 w4R4l1xtfGU published 2026-10-09 — NEW
-   📅 oz2CwrPV2Rg published 2026-10-08 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: Oracle’s New AI Only Thinks When It Has To...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/A8YuAEUQEos: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] A8YuAEUQEos: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
 
 🔍 Analyzing: Grok Bot now runs on Opus 5.5...
    🔑 Using YouTube cookies (2995 chars)
@@ -52,14 +60,6 @@ HTTP 200 size=27869
 ⚠️  Transcript fetch failed for https://www.youtube.com/shorts/w4R4l1xtfGU: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] w4R4l1xtfGU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Anthropic Engineers Just 10x'd Everyone's Claude C...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=oz2CwrPV2Rg: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] oz2CwrPV2Rg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
