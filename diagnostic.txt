@@ -1,52 +1,30 @@
-# Run 2026-10-10 00:21 UTC
+# Run 2026-10-10 06:28 UTC
 ```
 === RSS probe ===
-HTTP 200 size=27821
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
- <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
- <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
- <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
- <title>Nate Herk | AI 
+HTTP 404 size=1613
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-10T00:21:37.388817
+⏰ Time: 2026-10-10T06:28:08.997555
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 27821 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 A8YuAEUQEos published 2026-10-09 — NEW
-   📅 f_WsOXdGm4w published 2026-10-09 — NEW
-   📅 kebGZLyrvZg published 2026-10-09 — NEW
-   📅 MgvwZaDPCs4 published 2026-10-09 — NEW
-   📅 w4R4l1xtfGU published 2026-10-09 — NEW
-📹 Found 5 new video(s)
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 MgvwZaDPCs4 published 2026-10-10 — NEW
+   📅 oz2CwrPV2Rg published 2026-10-10 — NEW
+   📅 bvGptCLDhyo published 2026-10-10 — NEW
+   📅 DFlELTiSPk8 published 2026-10-10 — NEW
+   📅 9hetShMMp2s published 2026-10-10 — already processed
+📹 Found 4 new video(s)
 
-🔍 Analyzing: Oracle’s New AI Only Thinks When It Has To...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/A8YuAEUQEos: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] A8YuAEUQEos: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Grok Bot now runs on Opus 5.5...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/f_WsOXdGm4w: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] f_WsOXdGm4w: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Grok Bot uses my Claude Code subscription. Here's ...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/kebGZLyrvZg: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] kebGZLyrvZg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: Grok Bot Just Got 2 Massive Upgrades. Do These Thi...
+🔍 Analyzing: Grok Bot Has 2 New Superpowers. Do These Things No...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=MgvwZaDPCs4: RequestBlocked: youtube_transcript_api._errors
@@ -54,12 +32,28 @@ HTTP 200 size=27821
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] MgvwZaDPCs4: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 
-🔍 Analyzing: Your Popup Can Now Optimize Itself for Every Visit...
+🔍 Analyzing: Anthropic Engineers Just 10x'd Everyone's Claude C...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/w4R4l1xtfGU: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=oz2CwrPV2Rg: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] w4R4l1xtfGU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] oz2CwrPV2Rg: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
+
+🔍 Analyzing: I Built Another Andrej Karpathy Using Claude...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=bvGptCLDhyo: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] bvGptCLDhyo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
+
+🔍 Analyzing: Master 96% of Codex in under 35 minutes...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=DFlELTiSPk8: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] DFlELTiSPk8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
