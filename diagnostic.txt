@@ -1,7 +1,7 @@
-# Run 2026-10-15 15:21 UTC
+# Run 2026-10-15 19:29 UTC
 ```
 === RSS probe ===
-HTTP 200 size=28459
+HTTP 200 size=27420
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,19 +10,27 @@ HTTP 200 size=28459
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-15T15:21:06.082404
+⏰ Time: 2026-10-15T19:29:07.188762
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 28679 bytes
+   RSS feed HTTP 200, 27420 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 saxdE-U_YS8 published 2026-10-15 — NEW
    📅 KZiF2J83zaY published 2026-10-15 — NEW
    📅 CV-k6rPJvJY published 2026-10-14 — NEW
    📅 CklLenf9fNc published 2026-10-14 — NEW
    📅 hxJDcw540IE published 2026-10-13 — NEW
-   📅 rL5tw6h78zo published 2026-10-13 — NEW
 📹 Found 5 new video(s)
 
-🔍 Analyzing: I Built a Team of AI Agents AND Humans That Work T...
+🔍 Analyzing: AI Agents Just Became Multiplayer. Here's How to B...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/saxdE-U_YS8: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] saxdE-U_YS8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
+⚠️  Could not get transcript
+
+🔍 Analyzing: AI Agents Just Became Multiplayer. Here's How to B...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=KZiF2J83zaY: RequestBlocked: youtube_transcript_api._errors
@@ -52,14 +60,6 @@ HTTP 200 size=28459
 ⚠️  Transcript fetch failed for https://www.youtube.com/shorts/hxJDcw540IE: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] hxJDcw540IE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
-⚠️  Could not get transcript
-
-🔍 Analyzing: I Tested the Viral Reverse Engineer Anything Skill...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=rL5tw6h78zo: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] rL5tw6h78zo: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
