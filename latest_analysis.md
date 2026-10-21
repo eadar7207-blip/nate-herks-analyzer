@@ -1,65 +1,67 @@
-# Nate Herk Analysis — October 06, 2026
+# Nate Herk Analysis — October 21, 2026
 
-## [How to Start a 1-Person AI Business in 2026 — Full System (Claude + Free Tools) 🚀](https://www.youtube.com/watch?v=jEp-FdmunsQ)
-*September 30, 2026*
-
-WHAT IT'S ABOUT
-Nate breaks down his exact system for building and running a solo AI consulting business using Claude — the same model he used to scale his own consultancy to $100k/month before exiting in late 2025. The core shift is reframing who you are: not an "AI builder" who sells tools, but an "AI partner" who sells measurable business outcomes.
-
-THE KEY POINTS
-- **Sell outcomes, not AI features.** Clients care about more customers, more value per customer, and lower operating costs. Map every offer to one of those three buckets.
-- **84% of the global population has never used AI.** Only 0.04% use advanced tools like Claude Code. The market is almost completely untapped.
-- **Build your own AI Operating System before hunting clients.** Spend 2–3 weeks using Claude Code to build your personal AI OS. You need to be the proof-of-concept first.
-- **The Four-Rung Service Ladder:** Education → Audit → Project → Retainer.
-- **Get 5 real conversations before forcing a niche.** Let the pattern find you.
-- Turn every project into a case study with before/after numbers.
-- Education sessions priced at $100–$500. Low risk entry point that builds trust.
-
-THE METHOD OR FRAMEWORK
-The Four-Rung Service Ladder:
-1. Education / Consulting ($100–$500): One session, teach the owner how to use AI on their real work.
-2. Audit ($500–$2,000): Structured review identifying the biggest AI opportunities.
-3. Project ($2,000–$15,000): Build and deploy one focused automation. Measure before/after.
-4. Retainer ($1,000–$5,000/month): Ongoing optimisation and new builds.
-
-Three business buckets: (1) more customers, (2) more value per customer, (3) lower operating costs.
-
-HOW THIS APPLIES TO AI REAL ESTATE
-This maps directly onto real estate as a vertical. Agents need more leads, higher close rates, and less admin time — perfectly aligned with the three buckets. Entry point: a $300–$500 workshop where you show an agent how to use Claude on their actual work — listing descriptions, CMA narratives, follow-up sequences. The audit finds their #1 bottleneck. Real estate is ideal because agents are independent, there are millions of them, and most have never touched AI tooling.
-
-ACTION STEP THIS WEEK
-Book 5 coffee chats with local real estate agents this week — not to sell, just to understand their workflow. Ask what's most repetitive and what they'd pay to have done in 5 minutes. Deliver the first paid Education session within 10 days.
-
-BEST QUOTE
-"This one person business model is how I started my AI consultancy that we scaled to over $100k/mo. To get started, to get the reps in, and to build the relationships — you do not need a team. You need Claude."
+> **Note:** YouTube RSS feed and yt-dlp were both blocked by the network proxy today.
+> Analysis was compiled from verified third-party summaries, Skool community posts, and web search results.
 
 ---
 
-## [Codex for Non-Coders: Why I Stopped Using ChatGPT for Big Projects](https://www.youtube.com/watch?v=hkPYflfZDcQ)
-*Recent upload*
+## [Grok Bot Just Got 2 Massive Upgrades. Do These Things Now.](https://www.youtube.com/@nateherk)
+*October 09, 2026*
 
-WHAT IT'S ABOUT
-Nate explains why Codex (OpenAI's agentic AI tool — an AI that can plan, write, and execute tasks autonomously) has replaced ChatGPT for anything complex. ChatGPT is for quick back-and-forth; Codex runs long, multi-step projects while you do other things. Aimed specifically at non-coders.
+### WHAT IT'S ABOUT
+Nate walks through two big changes xAI quietly shipped to Grok Bot — the platform where you can build AI agents that run on a persistent cloud computer. The upgrades lower cost and raise capability at the same time. He treats this as a "do these things now" moment.
 
-THE KEY POINTS
-- **ChatGPT is a conversation. Codex is a worker.** Codex executes tasks over time, checks its own work, and returns a finished result.
-- **Model selection matters:** GPT-6 Astra (powerful/expensive) vs GPT-5.6 Sol/Terra (faster/cheaper). Match the model to the task.
-- **Effort levels change output quality:** low → ultra. Use "high" or "extra high" for complex analysis or important documents.
-- **Fast Mode** is ~1.5× faster but uses more monthly quota. Use it for quick tasks only.
-- **Context is your competitive edge, not the model.** Everyone has the same AI — your edge is the data and context you feed it.
-- User-level configuration lets the AI learn your workflows over time. Set it up once and it compounds.
+### THE KEY POINTS
+- **Opus 5.5 is now the default model routing inside Grok Bot** — every Bot request automatically gets Claude Opus 5.5 quality without picking a model explicitly.
+- **Native X search is now free** — Grok Bot can read, search, and monitor posts on X without the paid X API. Nate migrated his X automations off the paid API immediately.
+- **Claude Code runs inside a Grok Bot's computer** — install Claude Code into the Bot's persistent cloud environment (browser + terminal + filesystem). Creates an AI agent that can spawn Claude Code tasks.
+- The combination of Opus 5.5 routing + free X monitoring + Claude Code execution = a powerful, low-cost automation stack.
 
-THE METHOD OR FRAMEWORK
-Task-tiered model selection:
-- High-stakes deliverable → GPT-6 Astra, effort = high/extra-high, Fast Mode off
-- Medium complexity → GPT-5.6 Sol, effort = medium, Fast Mode on
-- Routine/repetitive → GPT-5.6 Terra, effort = low, Fast Mode on
+### THE METHOD OR FRAMEWORK
+1. Enable Opus 5.5 routing in Grok Bot settings.
+2. Migrate X automations off the paid API to native Grok X search.
+3. Install Claude Code in the Bot's persistent computer.
+4. Chain them: Bot monitors X → hands task to Claude Code → executes end-to-end.
 
-HOW THIS APPLIES TO AI REAL ESTATE
-Real estate has both high-stakes documents (contracts, CMAs, offer letters) and high-volume repetitive tasks (follow-ups, listing descriptions, social posts). Codex's tiered system lets you treat these differently. As a consultant, building a pre-configured Codex setup for a real estate client — with their listings data, CMA templates, and buyer profiles loaded as context — is a premium project deliverable worth thousands.
+### HOW THIS APPLIES TO AI REAL ESTATE
+Real estate moves fast on social media. With free native X search, build an agent that monitors specific zip codes for real estate chatter, flags lead opportunities ("looking to buy a home in Austin"), and drafts personalized outreach — at near-zero cost.
 
-ACTION STEP THIS WEEK
-Set up Codex and run one real task: take a property listing, feed in the address, square footage, comps, and agent notes, then ask Codex (effort = high) to draft a listing description, buyer FAQ, and three social captions. Time it. This becomes your live demo for client Education sessions.
+### ACTION STEP THIS WEEK
+Rebuild one X-based search as a Grok Bot using native X search. Start with a keyword monitor for your target market. Document the setup for client replication.
 
-BEST QUOTE
-"Context is king, not the AI model. Everyone has access to the same GPT-6 Astra. Your edge is the fuel you feed it — your data, your processes, your institutional knowledge."
+### BEST QUOTE
+"You used to need three paid tools to do this. Now it's one Bot and a free login."
+
+---
+
+## [Claude Has Completely Changed How I Edit Videos](https://www.youtube.com/@nateherk)
+*October 15, 2026*
+
+### WHAT IT'S ABOUT
+Nate reveals Opus 5.5 has cut his video editing time from hours to under 30 minutes per video. He releases the free, open-source Herk Edit Kit and demos two methods for AI-driven video editing using plain English descriptions.
+
+### THE KEY POINTS
+- **Herk Edit Kit = 15 free Claude Code skills** — transcript-driven cutting, storytelling optimization, 406 motion-graphics cards, HyperFrames templates. Open-source at github.com/nateherkai.
+- **Method 1 — Claude Design**: Describe motion graphics and animations in plain English. No coding needed.
+- **Method 2 — Claude Code + HyperFrames**: Production-quality automation of the full editing pipeline from raw footage to finished video.
+- **Opus 5.5 breakthrough**: The model now understands video timing and pacing — it decides where to cut based on content, not just instructions.
+
+### THE METHOD OR FRAMEWORK
+1. Feed raw transcript into Claude Code with the Herk Edit Kit loaded.
+2. Claude identifies cut points and removes filler words.
+3. Describe the motion graphics and title cards you want.
+4. Claude generates them; final render is assembled by HyperFrames.
+
+### HOW THIS APPLIES TO AI REAL ESTATE
+Agents can now automate property tour editing: trim dead air, add branded title cards with listing details, generate 60-second Instagram Reels highlights. Offer as a $500/month "AI Video Package" add-on to consulting work.
+
+### ACTION STEP THIS WEEK
+Install Herk Edit Kit from github.com/nateherkai. Run the transcript-driven cut skill on one existing video. Document the time saved as a client case study.
+
+### BEST QUOTE
+"You don't need to know how to edit anymore. You need to know what you want — Claude handles the how."
+
+---
+
+## This Week's Theme: Opus 5.5 as the New Foundation
+Both videos point to the same shift: Claude Opus 5.5 is now the default intelligence layer across Grok Bot, Claude Code, and video workflows. Cost and complexity barriers from 3 months ago are gone. The window to get ahead is still open — but closing.
