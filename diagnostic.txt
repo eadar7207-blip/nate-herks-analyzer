@@ -1,7 +1,7 @@
-# Run 2026-10-23 20:56 UTC
+# Run 2026-10-23 23:38 UTC
 ```
 === RSS probe ===
-HTTP 200 size=21275
+HTTP 200 size=21276
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,9 +10,9 @@ HTTP 200 size=21275
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-23T20:56:20.153041
+⏰ Time: 2026-10-23T23:37:29.665531
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 21275 bytes
+   RSS feed HTTP 200, 21276 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
    📅 DSS1Yqb6-qE published 2026-10-22 — NEW
@@ -41,10 +41,8 @@ HTTP 200 size=21275
 🔍 Analyzing: This AI Gives Every Shopper a Different Popup...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/biQmfyYZAHw: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] biQmfyYZAHw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
+   ✅ Got transcript (1581 chars)
+✅ Analysis complete
 
 🔍 Analyzing: Alex Hormozi, Jeff Bezos, and Warren Buffet help m...
    🔑 Using YouTube cookies (2995 chars)
@@ -61,5 +59,8 @@ HTTP 200 size=21275
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] OawSCIZdZmU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+❌ Failed to send email: Connection unexpectedly closed
+📄 Saved latest_analysis.md
+
+✅ Processing complete - 1 video(s) analyzed
 ```
