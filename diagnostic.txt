@@ -1,4 +1,4 @@
-# Run 2026-10-23 23:38 UTC
+# Run 2026-10-24 02:03 UTC
 ```
 === RSS probe ===
 HTTP 200 size=21276
@@ -10,17 +10,17 @@ HTTP 200 size=21276
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-23T23:37:29.665531
+⏰ Time: 2026-10-24T02:03:10.250467
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 21276 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
    📅 DSS1Yqb6-qE published 2026-10-22 — NEW
    📅 GnFFcLnmWuQ published 2026-10-22 — NEW
-   📅 biQmfyYZAHw published 2026-10-22 — NEW
+   📅 biQmfyYZAHw published 2026-10-22 — already processed
    📅 kj60zAD8lLU published 2026-10-21 — NEW
    📅 OawSCIZdZmU published 2026-10-21 — NEW
-📹 Found 5 new video(s)
+📹 Found 4 new video(s)
 
 🔍 Analyzing: /roast-room: How I Use Claude to Think Like the To...
    🔑 Using YouTube cookies (2995 chars)
@@ -38,12 +38,6 @@ HTTP 200 size=21276
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] GnFFcLnmWuQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 
-🔍 Analyzing: This AI Gives Every Shopper a Different Popup...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-   ✅ Got transcript (1581 chars)
-✅ Analysis complete
-
 🔍 Analyzing: Alex Hormozi, Jeff Bezos, and Warren Buffet help m...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
@@ -59,8 +53,5 @@ HTTP 200 size=21276
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] OawSCIZdZmU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
-❌ Failed to send email: Connection unexpectedly closed
-📄 Saved latest_analysis.md
-
-✅ Processing complete - 1 video(s) analyzed
+⚠️  No videos were successfully analyzed
 ```
