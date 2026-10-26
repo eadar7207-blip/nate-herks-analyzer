@@ -1,26 +1,28 @@
-# Run 2026-10-25 22:50 UTC
+# Run 2026-10-26 00:46 UTC
 ```
 === RSS probe ===
-HTTP 200 size=21278
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
- <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
- <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
- <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
- <title>Nate Herk | AI 
+HTTP 404 size=1613
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-25T22:50:46.476997
+⏰ Time: 2026-10-26T00:46:25.430404
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 21278 bytes
-   ✅ RSS feed returned 15 entries
-📺 Found 15 recent videos in feed
-   📅 DSS1Yqb6-qE published 2026-10-22 — NEW
-   📅 GnFFcLnmWuQ published 2026-10-22 — NEW
-   📅 biQmfyYZAHw published 2026-10-22 — already processed
-   📅 kj60zAD8lLU published 2026-10-21 — NEW
-   📅 OawSCIZdZmU published 2026-10-21 — NEW
-📹 Found 4 new video(s)
+⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
+   🔄 Switching to yt-dlp for video discovery
+   ✅ yt-dlp returned 10 entries
+📺 Found 10 recent videos in feed
+   📅 DSS1Yqb6-qE published 2026-10-26 — NEW
+   📅 hgLI491ajG0 published 2026-10-26 — NEW
+   📅 Z8lf5oWKfj0 published 2026-10-26 — NEW
+   📅 KZiF2J83zaY published 2026-10-26 — NEW
+   📅 rL5tw6h78zo published 2026-10-26 — NEW
+📹 Found 5 new video(s)
 
 🔍 Analyzing: /roast-room: How I Use Claude to Think Like the To...
    🔑 Using YouTube cookies (2995 chars)
@@ -30,28 +32,36 @@ HTTP 200 size=21278
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] DSS1Yqb6-qE: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 
-🔍 Analyzing: Claude has completely changed how I edit videos...
+🔍 Analyzing: I Tried 100+ AI Tools. These 7 Are the Best...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/GnFFcLnmWuQ: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=hgLI491ajG0: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] GnFFcLnmWuQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] hgLI491ajG0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 
-🔍 Analyzing: Alex Hormozi, Jeff Bezos, and Warren Buffet help m...
+🔍 Analyzing: Matt Pocock: The Most Valuable Skill to Learn in t...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/kj60zAD8lLU: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Z8lf5oWKfj0: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] kj60zAD8lLU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Z8lf5oWKfj0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 
-🔍 Analyzing: Opus 5.5 + Blender = Insane 3D Renders...
+🔍 Analyzing: AI Agents Just Became Multiplayer. Here's How to B...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/OawSCIZdZmU: RequestBlocked: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=KZiF2J83zaY: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] OawSCIZdZmU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] KZiF2J83zaY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+⚠️  Could not get transcript
+
+🔍 Analyzing: I Tested the Viral Reverse Engineer Anything Skill...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=rL5tw6h78zo: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] rL5tw6h78zo: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
