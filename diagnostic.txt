@@ -1,4 +1,4 @@
-# Run 2026-10-28 19:09 UTC
+# Run 2026-10-28 23:39 UTC
 ```
 === RSS probe ===
 HTTP 200 size=22603
@@ -10,7 +10,7 @@ HTTP 200 size=22603
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-28T19:09:37.586251
+⏰ Time: 2026-10-28T23:39:43.661089
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 22603 bytes
    ✅ RSS feed returned 15 entries
@@ -22,7 +22,7 @@ HTTP 200 size=22603
    📅 kj60zAD8lLU published 2026-10-21 — NEW
 📹 Found 4 new video(s)
 
-🔍 Analyzing: 3 Claude Systems That Sell For $3000+ Right Now (W...
+🔍 Analyzing: 4 Claude Systems That Sell For $3000+ Right Now (W...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=BQJRLZ2q_Ns: RequestBlocked: youtube_transcript_api._errors
