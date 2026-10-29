@@ -1,4 +1,4 @@
-# Run 2026-10-29 16:27 UTC
+# Run 2026-10-29 21:28 UTC
 ```
 === RSS probe ===
 HTTP 200 size=22604
@@ -10,7 +10,7 @@ HTTP 200 size=22604
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-29T16:27:29.942604
+⏰ Time: 2026-10-29T21:27:58.920784
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 22604 bytes
    ✅ RSS feed returned 15 entries
@@ -35,8 +35,8 @@ HTTP 200 size=22604
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=DSS1Yqb6-qE: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] DSS1Yqb6-qE: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
+   ✅ yt-dlp transcript (17144 chars)
+✅ Analysis complete
 
 🔍 Analyzing: Claude has completely changed how I edit videos...
    🔑 Using YouTube cookies (2995 chars)
@@ -53,5 +53,8 @@ HTTP 200 size=22604
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] kj60zAD8lLU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+❌ Failed to send email: Connection unexpectedly closed
+📄 Saved latest_analysis.md
+
+✅ Processing complete - 1 video(s) analyzed
 ```

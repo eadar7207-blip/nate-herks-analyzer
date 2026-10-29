@@ -1,45 +1,54 @@
-# Nate Herk Analysis — October 23, 2026
+# Nate Herk Analysis — October 29, 2026
 
-## [This AI Gives Every Shopper a Different Popup](https://www.youtube.com/shorts/biQmfyYZAHw)
-*October 22 at 11:00 AM*
+## [/roast-room: How I Use Claude to Think Like the Top 1%](https://www.youtube.com/watch?v=DSS1Yqb6-qE)
+*October 22 at 02:18 PM*
 
 WHAT IT'S ABOUT
 
-This short video is about a tool called Alia that makes a website show different pop-up messages to different visitors instead of the same one for everybody. Nate made this video to show online store owners (especially ones selling products) how this tool can automatically figure out which pop-ups get the most sign-ups and sales, which is handy right before big shopping days like Black Friday.
+Nate shows off a tool he built called "Roaster Room" (or "Rooster Room") that uses Claude, an AI assistant made by Anthropic, to simulate a panel of famous business minds — people like Jeff Bezos, Warren Buffett, and Alex Hormozi — who all critique your business ideas from their own unique angles. The point is to help you think like top-tier entrepreneurs by having AI versions of them argue, poke holes in your plans, and give you a final recommendation. He made the video to demonstrate how the system works under the hood and to share the free setup so others can use it.
 
 THE KEY POINTS
 
-- Alia shows **different pop-up versions to different people instead of one generic pop-up for everyone**, based on things like which page they landed on or where they came from (a "UTM" is just a tag added to a link that tells the website which ad or source sent the visitor).
+- You ask the system a business question with multiple-choice answers, and a virtual "board" of famous business figures critiques your idea. **Each board member focuses on one specific angle, so you get many expert viewpoints at once instead of just one.**
 
-- The tool runs what's basically a never-ending experiment — **it watches which pop-up versions get the most email sign-ups and money, then quietly sends more visitors to the winning versions.** This is called an A/B test, which just means comparing two or more versions to see which one works better.
+- The board members actually debate each other on screen — for example, Bezos arguing with Gary Vee — which makes it feel like a real heated discussion rather than a single flat answer. **The disagreement between advisors is the value, because it forces you to see weaknesses in your idea.**
 
-- "Smart offers" means **it reads how ready someone is to buy, so it doesn't waste a discount on someone who was already going to purchase anyway** — saving the store from giving away profit for no reason.
+- After a few rounds of debate, the system gives a final verdict (like "Option C") and lets you download a PDF to review or share with your team. **You get a clear decision plus a document you can keep, not just a vague conversation.**
 
-- "Smart triggering" figures out the right moment to show the pop-up again, which the company claims **can grab up to 40% more email subscribers.**
+- The visual panel you see is just a pretty layer on top of what's really happening inside Claude Code (Anthropic's tool for coding with AI), where "subagents" — smaller AI helpers each given one job — act out each board member. **The flashy visuals are optional; the real work happens in the background code.**
 
-- The cleverest part: **it doesn't just count who typed in their email — it tracks what happens after, like whether they bought, how much they spent per order (AOV, or Average Order Value), and how much they're worth over time (LTV, or Lifetime Value).**
+- The whole thing is fully customizable — you can add, remove, or create new advisors. He starts with 11 figures (seven standard plus Naval, Cody Sanchez, Sarah Blakely, and Leila Hormozi) and plans to add more. **You can build a board of literally anyone you admire.**
 
-- Nate points out that doing this now matters because **Black Friday brings a flood of visitors, so it's smart to fix your pop-ups before that traffic shows up.**
+- Each advisor is built from two files: an "agent file" (a plain text document, called markdown, describing how they talk and think) and a "brain" (a deeper folder of their books, frameworks, principles, quotes, and real sources). **The AI isn't guessing — it's pulling from real interviews, books, and talks each person actually gave.**
+
+- For example, Leila Hormozi's AI "brain" was built from 48 sources, about half a million words, 14 interviews, and 34 of her own videos. **The quality of the advice depends on feeding the AI a large pile of that person's real material.**
+
+- He added a "New Rooster" skill (a built-in command) that automatically creates a brand-new advisor — he demonstrates by generating an Elon Musk version, complete with brain, agent file, sources, and even a cartoon character. **You can clone any new expert in minutes without doing the setup by hand.**
 
 THE METHOD OR FRAMEWORK
 
-Here's how Alia works, step by step in plain terms:
+Here's how the Roaster Room system works, step by step in plain English:
 
-1. You create several versions of a pop-up (different wording, offers, or designs).
-2. The tool shows different versions depending on the visitor's situation — the page they landed on or the ad that brought them.
-3. It watches results in real time to see which version gets the most sign-ups and sales for each type of visitor.
-4. It slowly sends more people to the winning versions and fewer to the losers, all on its own.
-5. It adjusts offers based on buying intent, so it doesn't hand out discounts to people already set to buy.
-6. It tracks what happens after sign-up — actual purchases and long-term customer value — not just the email collected.
+1. **Set up your advisors.** Each "board member" is made of two parts: an agent file (a short text file saying how that person speaks, debates, and sees the world) and a "brain" folder (a bigger collection of their real books, frameworks, principles, positions on topics like pricing or debt, and actual quotes and stories).
+
+2. **Ask your question.** You type in a business question and give a few multiple-choice answers to pick from.
+
+3. **Let the board debate.** The system launches a subagent (a small, focused AI helper) for each advisor. Each one looks at your question through their specialty — Buffett looks at cash and long-term value, Hormozi looks at whether people will pay, Wickman looks at whether the business can run without you.
+
+4. **Watch them argue.** The advisors challenge each other over several rounds, exposing flaws in your idea.
+
+5. **Get the verdict and PDF.** The system picks a recommended option and gives you a downloadable document.
+
+6. **Scale it.** Use the "New Rooster" command to automatically add any new expert you want, and the system builds their brain and character for you.
 
 HOW THIS APPLIES TO AI REAL ESTATE
 
-The same idea works great for a real estate website or lead-capture page. Imagine your site gets visitors from a few different sources — some click a Facebook ad for "first-time home buyers," others come from a Google search about "luxury condos downtown," and others land on a page about selling their house. Instead of showing all of them the same "Join our newsletter" pop-up, an Alia-style tool could show the first-time buyers a free "Home Buying Checklist," show the luxury condo visitors a "Private Listings" offer, and show the sellers a "Free Home Value Estimate." The system would then learn which offer turns the most visitors into actual leads who book calls and close deals — and automatically favor the winning pop-ups. For an AI real estate consultant, this is a concrete service you could set up for agents or brokerages to capture far more quality leads without extra manual work.
+This is a powerful blueprint for an AI real estate consulting business because it shows how to turn expert knowledge into an AI "advisor panel" that clients can consult anytime. Imagine building a Roaster Room for real estate decisions, stocked with "brains" trained on real material from top investors and brokers — a Grant Cardone-style multifamily expert, a cash-flow-focused rental investor, a flipping specialist, and a 1031-exchange tax strategist. A client comes to you asking, "Should I buy this fourplex, do a fix-and-flip, or hold my cash and wait?" Your AI board debates it: the cash-flow advisor warns the rent won't cover the mortgage at current rates, the flipper questions the renovation budget, and the tax expert flags a missed exchange opportunity. The client walks away with a reasoned recommendation and a downloadable PDF they can show their partner or lender. You've just packaged elite-level thinking into a repeatable, sellable service.
 
 ACTION STEP THIS WEEK
 
-Go look at your own website or your client's website and count how many sources of traffic you have (ads, Google search, social media, direct links). Then write out at least three different pop-up offers — one for each main type of visitor you identified. For example: a seller offer, a buyer offer, and a general newsletter offer. Having these three ready means you can plug them into a tool like Alia (or a simpler pop-up tool) and start testing which one pulls in the most leads.
+Build one single AI advisor this week. Pick one real estate expert you respect (say, a well-known investor with lots of public content). Gather their material — grab transcripts from 5 to 10 of their YouTube videos and notes from any book or framework they teach. Then open Claude (or ChatGPT) and create one document describing how they think, their key frameworks, and their positions on common deals. Test it by asking your new "advisor" a real investment question and see if the answer sounds like something that expert would actually say. This gives you the first building block of your own Roaster Room.
 
 BEST QUOTE
 
-"It's basically a massive A/B test that keeps optimizing itself on its own."
+"You just ask a question with multiple choice answers, and all these board members come together, blast your idea to the ground, and help you look at it from a different angle."
