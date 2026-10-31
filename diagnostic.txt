@@ -1,26 +1,43 @@
-# Run 2026-10-30 23:18 UTC
+# Run 2026-10-31 02:49 UTC
 ```
 === RSS probe ===
-HTTP 200 size=22659
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
- <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
- <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
- <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
- <title>Nate Herk | AI 
+HTTP 404 size=1613
+<!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-10-30T23:18:45.385000
+⏰ Time: 2026-10-31T02:49:35.209442
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 22659 bytes
+   RSS feed HTTP 200, 24157 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 LP_ErrhiD-M published 2026-10-31 — NEW
+   📅 tcb5q_6jwvY published 2026-10-30 — NEW
    📅 sUsfO3dm8m4 published 2026-10-30 — NEW
    📅 PmSVAtTKZ8U published 2026-10-30 — NEW
    📅 DByAR5Su1Yw published 2026-10-30 — NEW
-   📅 BQJRLZ2q_Ns published 2026-10-27 — NEW
-   📅 DSS1Yqb6-qE published 2026-10-22 — already processed
-📹 Found 4 new video(s)
+📹 Found 5 new video(s)
+
+🔍 Analyzing: Favorite AI model? Asking people at Oracle AI Worl...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/LP_ErrhiD-M: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] LP_ErrhiD-M: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+⚠️  Could not get transcript
+
+🔍 Analyzing: Every Claude 2.0 Concept Explained for Non-Coders...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=tcb5q_6jwvY: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] tcb5q_6jwvY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+⚠️  Could not get transcript
 
 🔍 Analyzing: Which AI tool do you use the most? Claude vs every...
    🔑 Using YouTube cookies (2995 chars)
@@ -44,14 +61,6 @@ HTTP 200 size=22659
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=DByAR5Su1Yw: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] DByAR5Su1Yw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: 4 Claude Systems That Sell For $3000+ Right Now (W...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=BQJRLZ2q_Ns: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] BQJRLZ2q_Ns: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
