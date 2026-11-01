@@ -1,7 +1,7 @@
-# Run 2026-11-01 08:14 UTC
+# Run 2026-11-01 15:30 UTC
 ```
 === RSS probe ===
-HTTP 200 size=22822
+HTTP 200 size=22904
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=22822
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-11-01T08:13:52.730530
+⏰ Time: 2026-11-01T15:29:52.391739
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 22822 bytes
+   RSS feed HTTP 200, 22904 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 sOK6kSXff0M published 2026-11-01 — NEW
    📅 wTYKO_5nonc published 2026-11-01 — NEW
    📅 V0PzEBcnAdk published 2026-10-31 — NEW
    📅 F9YdbCwBX3c published 2026-10-31 — NEW
    📅 LP_ErrhiD-M published 2026-10-31 — NEW
-   📅 tcb5q_6jwvY published 2026-10-30 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: Would you let AI answer your texts for a week?...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/sOK6kSXff0M: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] sOK6kSXff0M: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+⚠️  Could not get transcript
 
 🔍 Analyzing: One word for AI agents in 2027...
    🔑 Using YouTube cookies (2995 chars)
@@ -52,14 +60,6 @@ HTTP 200 size=22822
 ⚠️  Transcript fetch failed for https://www.youtube.com/shorts/LP_ErrhiD-M: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] LP_ErrhiD-M: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: Every Claude 2.0 Concept Explained for Non-Coders...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=tcb5q_6jwvY: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] tcb5q_6jwvY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
