@@ -1,7 +1,7 @@
-# Run 2026-11-01 15:30 UTC
+# Run 2026-11-01 19:55 UTC
 ```
 === RSS probe ===
-HTTP 200 size=22904
+HTTP 200 size=22906
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,9 +10,9 @@ HTTP 200 size=22904
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-11-01T15:29:52.391739
+⏰ Time: 2026-11-01T19:55:05.263640
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 22904 bytes
+   RSS feed HTTP 200, 22906 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
    📅 sOK6kSXff0M published 2026-11-01 — NEW
