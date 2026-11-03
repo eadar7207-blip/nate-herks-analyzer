@@ -1,7 +1,7 @@
-# Run 2026-11-03 10:09 UTC
+# Run 2026-11-03 18:06 UTC
 ```
 === RSS probe ===
-HTTP 200 size=22981
+HTTP 200 size=21756
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=22981
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-11-03T10:09:19.834812
+⏰ Time: 2026-11-03T18:05:58.958119
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 22981 bytes
+   RSS feed HTTP 200, 21756 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 iboJevEybdg published 2026-11-03 — NEW
    📅 fkeK5J7sjpI published 2026-11-03 — NEW
    📅 _EChYLC3Vag published 2026-11-02 — NEW
    📅 1I2dLDAFNaY published 2026-11-02 — NEW
    📅 z8qXJFlcqlM published 2026-11-02 — NEW
-   📅 sOK6kSXff0M published 2026-11-01 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: Which AI tool do people at Oracle AI World use the...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/iboJevEybdg: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] iboJevEybdg: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+⚠️  Could not get transcript
 
 🔍 Analyzing: AI co-founder or human co-founder?...
    🔑 Using YouTube cookies (2995 chars)
@@ -52,14 +60,6 @@ HTTP 200 size=22981
 ⚠️  Transcript fetch failed for https://www.youtube.com/shorts/z8qXJFlcqlM: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] z8qXJFlcqlM: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: Would you let AI answer your texts for a week?...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/sOK6kSXff0M: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] sOK6kSXff0M: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
