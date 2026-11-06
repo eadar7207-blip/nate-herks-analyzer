@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.13
 """
 Nate Herks Video Analyzer - Extracts key insights from daily videos
 Monitors YouTube feed, analyzes transcripts, and emails detailed summaries
