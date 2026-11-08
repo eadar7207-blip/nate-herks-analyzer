@@ -1,54 +1,47 @@
-# Nate Herk Analysis — October 29, 2026
+# Nate Herk Analysis — November 08, 2026
 
-## [/roast-room: How I Use Claude to Think Like the Top 1%](https://www.youtube.com/watch?v=DSS1Yqb6-qE)
-*October 22 at 02:18 PM*
+## [I Told Claude to "Make it better" 100 Times (It Went Too Far)](https://www.youtube.com/watch?v=DByAR5Su1Yw)
+*November 08 at 02:47 AM*
 
-WHAT IT'S ABOUT
+# WHAT IT'S ABOUT
 
-Nate shows off a tool he built called "Roaster Room" (or "Rooster Room") that uses Claude, an AI assistant made by Anthropic, to simulate a panel of famous business minds — people like Jeff Bezos, Warren Buffett, and Alex Hormozi — who all critique your business ideas from their own unique angles. The point is to help you think like top-tier entrepreneurs by having AI versions of them argue, poke holes in your plans, and give you a final recommendation. He made the video to demonstrate how the system works under the hood and to share the free setup so others can use it.
+Nate ran a fun experiment: he took an ugly coffee shop website and told Claude (an AI coding tool made by Anthropic) to "make it better" 100 times in a row, with no human guidance between rounds. He made the video to show what happens when you let AI improve something over and over on its own — and to prove a bigger point: **AI is great at polishing, but bad at real creative "outside the box" thinking unless a human steps in to guide it.**
 
-THE KEY POINTS
+# THE KEY POINTS
 
-- You ask the system a business question with multiple-choice answers, and a virtual "board" of famous business figures critiques your idea. **Each board member focuses on one specific angle, so you get many expert viewpoints at once instead of just one.**
+- Nate started with a deliberately horrible coffee shop website and fed Claude the exact same prompt 100 times: look at the site, make one bold change that improves conversions or looks, and ship something every single round. **He had to force it to keep going because earlier tries made the AI quit around round 20, saying "nothing else can be done."**
 
-- The board members actually debate each other on screen — for example, Bezos arguing with Gary Vee — which makes it feel like a real heated discussion rather than a single flat answer. **The disagreement between advisors is the value, because it forces you to see weaknesses in your idea.**
+- He tested two versions of the AI — Sonnet 4.5 and Opus 4.5 (two different models, or "brains," of Claude, with Opus being the more powerful one) — both on medium effort.
 
-- After a few rounds of debate, the system gives a final verdict (like "Option C") and lets you download a PDF to review or share with your team. **You get a clear decision plus a document you can keep, not just a vague conversation.**
+- Each round ran in a "clean room," meaning a fresh session with no memory, no saved instructions, and no extra add-ons — so the AI only used its own built-in knowledge each time. **This made the test fair, since the AI couldn't lean on past context or custom tools.**
 
-- The visual panel you see is just a pretty layer on top of what's really happening inside Claude Code (Anthropic's tool for coding with AI), where "subagents" — smaller AI helpers each given one job — act out each board member. **The flashy visuals are optional; the real work happens in the background code.**
+- The Sonnet run cost $29.93 in API fees (the pay-per-use cost of running the AI through code instead of the chat app) and it generated 11 images and 2 videos for the site.
 
-- The whole thing is fully customizable — you can add, remove, or create new advisors. He starts with 11 figures (seven standard plus Naval, Cody Sanchez, Sarah Blakely, and Leila Hormozi) and plans to add more. **You can build a board of literally anyone you admire.**
+- Real improvements happened early: by round 2 it added a "sticky" order bar that follows you as you scroll, by round 24 it added an AI-generated background video and a receipt-style order ticket, and by round 32 it built a working order-ahead form.
 
-- Each advisor is built from two files: an "agent file" (a plain text document, called markdown, describing how they talk and think) and a "brain" (a deeper folder of their books, frameworks, principles, quotes, and real sources). **The AI isn't guessing — it's pulling from real interviews, books, and talks each person actually gave.**
+- **The AI stopped hitting real milestones after round 32 — from round 32 to round 100 nothing major happened, even though it kept piling on more code every single round.** The lines of code kept climbing steadily, but the site wasn't truly getting better.
 
-- For example, Leila Hormozi's AI "brain" was built from 48 sources, about half a million words, 14 interviews, and 34 of her own videos. **The quality of the advice depends on feeding the AI a large pile of that person's real material.**
+- Nate's core insight: when you give AI vague goals like "make this prettier," you can get to maybe 80 out of 100 quality — but **to reach the high 90s you have to be the human applying taste and real creative direction.**
 
-- He added a "New Rooster" skill (a built-in command) that automatically creates a brand-new advisor — he demonstrates by generating an Elon Musk version, complete with brain, agent file, sources, and even a cartoon character. **You can clone any new expert in minutes without doing the setup by hand.**
+- The big open question he raises: at what point is it "too much"? The site probably peaked somewhere around round 65, and everything after was just extra clutter.
 
-THE METHOD OR FRAMEWORK
+# THE METHOD OR FRAMEWORK
 
-Here's how the Roaster Room system works, step by step in plain English:
+Nate's loose framework here is about how to actually get great results from AI, and it goes like this:
 
-1. **Set up your advisors.** Each "board member" is made of two parts: an agent file (a short text file saying how that person speaks, debates, and sees the world) and a "brain" folder (a bigger collection of their real books, frameworks, principles, positions on topics like pricing or debt, and actual quotes and stories).
+1. **Don't just give vague commands.** Telling AI "make it better" works for a while but hits a ceiling fast.
+2. **Feed it inspiration or proven examples.** Nate says he's had way more success building AI systems lately when he borrows from other people's proven methods instead of asking AI to invent from scratch.
+3. **Be the taste-maker.** The human's job is to supply the creative judgment and the "outside the box" ideas, because AI tends to only make safe, small tweaks on its own.
+4. **Know when to stop.** More rounds (more effort) don't always mean better — at some point you're just adding noise, not value.
 
-2. **Ask your question.** You type in a business question and give a few multiple-choice answers to pick from.
+# HOW THIS APPLIES TO AI REAL ESTATE
 
-3. **Let the board debate.** The system launches a subagent (a small, focused AI helper) for each advisor. Each one looks at your question through their specialty — Buffett looks at cash and long-term value, Hormozi looks at whether people will pay, Wickman looks at whether the business can run without you.
+This matters a lot if you're building AI tools or consulting for real estate. Say you're using an AI to write property listing descriptions or design a landing page for an agent. If you just tell it "make this listing sound better," you'll get decent results — but it'll plateau at generic, safe writing that sounds like every other listing. The winning move is to feed it proven examples: give it three top-performing luxury listings from your market and say "match this tone and structure." Same with an AI that handles buyer lead follow-up — don't just say "improve the messages," hand it real scripts from your best-converting agent and have the AI build from that proven foundation. **Your value as a consultant isn't letting the AI run wild 100 times; it's knowing when the output is good enough and injecting the human taste that pushes it from 80% to 95%.**
 
-4. **Watch them argue.** The advisors challenge each other over several rounds, exposing flaws in your idea.
+# ACTION STEP THIS WEEK
 
-5. **Get the verdict and PDF.** The system picks a recommended option and gives you a downloadable document.
+Take one AI task you already run for real estate — like a listing description generator or a lead follow-up message. Do this: (1) Find 3 real examples of top-performing work in that area (best listings, best cold emails, whatever applies). (2) Rewrite your AI prompt to include those examples with a line like "study these proven examples first, then create one in this style." (3) Run it and compare the new output side-by-side with your old vague-prompt version. You'll immediately see the quality jump from giving it inspiration instead of a blind command.
 
-6. **Scale it.** Use the "New Rooster" command to automatically add any new expert you want, and the system builds their brain and character for you.
+# BEST QUOTE
 
-HOW THIS APPLIES TO AI REAL ESTATE
-
-This is a powerful blueprint for an AI real estate consulting business because it shows how to turn expert knowledge into an AI "advisor panel" that clients can consult anytime. Imagine building a Roaster Room for real estate decisions, stocked with "brains" trained on real material from top investors and brokers — a Grant Cardone-style multifamily expert, a cash-flow-focused rental investor, a flipping specialist, and a 1031-exchange tax strategist. A client comes to you asking, "Should I buy this fourplex, do a fix-and-flip, or hold my cash and wait?" Your AI board debates it: the cash-flow advisor warns the rent won't cover the mortgage at current rates, the flipper questions the renovation budget, and the tax expert flags a missed exchange opportunity. The client walks away with a reasoned recommendation and a downloadable PDF they can show their partner or lender. You've just packaged elite-level thinking into a repeatable, sellable service.
-
-ACTION STEP THIS WEEK
-
-Build one single AI advisor this week. Pick one real estate expert you respect (say, a well-known investor with lots of public content). Gather their material — grab transcripts from 5 to 10 of their YouTube videos and notes from any book or framework they teach. Then open Claude (or ChatGPT) and create one document describing how they think, their key frameworks, and their positions on common deals. Test it by asking your new "advisor" a real investment question and see if the answer sounds like something that expert would actually say. This gives you the first building block of your own Roaster Room.
-
-BEST QUOTE
-
-"You just ask a question with multiple choice answers, and all these board members come together, blast your idea to the ground, and help you look at it from a different angle."
+"I think to get to more of the 90s, you know, high 90s, 100 out of 100, you have to be the one that's applying the taste and helping innovate."
