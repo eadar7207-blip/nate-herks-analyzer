@@ -1,47 +1,57 @@
-# Nate Herk Analysis — November 08, 2026
+# Nate Herk Analysis — November 10, 2026
 
-## [I Told Claude to "Make it better" 100 Times (It Went Too Far)](https://www.youtube.com/watch?v=DByAR5Su1Yw)
-*November 08 at 02:47 AM*
+## [What's the dumbest thing you've asked AI?](https://www.youtube.com/shorts/EN9IcNncjxE)
+*November 06 at 02:01 AM*
 
-# WHAT IT'S ABOUT
+WHAT IT'S ABOUT
 
-Nate ran a fun experiment: he took an ugly coffee shop website and told Claude (an AI coding tool made by Anthropic) to "make it better" 100 times in a row, with no human guidance between rounds. He made the video to show what happens when you let AI improve something over and over on its own — and to prove a bigger point: **AI is great at polishing, but bad at real creative "outside the box" thinking unless a human steps in to guide it.**
+This is a short, fun street-style video where Nate Herk asks regular people the silliest or weirdest question they've ever asked an AI (a computer program that can chat and answer questions, like ChatGPT). It's not a tutorial — it's a quick, lighthearted clip meant to show how people use AI for everyday, random, and sometimes funny stuff in their real lives.
 
-# THE KEY POINTS
+THE KEY POINTS
 
-- Nate started with a deliberately horrible coffee shop website and fed Claude the exact same prompt 100 times: look at the site, make one bold change that improves conversions or looks, and ship something every single round. **He had to force it to keep going because earlier tries made the AI quit around round 20, saying "nothing else can be done."**
+- People ask AI about personal and emotional problems, like **one person who asked how to make their wife stop complaining** — showing folks turn to AI for life advice, not just work tasks.
+- Some use AI for silly image edits, like **turning their face into a dog's**, proving people enjoy AI for pure fun and entertainment.
+- One person photographed their mahjong game piece (a tile from a tile-matching board game) and **asked AI what move to make next — essentially using it to cheat and win**, which shows AI can read images and give strategy.
+- Practical household questions came up too, like **which trash bags from Home Depot work best for taping up windows in a short-term rental home (Airbnb)** — a real, useful everyday task.
+- A finance worker at Oracle asked AI basic job questions and **the AI playfully told him he should already know the answer since he's the manager**, showing AI can respond with personality.
+- A rider in a self-driving taxi (a robotaxi) **asked if the AI was secretly listening to his private phone call**, highlighting real worries people have about privacy with AI.
+- The winning answer was pure imagination: **how to build a bridge to the moon out of Hershey's chocolate bars**, showing people like testing AI's limits with impossible ideas.
 
-- He tested two versions of the AI — Sonnet 4.5 and Opus 4.5 (two different models, or "brains," of Claude, with Opus being the more powerful one) — both on medium effort.
+HOW THIS APPLIES TO AI REAL ESTATE
 
-- Each round ran in a "clean room," meaning a fresh session with no memory, no saved instructions, and no extra add-ons — so the AI only used its own built-in knowledge each time. **This made the test fair, since the AI couldn't lean on past context or custom tools.**
+The big takeaway here is that everyday people are already comfortable asking AI all kinds of questions — practical, personal, and weird. One person in the video literally asked AI about trash bags for sealing windows in an Airbnb, which is a real estate task. This tells you that property owners, renters, and real estate clients already trust AI for small decisions. For an AI real estate consulting business, that comfort is your opening. For example, you could build a simple AI chat tool for a real estate agent's website that answers common buyer questions 24/7 — "What's the property tax on this home?" or "How far is the nearest school?" — the same casual way people in this video asked their random questions. The lesson: people aren't scared of talking to AI anymore, so meeting them with a helpful AI tool feels natural, not strange.
 
-- The Sonnet run cost $29.93 in API fees (the pay-per-use cost of running the AI through code instead of the chat app) and it generated 11 images and 2 videos for the site.
+ACTION STEP THIS WEEK
 
-- Real improvements happened early: by round 2 it added a "sticky" order bar that follows you as you scroll, by round 24 it added an AI-generated background video and a receipt-style order ticket, and by round 32 it built a working order-ahead form.
+Write down 10 real questions a homebuyer or renter would casually ask, then open a free AI chat tool (like ChatGPT) and test how well it answers each one. Note which answers are good and which are weak — this list becomes the starting blueprint for an AI assistant you could offer to a real estate client.
 
-- **The AI stopped hitting real milestones after round 32 — from round 32 to round 100 nothing major happened, even though it kept piling on more code every single round.** The lines of code kept climbing steadily, but the site wasn't truly getting better.
+BEST QUOTE
 
-- Nate's core insight: when you give AI vague goals like "make this prettier," you can get to maybe 80 out of 100 quality — but **to reach the high 90s you have to be the human applying taste and real creative direction.**
+"How to build a bridge to the moon out of Hershey chocolates."
 
-- The big open question he raises: at what point is it "too much"? The site probably peaked somewhere around round 65, and everything after was just extra clutter.
+## [Would you let AI text for you for a week?](https://www.youtube.com/shorts/UD_F6EJ86PY)
+*November 05 at 02:01 PM*
 
-# THE METHOD OR FRAMEWORK
+WHAT IT'S ABOUT
 
-Nate's loose framework here is about how to actually get great results from AI, and it goes like this:
+This is a short street-interview style video where Nate (or whoever is filming) asks random people one simple question: would you let an AI reply to your text messages for a week? The point is to see how regular people feel about handing over something as personal as texting to a computer program. It's less of a tutorial and more of a quick pulse-check on how comfortable people are with AI stepping into their private lives.
 
-1. **Don't just give vague commands.** Telling AI "make it better" works for a while but hits a ceiling fast.
-2. **Feed it inspiration or proven examples.** Nate says he's had way more success building AI systems lately when he borrows from other people's proven methods instead of asking AI to invent from scratch.
-3. **Be the taste-maker.** The human's job is to supply the creative judgment and the "outside the box" ideas, because AI tends to only make safe, small tweaks on its own.
-4. **Know when to stop.** More rounds (more effort) don't always mean better — at some point you're just adding noise, not value.
+THE KEY POINTS
 
-# HOW THIS APPLIES TO AI REAL ESTATE
+- Most people say no when it comes to **personal messages — texting friends and family feels too private to hand off to a machine.**
+- Several people drew a clear line between work messages and personal ones, saying **AI might be fine for business but not for close relationships.**
+- One person admitted they already use AI for texting, and another said they've used Claude (an AI chatbot made by a company called Anthropic) to help write nice notes to their wife — so **some people are quietly already doing this.**
+- A common worry was accuracy — one person said no "because sometimes they are wrong," meaning **AI can make mistakes that would be embarrassing or hurtful in a personal message.**
+- A few people were totally fine with it, treating it as a convenience, especially those who don't text much or have piles of unread messages.
 
-This matters a lot if you're building AI tools or consulting for real estate. Say you're using an AI to write property listing descriptions or design a landing page for an agent. If you just tell it "make this listing sound better," you'll get decent results — but it'll plateau at generic, safe writing that sounds like every other listing. The winning move is to feed it proven examples: give it three top-performing luxury listings from your market and say "match this tone and structure." Same with an AI that handles buyer lead follow-up — don't just say "improve the messages," hand it real scripts from your best-converting agent and have the AI build from that proven foundation. **Your value as a consultant isn't letting the AI run wild 100 times; it's knowing when the output is good enough and injecting the human taste that pushes it from 80% to 95%.**
+HOW THIS APPLIES TO AI REAL ESTATE
 
-# ACTION STEP THIS WEEK
+The big takeaway here is that people split sharply between "personal" and "business" communication — they trust AI more with work stuff than with their private lives. That's actually good news for an AI real estate consulting business, because most real estate messaging is business communication, not deeply personal. For example, a real estate agent could use an AI assistant to automatically reply to new leads who fill out a website form — answering basic questions like "Is this house still available?" or "Can I book a showing Saturday?" The agent keeps the personal, relationship-building conversations for themselves, while the AI handles the fast, repetitive first replies that otherwise sit unanswered (just like those "piles of unread messages" people mentioned). The lesson: pitch AI as a tool for the business side of communication, where people already feel comfortable letting it help.
 
-Take one AI task you already run for real estate — like a listing description generator or a lead follow-up message. Do this: (1) Find 3 real examples of top-performing work in that area (best listings, best cold emails, whatever applies). (2) Rewrite your AI prompt to include those examples with a line like "study these proven examples first, then create one in this style." (3) Run it and compare the new output side-by-side with your old vague-prompt version. You'll immediately see the quality jump from giving it inspiration instead of a blind command.
+ACTION STEP THIS WEEK
 
-# BEST QUOTE
+Set up one simple AI auto-reply for a real estate lead. Pick a single channel — say, the contact form on an agent's website or their Instagram direct messages. Write out the three most common questions leads ask (availability, price, booking a viewing), then use an AI tool to draft instant responses to those three questions. Test it by sending yourself a fake inquiry and seeing if the reply sounds natural and accurate. Fix anything that sounds off before letting it go live.
 
-"I think to get to more of the 90s, you know, high 90s, 100 out of 100, you have to be the one that's applying the taste and helping innovate."
+BEST QUOTE
+
+"I consider messaging to be something very personal for keeping in touch with people, so no."
