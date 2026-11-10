@@ -1,4 +1,4 @@
-# Run 2026-11-10 15:51 UTC
+# Run 2026-11-10 21:29 UTC
 ```
 === RSS probe ===
 HTTP 200 size=20686
@@ -10,7 +10,7 @@ HTTP 200 size=20686
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-11-10T15:50:36.776947
+⏰ Time: 2026-11-10T21:29:02.586823
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 20686 bytes
    ✅ RSS feed returned 15 entries
@@ -18,9 +18,9 @@ HTTP 200 size=20686
    📅 mImbbszCjCI published 2026-11-09 — NEW
    📅 9qvqlSxgzgk published 2026-11-07 — NEW
    📅 16lpGeMZlzY published 2026-11-06 — NEW
-   📅 EN9IcNncjxE published 2026-11-06 — NEW
-   📅 UD_F6EJ86PY published 2026-11-05 — NEW
-📹 Found 5 new video(s)
+   📅 EN9IcNncjxE published 2026-11-06 — already processed
+   📅 UD_F6EJ86PY published 2026-11-05 — already processed
+📹 Found 3 new video(s)
 
 🔍 Analyzing: I Studied 10,000 AI Websites… Here’s what I learne...
    🔑 Using YouTube cookies (2995 chars)
@@ -45,25 +45,5 @@ HTTP 200 size=20686
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 16lpGeMZlzY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-
 ⚠️  Could not get transcript
-
-🔍 Analyzing: What's the dumbest thing you've asked AI?...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/EN9IcNncjxE: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ✅ yt-dlp transcript (980 chars)
-✅ Analysis complete
-
-🔍 Analyzing: Would you let AI text for you for a week?...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/UD_F6EJ86PY: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ✅ yt-dlp transcript (1097 chars)
-✅ Analysis complete
-❌ Failed to send email: Connection unexpectedly closed
-❌ Failed to send email: Connection unexpectedly closed
-📄 Saved latest_analysis.md
-
-✅ Processing complete - 2 video(s) analyzed
+⚠️  No videos were successfully analyzed
 ```
