@@ -1,26 +1,33 @@
-# Run 2026-11-13 02:10 UTC
+# Run 2026-11-13 10:07 UTC
 ```
 === RSS probe ===
-HTTP 404 size=1613
-<!DOCTYPE html>
-<html lang=en>
-  <meta charset=utf-8>
-  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-  <title>Error 404 (Not Found)!!1</title>
-  <style>
-    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:u
+HTTP 200 size=22131
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
+ <id>yt:channel:2ojq-nuP8ceeHqiroeKhBA</id>
+ <yt:channelId>2ojq-nuP8ceeHqiroeKhBA</yt:channelId>
+ <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-11-13T02:10:52.545977
+⏰ Time: 2026-11-13T10:07:38.298506
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-⚠️  RSS feed fetch failed: HTTP Error 404: Not Found — trying yt-dlp fallback
-   🔄 Switching to yt-dlp for video discovery
-   ✅ yt-dlp returned 10 entries
-📺 Found 10 recent videos in feed
-   📅 dlkZr61G6vA published 2026-11-13 — already processed
-   📅 mImbbszCjCI published 2026-11-13 — already processed
-   📅 O3g_m2i2IGU published 2026-11-13 — already processed
-   📅 tcb5q_6jwvY published 2026-11-13 — already processed
-   📅 DByAR5Su1Yw published 2026-11-13 — already processed
-✨ No new videos to analyze
+   RSS feed HTTP 200, 22131 bytes
+   ✅ RSS feed returned 15 entries
+📺 Found 15 recent videos in feed
+   📅 3iylmS2k3Is published 2026-11-11 — NEW
+   📅 dlkZr61G6vA published 2026-11-11 — already processed
+   📅 mImbbszCjCI published 2026-11-09 — already processed
+   📅 9qvqlSxgzgk published 2026-11-07 — already processed
+   📅 16lpGeMZlzY published 2026-11-06 — already processed
+📹 Found 1 new video(s)
+
+🔍 Analyzing: Claude Can Now Run Your Omnisend Account for You...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/3iylmS2k3Is: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 3iylmS2k3Is: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+⚠️  Could not get transcript
+⚠️  No videos were successfully analyzed
 ```
