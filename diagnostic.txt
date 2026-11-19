@@ -1,7 +1,7 @@
-# Run 2026-11-19 00:47 UTC
+# Run 2026-11-19 08:01 UTC
 ```
 === RSS probe ===
-HTTP 200 size=28067
+HTTP 200 size=26847
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,25 @@ HTTP 200 size=28067
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-11-19T00:47:02.992997
+⏰ Time: 2026-11-19T08:01:37.499184
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 28067 bytes
+   RSS feed HTTP 200, 26847 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 cMPisrqH1eQ published 2026-11-19 — NEW
    📅 BqFimJpU1g8 published 2026-11-18 — NEW
    📅 _76y5N_5KsU published 2026-11-18 — NEW
    📅 IG7WdwAJpro published 2026-11-18 — NEW
    📅 e5b4lgf2jXE published 2026-11-18 — NEW
-   📅 hc34VXRoX7s published 2026-11-17 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: Run AI Agents Locally on the MSI Prestige N16 Flip...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/cMPisrqH1eQ: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] cMPisrqH1eQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+⚠️  Could not get transcript
 
 🔍 Analyzing: Claude and GPT Get Nerfed After Launch (They Admit...
    🔑 Using YouTube cookies (2995 chars)
@@ -52,14 +60,6 @@ HTTP 200 size=28067
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=e5b4lgf2jXE: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] e5b4lgf2jXE: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: Claude Can Run a GTA 6 Clipping Channel on Autopil...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/hc34VXRoX7s: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] hc34VXRoX7s: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
