@@ -1,7 +1,7 @@
-# Run 2026-11-20 13:39 UTC
+# Run 2026-11-20 21:34 UTC
 ```
 === RSS probe ===
-HTTP 200 size=26595
+HTTP 200 size=28254
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,33 @@ HTTP 200 size=26595
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-11-20T13:39:39.338446
+⏰ Time: 2026-11-20T21:34:19.440296
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 26595 bytes
+   RSS feed HTTP 200, 28254 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 6RDL094JKGo published 2026-11-20 — NEW
+   📅 ypvVi0oITFw published 2026-11-20 — NEW
    📅 0IPuk63FwU0 published 2026-11-20 — NEW
    📅 aaTqimE1J9w published 2026-11-19 — NEW
    📅 DMdqpLr2DlQ published 2026-11-19 — NEW
-   📅 cMPisrqH1eQ published 2026-11-19 — NEW
-   📅 BqFimJpU1g8 published 2026-11-18 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: The Hottest AI Job of 2027 pays $325k/year...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/6RDL094JKGo: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 6RDL094JKGo: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+⚠️  Could not get transcript
+
+🔍 Analyzing: How I’d Become a Forward Deployed Engineer in 2027...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=ypvVi0oITFw: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] ypvVi0oITFw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+⚠️  Could not get transcript
 
 🔍 Analyzing: You Can Make $100/day With a Grok Bot GTA 6 Clippe...
    🔑 Using YouTube cookies (2995 chars)
@@ -44,22 +60,6 @@ HTTP 200 size=26595
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=DMdqpLr2DlQ: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] DMdqpLr2DlQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: Run AI Agents Locally on the MSI Prestige N16 Flip...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/cMPisrqH1eQ: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] cMPisrqH1eQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: Claude and GPT Get Nerfed After Launch (They Admit...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=BqFimJpU1g8: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] BqFimJpU1g8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
