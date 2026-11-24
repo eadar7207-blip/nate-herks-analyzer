@@ -1,7 +1,7 @@
-# Run 2026-11-23 15:27 UTC
+# Run 2026-11-24 02:37 UTC
 ```
 === RSS probe ===
-HTTP 200 size=34195
+HTTP 200 size=33852
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,17 +10,33 @@ HTTP 200 size=34195
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-11-23T15:27:07.350032
+⏰ Time: 2026-11-24T02:37:27.194383
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 34195 bytes
+   RSS feed HTTP 200, 33852 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
+   📅 RFfaZMSWG6w published 2026-11-23 — NEW
+   📅 QTJIj5Zb-Cc published 2026-11-23 — NEW
    📅 TqsT28sRag8 published 2026-11-23 — NEW
    📅 sVrmhD99BJk published 2026-11-23 — NEW
    📅 0RF9ml43ups published 2026-11-22 — NEW
-   📅 NLNoZrzXrvU published 2026-11-22 — NEW
-   📅 Xt_pAY0Mg4Q published 2026-11-21 — NEW
 📹 Found 5 new video(s)
+
+🔍 Analyzing: Jensen is back...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=RFfaZMSWG6w: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] RFfaZMSWG6w: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+⚠️  Could not get transcript
+
+🔍 Analyzing: $1 vs $1,000 Video Game...
+   🔑 Using YouTube cookies (2995 chars)
+   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
+⚠️  Transcript fetch failed for https://www.youtube.com/shorts/QTJIj5Zb-Cc: RequestBlocked: youtube_transcript_api._errors
+   🔄 Trying yt-dlp for transcript...
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] QTJIj5Zb-Cc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
+⚠️  Could not get transcript
 
 🔍 Analyzing: I Paid Claude $1 vs $1,000 to Build a Video Game...
    🔑 Using YouTube cookies (2995 chars)
@@ -44,22 +60,6 @@ HTTP 200 size=34195
 ⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=0RF9ml43ups: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
    ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 0RF9ml43ups: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: Google Is BACK (Gemini 4 Neon Tested)...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=NLNoZrzXrvU: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] NLNoZrzXrvU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: Anthropic's IPO Clearly Explained in 7 Minutes...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=Xt_pAY0Mg4Q: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Xt_pAY0Mg4Q: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
