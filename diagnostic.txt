@@ -1,7 +1,7 @@
-# Run 2026-11-26 00:43 UTC
+# Run 2026-11-26 08:57 UTC
 ```
 === RSS probe ===
-HTTP 200 size=32882
+HTTP 200 size=32884
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
  <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UC2ojq-nuP8ceeHqiroeKhBA"/>
@@ -10,56 +10,15 @@ HTTP 200 size=32882
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-11-26T00:43:16.420495
+⏰ Time: 2026-11-26T08:57:29.205819
    🔑 Using YouTube cookies for RSS feed (2995 chars)
-   RSS feed HTTP 200, 32882 bytes
+   RSS feed HTTP 200, 32884 bytes
    ✅ RSS feed returned 15 entries
 📺 Found 15 recent videos in feed
-   📅 Mrl_jKJ3VtA published 2026-11-25 — NEW
-   📅 YHRCFtHD5yo published 2026-11-25 — NEW
-   📅 reRtVTuXbNc published 2026-11-25 — NEW
-   📅 O_-QoxNBDX0 published 2026-11-25 — NEW
-   📅 W7jwa7aD0R0 published 2026-11-24 — NEW
-📹 Found 5 new video(s)
-
-🔍 Analyzing: I Tested 9 Ways to Use Claude Code for Free...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/Mrl_jKJ3VtA: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] Mrl_jKJ3VtA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: I Tested 9 Ways to Use Claude Code for Free (3 are...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=YHRCFtHD5yo: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] YHRCFtHD5yo: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: Claude Artifacts Just Got a HUGE Upgrade: Apps...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/reRtVTuXbNc: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] reRtVTuXbNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: Claude Artifacts Just Got a Huge Upgrade...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=O_-QoxNBDX0: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] O_-QoxNBDX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-
-🔍 Analyzing: This AI assistant does the busywork on your Mac an...
-   🔑 Using YouTube cookies (2995 chars)
-   ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/shorts/W7jwa7aD0R0: RequestBlocked: youtube_transcript_api._errors
-   🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] W7jwa7aD0R0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
-⚠️  Could not get transcript
-⚠️  No videos were successfully analyzed
+   📅 Mrl_jKJ3VtA published 2026-11-25 — already processed
+   📅 YHRCFtHD5yo published 2026-11-25 — already processed
+   📅 reRtVTuXbNc published 2026-11-25 — already processed
+   📅 O_-QoxNBDX0 published 2026-11-25 — already processed
+   📅 W7jwa7aD0R0 published 2026-11-24 — already processed
+✨ No new videos to analyze
 ```
