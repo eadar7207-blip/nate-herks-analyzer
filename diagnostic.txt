@@ -1,4 +1,4 @@
-# Run 2026-11-28 02:15 UTC
+# Run 2026-11-28 10:57 UTC
 ```
 === RSS probe ===
 HTTP 200 size=32568
@@ -10,7 +10,7 @@ HTTP 200 size=32568
  <title>Nate Herk | AI 
 --- analyzer output ---
 🎬 Nate Herks Video Analyzer Started
-⏰ Time: 2026-11-28T02:15:49.339166
+⏰ Time: 2026-11-28T10:57:42.249459
    🔑 Using YouTube cookies for RSS feed (2995 chars)
    RSS feed HTTP 200, 32568 bytes
    ✅ RSS feed returned 15 entries
@@ -25,9 +25,9 @@ HTTP 200 size=32568
 🔍 Analyzing: I Grew a Faceless Instagram With Claude (Real Resu...
    🔑 Using YouTube cookies (2995 chars)
    ⚠️  No PROXY_URL set — GitHub Actions IPs are blocked by YouTube
-⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=9gZXj1dqp40: VideoUnplayable: youtube_transcript_api._errors
+⚠️  Transcript fetch failed for https://www.youtube.com/watch?v=9gZXj1dqp40: RequestBlocked: youtube_transcript_api._errors
    🔄 Trying yt-dlp for transcript...
-   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 9gZXj1dqp40: Video unavailable. This content isn’t available.
+   ⚠️  yt-dlp found no VTT file. stderr: ERROR: [youtube] 9gZXj1dqp40: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-d
 ⚠️  Could not get transcript
 ⚠️  No videos were successfully analyzed
 ```
